@@ -667,7 +667,7 @@ html {
   .main-title{
     
     margin-left: 0vh !important;
-    margin-top: 0vh !important;
+    /*margin-top: 0vh !important;*/
     text-align: center;
   }
 
@@ -919,10 +919,37 @@ html {
   
   #menu li
   {
-    
-    font-size: 22px;
+    font-size: 4vw;
+  }
+
+  #menu li a{
+    line-height: 1px;
   }
   
+  #menu li span{
+    font-weight: bolder;
+  }
+
+  nav ul li .li-servicio{
+    display: none;
+  }
+
+  nav ul li:hover > .li-servicio {
+		display: block;
+	}
+
+  .servicio{
+    display: inline-block ;
+    text-align: left;
+  }
+
+  #menu .servicio  span{
+     font-weight: 500;
+     
+  }
+
+  
+
   /*
    * And let's slide it in from the left
    */
