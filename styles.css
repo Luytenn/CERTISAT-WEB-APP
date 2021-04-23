@@ -263,7 +263,7 @@ height: 70%;
 
 .background-image{
 
-background:url('../CERTISAT-WEBSITE/imagenes/ELEMENTOS-01.png') no-repeat center center / cover ;
+background:url('imagenes/ELEMENTOS-01.png') no-repeat center center / cover ;
 /*background-size: 100% 90vw;*/
 height: 100vh;
 
