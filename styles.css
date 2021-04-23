@@ -18,6 +18,9 @@ overflow-x: hidden;
 
 /* Navbar */
 
+.menu-sidebar{
+  display: none;
+}
 
 .navbar-left{
   text-align: center;
@@ -32,7 +35,7 @@ overflow-x: hidden;
 
 
 .wrapper img { 
-  width: 10vw; left: 50%; transform: translate(-50%,0); position: absolute; z-index: 1 
+  width: 10vw; left: 50%; transform: translate(-50%,0); position: absolute; 
 }
 
 
@@ -507,6 +510,10 @@ height: 100vh;
 
 @media (max-width: 780px) {
 
+  .app{
+    display: none;
+  }
+
 html {
   font-size: 45%;
 }
@@ -550,8 +557,26 @@ html {
 
 @media (max-width: 576px) {
 
+  .wrapper .center{
+    position: absolute;
+    top: 0.5vh;
+  }
+
+
+  #menu img{
+    width: 20vw;
+  }
+
+  #menu .icon-media{
+    text-align: center;
+  }
+
+  #menu .icon-media img{
+    width: 5vh;
+  }
 
   .app{
+    display: block;
     visibility: visible;
     height: 100%;
     position: fixed; 
@@ -559,13 +584,13 @@ html {
     left: 0;
     overflow : hidden;
     z-index: 999;
-  
     width: 70vw;
   }
 
 
  
   .sidebar{
+   
     position: absolute;
     visibility: hidden;
     left: -280px;
@@ -574,6 +599,8 @@ html {
     width: 40vh;
     
   }
+
+  
 
   .app:hover .sidebar{
     transition: 1s;
@@ -601,8 +628,6 @@ html {
     width: 19vw;
   }
 
- 
- 
   
 
   .background-image {
@@ -766,7 +791,150 @@ html {
   
   }
 
+  /*SideBar*/
+
+
+  .menu-sidebar{
+    display: block;
+  }
+  
+  #menuToggle
+  {
+    display: block;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    
+    z-index: 1;
+    
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  #menuToggle a
+  {
+    text-decoration: none;
+    color: #232323;
+    
+    transition: color 0.3s ease;
+  }
+  
+  #menuToggle a:hover
+  {
+    color: tomato;
+  }
+  
+  
+  #menuToggle input
+  {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    
+    cursor: pointer;
+    
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    
+    -webkit-touch-callout: none;
+  }
+  
+  /*
+   * Just a quick hamburger
+   */
+  #menuToggle button
+  {
+   
+   box-sizing: border-box;
+   
+    position: relative;
+  
+    
+    transform-origin: 4px 0px;
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+  
+  #menuToggle span:first-child
+  {
+    transform-origin: 0% 0%;
+  }
+  
+  #menuToggle span:nth-last-child(2)
+  {
+    transform-origin: 0% 100%;
+  }
+  
+  /* 
+   * Transform all the slices of hamburger
+   * into a crossmark.
+   */
+  #menuToggle input:checked ~ span
+  {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  
+  /*
+   * But let's hide the middle one.
+   */
+  #menuToggle input:checked ~ span:nth-last-child(3)
+  {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+  
+  /*
+   * Ohyeah and the last one should go the other direction
+   */
+  #menuToggle input:checked ~ span:nth-last-child(2)
+  {
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+  
+  /*
+   * Make this absolute positioned
+   * at the top left of the screen
+   */
+  #menu
+  {
+   
+    position: absolute;
+    width: 90%;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    background: #ededed;
+    list-style-type: none;
+    border-radius: 25px;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  #menu li
+  {
+    
+    font-size: 22px;
+  }
+  
+  /*
+   * And let's slide it in from the left
+   */
+  #menuToggle input:checked ~ ul
+  {
+    transform: none;
+  }
+
 
 }
 /* End of Responsive */
-
