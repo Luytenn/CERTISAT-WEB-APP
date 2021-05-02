@@ -26,7 +26,7 @@
     border-radius: 2px;
     -moz-border-radius: 2px;
     -webkit-border-radius: 2px;
-    
+    z-index: 999;
     /* == */
    
     /* == */
@@ -39,19 +39,12 @@
     display: block;
     text-decoration: none;
     font-size: 1vw;
-    padding-left: 40px;
+    
     text-align: center;
     color: #777;
-   
-   
-    /*text-align: center;
-    border-right: 1px solid #E7E7E7;*/
-    
-    /* == */
     text-align: left;
-    height: 36px;
     position: relative;
-  
+    z-index: 99999;
     /* == */
   }
   
@@ -73,6 +66,11 @@
     box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
   }
   
+  .mcd-menu li .item-servicio{
+    padding-left: 40px;
+    
+  }
+
   .mcd-menu li span {
     display: block;
     text-decoration: none;
@@ -125,27 +123,20 @@
     margin-left: 0.5vw;
   
   }
-  
-  .mcd-menu li:hover > ul {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    /*top: 100px;*/
-    
-    /* == */
-    left: 25vh;
-    /* == */
-  
-  }
+ 
   
   
   
+ .cambiarImagen{
+  content: url('../imagenes/ELEMENTOS-48.png');
   
-  .mcd-menu li:hover > .imagenServicios{
-    content: url('imagenes/ELEMENTOS-48.png');
-    
-  }
+}
+
+.cambiarImagen{
+  content: url('../imagenes/ELEMENTOS-47.png');
   
+}
+
   
 
   /* Navbar */
@@ -350,7 +341,7 @@
   .section{
     position: relative;
     bottom: 30vh;
-
+    
   }
 
   .clientes{
@@ -391,11 +382,11 @@
   }
 
   .image-section{
-    background:url('imagenes/ELEMENTOS-04.png') no-repeat center center / cover ;
+    background:url('../imagenes/ELEMENTOS-04.png') no-repeat center center / cover ;
     height: 330vh;
     width: 100vw;
     margin-top: -5vh;
-    
+    z-index: 0;
   }
 
   .experiencia div{
@@ -443,7 +434,7 @@
   
   .background-image{
   
- background:url('imagenes/ELEMENTOS-07.png') no-repeat center center / cover ;
+ background:url('../imagenes/ELEMENTOS-07.png') no-repeat center center / cover ;
   /*background-size: 100% 90vw;*/
   height: 100vh;
  

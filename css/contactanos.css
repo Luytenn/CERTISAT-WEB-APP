@@ -121,6 +121,10 @@ overflow-x: hidden;
   /* == */
 }
 
+.mcd-menu li .item-servicio{
+  padding-left: 40px;
+  
+}
 
 
 .mcd-menu li ul li{
@@ -145,12 +149,12 @@ overflow-x: hidden;
 */
 
 .cambiarImagen{
-  content: url('imagenes/ELEMENTOS-48.png');
+  content: url('../imagenes/ELEMENTOS-48.png');
   
 }
 
 .cambiarImagen{
-  content: url('imagenes/ELEMENTOS-47.png');
+  content: url('../imagenes/ELEMENTOS-47.png');
   
 }
 
@@ -384,7 +388,7 @@ height: 70%;
 /* Section 2 */
 
 .container-experiencia{
-  background:url('imagenes/ELEMENTOS-24.png') no-repeat center center / cover ;
+  background:url('../imagenes/ELEMENTOS-24.png') no-repeat center center / cover ;
   height: 80vh;
   width: 100%;
   position: relative;
@@ -392,7 +396,7 @@ height: 70%;
 
 
   .red-social{
-      background:url('imagenes/ELEMENTOS-09.png') no-repeat center center / cover ;
+      background:url('../imagenes/ELEMENTOS-09.png') no-repeat center center / cover ;
   height: 70vh;
   width: 100%;
   }
@@ -410,7 +414,7 @@ height: 70%;
 
 .background-image{
 
-background:url('imagenes/ELEMENTOS-08.png') no-repeat center center / cover ;
+background:url('../imagenes/ELEMENTOS-08.png') no-repeat center center / cover ;
 /*background-size: 100% 90vw;*/
 height: 100vh;
 
@@ -1284,7 +1288,7 @@ html {
 
   
 .image-section{
-  background:url('imagenes/ELEMENTOS-04.png') no-repeat center center / cover ;
+  background:url('../imagenes/ELEMENTOS-04.png') no-repeat center center / cover ;
   height: 97vh;
   width: 98vw;
 
