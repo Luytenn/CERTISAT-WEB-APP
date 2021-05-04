@@ -91,3 +91,29 @@ document.addEventListener('mouseup', function(e) {
   }
  });
  
+
+ function myFunction4() {
+  console.log("Funciona");
+  var x = document.getElementById("miServicio4");
+  
+   document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-48.png";
+
+ 
+   x.style.display = "block";
+  x.style.opacity = "1";
+  x.style.left = "25vh";
+  x.style.visibility = "visible"
+  
+ 
+ 
+ }
+ 
+ document.addEventListener('mouseup', function(e) {
+   var container = document.getElementById("miServicio4");
+   if (!container.contains(e.target)) {
+       container.style.display = 'none';
+       document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
+       document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-46.png";
+   }
+  });
+  

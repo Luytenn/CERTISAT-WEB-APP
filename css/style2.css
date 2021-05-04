@@ -80,7 +80,7 @@
     display: block;
     text-decoration: none;
     font-size: 1vw;
-    padding-left: 40px;
+    
     text-align: center;
     color: #777;
    
@@ -90,7 +90,7 @@
     
     /* == */
     text-align: left;
-    height: 36px;
+  
     position: relative;
   
     /* == */
@@ -167,23 +167,9 @@
   
   }
   
-  .mcd-menu li:hover > ul {
-    display: block;
-    opacity: 1;
-    visibility: visible;
-    /*top: 100px;*/
-    
-    /* == */
-    left: 25vh;
-    /* == */
   
-  }
-  
-  
-  
-  
-  .mcd-menu li:hover > .imagenServicios{
-    content: url('imagenes/ELEMENTOS-48.png');
+  .mcd-menu li .item-servicio{
+    padding-left: 40px;
     
   }
   
