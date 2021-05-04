@@ -877,6 +877,13 @@ html {
   }
 
 
+   .social-media-main{
+     margin-top: 10vh;
+  }
+
+  .social-media-main .icon-bar img{
+    width: 4vw;
+  }
 
   .main-title{
     text-align: center;
