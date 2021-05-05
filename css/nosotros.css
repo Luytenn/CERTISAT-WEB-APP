@@ -10,7 +10,7 @@ width: 100%;
 margin: 0px;
 padding: 0px;
 overflow-x: hidden;
-
+background: #f5f5f5;
 }
 
 .gfg {
@@ -373,9 +373,7 @@ height: 70%;
   height: 300vh;
 }
 
-.workers-image{
-  
-}
+
 
 
 .clientes{
@@ -477,6 +475,97 @@ height: 70%;
 
 
 /* End of Section 2 */
+
+/* Section 3*/
+
+
+
+
+.container-section3{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 3px dashed #013c6c;
+  margin-bottom: 7vh;
+}
+
+
+
+.mision{
+
+  flex: 50%;
+  margin-bottom: 5vh;
+ 
+}
+
+.mision h1{
+  font-size: 5vw;
+  font-weight: 350;
+}
+
+.vision h1{
+  font-size: 5vw;
+  font-weight: 350;
+}
+
+.vision{
+
+  flex: 39%;
+  margin-bottom: 5vh;
+}
+
+.center-title-left{
+  margin-left: 25vh;
+  margin-right: auto;
+  width: 55%;
+}
+
+.center-title-right{
+  margin-left: auto;
+  margin-right: auto;
+  width: 65;
+}
+
+
+.container-section4{
+  display: flex;
+  flex-direction: row;
+ 
+ 
+}
+
+.center-item-left{
+
+  margin-left: 25vh;
+  margin-right: auto;
+  width: 55%;
+}
+
+.center-item-right{
+
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 65;
+}
+
+.flex-item-left {
+  flex: 50%;
+}
+
+.flex-item-left p{
+  font-size: 1.5vw;
+}
+
+.flex-item-right {
+  flex: 39%;
+}
+
+.flex-item-right p{
+  font-size: 1.5vw;
+}
+
+/* End of Section 3*/
+
 
 .app{
   visibility: hidden;
@@ -801,13 +890,27 @@ html {
 
 @media (max-width: 576px) {
 
+.icon-menu{
+  background-color: #ffffff;
+border-radius: 55%;
+padding-right: 3.5vw;
+padding-bottom: 3.5vw;
+padding-left: 3.5vw;
+padding-top: 3.5vw;
+margin-top: 0.5vh;
+}
   
+  
+  .icon-menu img{
+    content:  url("../imagenes/black_menu.png");
+  }
 
   .line-header{
     height: 1.5vh;
     margin-top: 2vh; 
-    background-color: #1B1E29;
-    box-shadow: -5px -78px 200px 100px rgb(26 35 61);
+    background-color: rgb(0 0 0 / 22%);
+    border: 1px solid rgb(47 47 47 / 14%);
+   
   }
   
   .wrapper .center{
@@ -902,7 +1005,7 @@ html {
   
 
   .background-image {
-    height: 42vh;
+    height: 60vh;
   }
 
   .image-section{
@@ -994,7 +1097,7 @@ html {
   width: 100%;
   position: relative;
   margin-left: 5vw;
-  z-index: 999;
+  z-index: 0;
 
 }
 
@@ -1049,6 +1152,100 @@ html {
 
   }
 
+
+
+    /* Section 3*/
+
+
+
+
+.container-section3{
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px dashed #013c6c;
+  margin-bottom: 2vh;
+}
+
+
+
+.mision{
+
+  flex: 50%;
+  margin-bottom: 2vh;
+}
+
+.vision{
+
+  flex: 50%;
+  margin-bottom: 2vh;
+}
+
+.center-title-left{
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center-title-left h1{
+  font-size: 7vw;
+}
+
+.center-title-right h1{
+  font-size: 7vw;
+}
+
+
+.center-title-right{
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+
+.container-section4{
+  display: flex;
+  flex-direction: row;
+  
+ 
+}
+
+.center-item-left{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.center-item-right{
+
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+}
+
+.flex-item-left {
+  flex: 0%;
+  
+  width: 100%;
+}
+
+.flex-item-left p{
+  font-size: 3vw;
+}
+
+.flex-item-right {
+  flex: 0%;
+
+}
+
+.flex-item-right p{
+  font-size: 3vw;
+}
+
+/* End of Section 3*/
 
 
   
@@ -1274,6 +1471,7 @@ html {
     width: 100%;
   
   }
+
 
 
 

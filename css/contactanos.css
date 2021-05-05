@@ -208,7 +208,7 @@ overflow-x: hidden;
   margin-top: 48vh;
   margin-bottom: auto;
   text-align: center;
-  z-index: 999;
+  z-index: 0;
 }
 
 
@@ -819,6 +819,22 @@ html {
 
 
 
+  .icon-menu{
+    background-color: #ffffff;
+  border-radius: 55%;
+  padding-right: 3.5vw;
+  padding-bottom: 3.5vw;
+  padding-left: 3.5vw;
+  padding-top: 3.5vw;
+  margin-top: 0.5vh;
+  }
+    
+    
+    .icon-menu img{
+      content:  url("../imagenes/black_menu.png");
+    }
+
+
 /* Section 3 */
 
 .box-container{
@@ -1370,8 +1386,9 @@ html {
   }
 
   .line-header {
-    background-color: rgb(20 60 162 / 50%);
-    box-shadow: -5px -78px 200px 100px rgb(187 191 204 / 10%);
+    background-color: rgb(0 20 84 / 22%);
+    box-shadow: -5px -78px 200px 100px rgb(51 47 47 / 10%);
+    border: 1px solid rgb(51 47 47 / 4%);
   }
   
   
