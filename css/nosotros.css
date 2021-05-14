@@ -50,7 +50,6 @@ background: #f5f5f5;
   list-style: none;
   padding: 0;
   margin: 0;
-  
   /*height: 100px;*/
   border-radius: 2px;
   -moz-border-radius: 2px;
@@ -82,17 +81,16 @@ background: #f5f5f5;
   border-radius: 25px;
   margin-right: 2vw;
   height: 6vh;
- 
+  background: #f5f5f5;
   line-height: 6vh;
-  
-  
-  
   text-align: center;
   
 }
 
 .item-servicio:hover{
   box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+  position: relative;
+  z-index: 999;
 }
 
 .mcd-menu li .item-servicio{
@@ -129,7 +127,7 @@ background: #f5f5f5;
   padding: 0;
   padding-bottom: 10px;
   margin: 0;
-  background: #FFF;
+  background: #f5f5f5;
   /*border-top: 4px solid #e67e22;*/
   opacity: 0;
   visibility: hidden;

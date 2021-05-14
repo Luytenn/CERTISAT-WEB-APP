@@ -1,11 +1,32 @@
+
+
+@font-face {
+  font-family: "biennale_bold";
+  src: url("../fonts/Biennale\ Heavy.otf") format('truetype') ;
+}
+
+@font-face {
+  font-family: "biennale_light";
+  src: url("../fonts/Biennale\ Light.otf");
+}
+
+@font-face {
+  font-family: "biennale_medium";
+  src: url("../fonts/Biennale\ Medium.otf");
+}
+
+
 * {
   margin:0;
   padding:0;
 }
 
 
+
+
 html,body
 {
+background: #f5f5f5;
 width: 100%;
 margin: 0px;
 padding: 0px;
@@ -74,22 +95,22 @@ overflow-x: hidden;
 }
 
 
+
 .item-servicio{
 
   border-radius: 25px;
   margin-right: 2vw;
   height: 6vh;
- 
+  background: #f5f5f5;
   line-height: 6vh;
-  
-  
-  
   text-align: center;
   
 }
 
 .item-servicio:hover{
   box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+  position: relative;
+  z-index: 999;
 }
 
 .mcd-menu li span {
@@ -142,7 +163,7 @@ overflow-x: hidden;
 
 .mcd-menu li ul li{
   margin-left: 0.5vw;
-
+ 
 }
 /*
 .mcd-menu li:hover > ul {
@@ -218,8 +239,9 @@ overflow-x: hidden;
   font-size: 6vw;
   display: inline;
   text-align: left;
-  font-weight: 900;
-
+  font-family: biennale_bold;
+ 
+  
 }
 
 .main-title{
@@ -237,13 +259,17 @@ overflow-x: hidden;
 .subtitle{
   color: white;
   font-weight: 300;
-  font-size: 1.5vw;
+  font-size: 1.7vw;
+  text-shadow: 3px 4px 5px black;
+  font-family: biennale_light;
   margin-top: 3vh;
 }
 
 /* -------------
 SIDEBAR-LEFT
 ----------------*/
+
+
 
 img {
   
@@ -375,7 +401,7 @@ height: 70%;
 
 
 .col-logo img{
-  width: 8vw;  
+  width: 10vw;  
 }
 
 .col-contact, .col-social-media{
@@ -415,7 +441,7 @@ height: 70%;
 }
 
 .customers img{
-  width: 30vw;
+  width: 38vw;
  
 }
 
@@ -439,14 +465,27 @@ height: 70%;
 
 
 
-
 .background-image{
 
 background:url('../imagenes/ELEMENTOS-01.png') no-repeat center center / cover ;
+position: relative;
+
 /*background-size: 100% 90vw;*/
 height: 100vh;
 
 
+}
+
+
+
+.mcd-menu{
+
+  z-index: 999;
+}
+
+.icon-bar{
+
+  z-index: 999;
 }
 
 .color-box {
@@ -503,66 +542,74 @@ height: 100vh;
   .label {
     position: absolute;
     top: 60%;
-    left: 58%;
+    left: 65%;
     transform: translate(-50%, -50%);
     color: #013C6C;
-    font-size: 1.5vw;
-    font-weight: bold;
+    font-size: 2.3vw;
+    font-family: biennale_bold;
     text-align: left;
   }
 
   .label2 {
     position: absolute;
     top: 30%;
-    left: 33%;
+    left: 27%;
     transform: translate(-50%, -50%);
+    font-family: biennale_light;
     color: #013C6C;
     font-size: 2vw;
   }
 
   .label3 {
     position: absolute;
-    top: 45%;
-    left: 34%;
+    top: 48%;
+    left: 30%;
+    font-family: biennale_light;
     transform: translate(-50%, -50%);
     color: #013C6C;
-    font-size: 3.5vw;
+    font-size: 4vw;
   }
 
   .label4{
     position: absolute;
     top: 60%;
-    left: 58%;
+    left: 65%;
     transform: translate(-50%, -50%);
+    font-family: biennale_bold;
     color: #013C6C;
-    font-size: 1.5vw;
+    text-align: left;
+    font-size: 2.3vw;
     font-weight: bold;
   }
 
   .label5{
     position: absolute;
-    top: 45%;
-    left: 35%;
+    top: 46%;
+    left: 30%;
+    font-family: biennale_light;
     transform: translate(-50%, -50%);
     color: #013C6C;
-    font-size: 3.1vw;
+    font-size: 4vw;
   }
 
 
   .label6{
     position: absolute;
     top: 60%;
-    left: 55%;
+    left: 58%;
     transform: translate(-50%, -50%);
+    font-family: biennale_bold;
     color: #013C6C;
-    font-size: 1.5vw;
+    text-align: left;
+    font-size: 2.3vw;
     font-weight: bold;
   }
 
   .label7{
     position: absolute;
     top: 45%;
-    left: 42%;
+    left: 39.5%;
+    font-family: biennale_light;
     transform: translate(-50%, -50%);
     color: #013C6C;
     font-size: 4vw;
@@ -584,25 +631,29 @@ height: 100vh;
 
 .col-contact h1{
   font-size: 1vw;
-  
+  font-family: biennale_medium;
 }
 
 .col-contact p{
   font-size: 1vw;
   color: #464646;
+  line-height: 10px;
+  font-family: biennale_light;
 }
 
 .col-social-media img{
-  width: 7vh;
+  width: 10vh;
 }
 
 .col-social-media h1{
   font-size: 1vw;
+  font-family: biennale_medium;
 }
 
 .copyright p{
   font-size: 1vw;
   color: #464646;
+  font-family: biennale_light;
 }
 
 
@@ -931,27 +982,27 @@ html {
   .label {
  
     font-size: 2.5vw;
-   
+    margin-left: -4vw;
   }
 
   .label2 {
     font-size: 2.5vw;
-   
+    margin-left: 7.5%;
   }
 
   .label3 {
     font-size: 5vw;
-   
+    margin-left: 6%;
   }
 
   .label4{
     font-size: 2.5vw;
-   
+    margin-left: -4vw;
   }
 
   .label5{
     font-size: 5vw;
-   
+    margin-left: 6%;
   }
 
   .label6{
@@ -1203,8 +1254,6 @@ html {
 
 
 
-
-}
 
 
 
