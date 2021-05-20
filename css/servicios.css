@@ -359,14 +359,7 @@
   }
   
   
-  
-  .customers-wrapper2 {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  height: 70%;
-  
-  }
+ 
   
   .copyright{
     text-align: center;
@@ -431,36 +424,246 @@
   }
   
   
-  /* Section 2 */
+  /*---------------- Section 2 --------------------*/
   
-  
-  
-  .customers{
-    text-align: center;
-    position: relative;
+
+
+  .certi-iot span{
+    font-size: 6vw;
+    color: #013C6C;
+    font-family: biennale_bold;
+    line-height: 15vh;
+  }
+
+  .certi-iot{
+    margin-left: 5vw;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
   }
   
-  .customers img{
-    width: 38vw;
+  /*Steps icons*/
+
+  .fila1 .group-icon div{
+        
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+     margin-top: 2vh;
+   width: auto;
+    box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila1 .group-icon span{
+    font-size: 1.3vw;
+    display: block;
+    color: #013C6C;
    
-  }
+}
+
+.fila2 .group-icon div{
+        
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+ width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila2 .group-icon span{
+  font-size: 1.3vw;
+  display: block;
+  color: #013C6C;
+ 
+}
+
+.fila3 .group-icon div{
+        
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+ width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila3 .group-icon span{
+  font-size: 1.3vw;
+  display: block;
+  color: #013C6C;
+  font-family: biennale_light;
+}
+
+.fila6 .group-icon div{
+        
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+ width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila6 .group-icon span{
+  font-size: 1.3vw;
+  display: block;
+  color: #013C6C;
+  font-family: biennale_light;
+}
+.group-span{
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+  margin-bottom: 2vh;
+  display: inline;
+
+}
+
+.group-span span{
+  font-size: 1.3vw;
+  color: #013C6C;
+  font-family: biennale_light;
+}
+
+/*Certisat description*/
+
+
+.certi-security{
+  height: 135vh;
+  position: relative;
+}
+
+
+.certi-security div{
+  margin: 0;
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  width: 33vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.certi-security h3,.certi-gold h3,.car-component span{
+  font-size: 4.5vw;
+  font-weight: bold;
+  font-family: biennale_light;
+  line-height: 11vh;
+
+}
+
+.certi-security p,.certi-gold p, .car-component p{
   
-  .container-experiencia{
-   
-    padding: 5rem;
-    background: url('../imagenes/ELEMENTOS-21.png') no-repeat center center / cover;
+  font-family: biennale_light;
+  font-size: 1.5vw;
+   text-align: left;
+
+   color: #464646;
+
+}
+
+.certi-gold div{
+  margin-left: 3vw;
+  margin-top: 5vh;
+}
+
+
+/*Car components*/
+
+.car-component-desc{
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 40%;
+  width: 33vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.car-component-desc2{
+  margin: 0;
+  position: absolute;
+  top: 55%;
+  left: 70%;
+  width: 40vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+
+.sw-faktory-desc2{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  width: 40vw;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.sw-faktory-desc span{
+  font-size: 7vw;
+  font-weight: bold;
+  font-family: biennale_bold;
+  line-height: 15vh;
+  color: #F5F5F5;
+}
+ .sw-faktory-desc p{
   
-  }
-  
+  font-family: biennale_light;
+  font-size: 1.5vw;
+   text-align: left;
+   color: #F5F5F5;
+
+}
+
+
   /* End of Section 2 */
   
   .app{
     visibility: hidden;
   }
   
-  .clientes img{
+  .clientes {
     width: 100%;
-    height: 40vw;
+    height: 50vw;
+    background: url('../imagenes/ELEMENTOS-23.png');
+ 
+  }
+
+  .sw-faktory{
+
+    margin-top: 20vh;
+    background: url('../imagenes/ELEMENTOS-20.png');
+  
+
   }
   
   
@@ -469,7 +672,7 @@
   
   background:url('../imagenes/ELEMENTOS-06.png') no-repeat center center / cover ;
   position: relative;
-  
+ 
   /*background-size: 100% 90vw;*/
   height: 100vh;
   
@@ -522,210 +725,9 @@
     }
   
   
-  
-  
-  /*
-  .background-image::before {
-  
-    content: "";
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    background-color: rgb(14 33 56 / 80%);
-  }*/
-  
-  
-  
-    
-    .label {
-      position: absolute;
-      top: 60%;
-      left: 65%;
-      transform: translate(-50%, -50%);
-      color: #013C6C;
-      font-size: 2.3vw;
-      font-family: biennale_bold;
-      text-align: left;
-    }
-  
-    .label2 {
-      position: absolute;
-      top: 30%;
-      left: 27%;
-      transform: translate(-50%, -50%);
-      font-family: biennale_light;
-      color: #013C6C;
-      font-size: 2vw;
-    }
-  
-    .label3 {
-      position: absolute;
-      top: 48%;
-      left: 30%;
-      font-family: biennale_light;
-      transform: translate(-50%, -50%);
-      color: #013C6C;
-      font-size: 4vw;
-    }
-  
-    .label4{
-      position: absolute;
-      top: 60%;
-      left: 65%;
-      transform: translate(-50%, -50%);
-      font-family: biennale_bold;
-      color: #013C6C;
-      text-align: left;
-      font-size: 2.3vw;
-      font-weight: bold;
-    }
-  
-    .label5{
-      position: absolute;
-      top: 46%;
-      left: 30%;
-      font-family: biennale_light;
-      transform: translate(-50%, -50%);
-      color: #013C6C;
-      font-size: 4vw;
-    }
-  
-  
-    .label6{
-      position: absolute;
-      top: 60%;
-      left: 58%;
-      transform: translate(-50%, -50%);
-      font-family: biennale_bold;
-      color: #013C6C;
-      text-align: left;
-      font-size: 2.3vw;
-      font-weight: bold;
-    }
-  
-    .label7{
-      position: absolute;
-      top: 45%;
-      left: 39.5%;
-      font-family: biennale_light;
-      transform: translate(-50%, -50%);
-      color: #013C6C;
-      font-size: 4vw;
-    }
-  
-  
-  
-  
-  .main-intro{
-    margin-right: 0rem;
-  }
-  
-  /*Steps icons*/
-
-  .fila1 .group-icon div{
-        
-    border-radius: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-   margin-top: 2vh;
-   width: auto;
-    box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
-}
-
-
-
-.fila1 .group-icon span{
-    font-size: 1.2vw;
-    display: block;
-    color: #013C6C;
-   
-}
-
-.fila2 .group-icon div{
-        
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
- width: auto;
-  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
-}
-
-
-
-.fila2 .group-icon span{
-  font-size: 1.2vw;
-  display: block;
-  color: #013C6C;
  
-}
-
-.fila3 .group-icon div{
-        
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
- width: auto;
-  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
-}
-
-
-
-.fila3 .group-icon span{
-  font-size: 1.2vw;
-  display: block;
-  color: #013C6C;
- 
-}
-
-.fila6 .group-icon div{
-        
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-
- width: auto;
-  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
-}
-
-
-
-.fila6 .group-icon span{
-  font-size: 1.2vw;
-  display: block;
-  color: #013C6C;
-  
-}
-.group-span{
-  border-radius: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  width: auto;
-  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
-  margin-bottom: 2vh;
-  display: inline;
- 
-
-}
-
-.group-span span{
-  font-size: 1.2vw;
   
   
-}
 
 
 
