@@ -622,6 +622,113 @@
     margin-right: 0rem;
   }
   
+  /*Steps icons*/
+
+  .fila1 .group-icon div{
+        
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   margin-top: 2vh;
+   width: auto;
+    box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila1 .group-icon span{
+    font-size: 1.2vw;
+    display: block;
+    color: #013C6C;
+   
+}
+
+.fila2 .group-icon div{
+        
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+ width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila2 .group-icon span{
+  font-size: 1.2vw;
+  display: block;
+  color: #013C6C;
+ 
+}
+
+.fila3 .group-icon div{
+        
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+ width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila3 .group-icon span{
+  font-size: 1.2vw;
+  display: block;
+  color: #013C6C;
+ 
+}
+
+.fila6 .group-icon div{
+        
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
+ width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+}
+
+
+
+.fila6 .group-icon span{
+  font-size: 1.2vw;
+  display: block;
+  color: #013C6C;
+  
+}
+.group-span{
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: auto;
+  box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
+  margin-bottom: 2vh;
+  display: inline;
+ 
+
+}
+
+.group-span span{
+  font-size: 1.2vw;
+  
+  
+}
+
+
+
   /*footer*/
   
   .col-logo{
