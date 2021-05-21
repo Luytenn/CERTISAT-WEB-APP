@@ -618,7 +618,91 @@
   box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
 }
 
+.fila4{
+  margin-top: 0;
+  margin-left: 4vw;
+}
 
+.fila4 .group-icon{
+  float: left;
+  margin-top: 6vh;
+  text-align: right;
+}
+
+.fila4 .group-icon .ic2{
+  margin-right: 6vw;
+}
+
+.fila4 .group-icon .tag2{
+  margin-right: 2vw;
+}
+
+.fila4 .ic3{
+  float: left;
+  margin-top: 13vh;
+}
+
+.fila4 .ic4{
+  float: left;
+  margin-top: 13vh;
+}
+
+
+.fila5 .group-icon{
+  float: left;
+  text-align: right;
+}
+
+.fila5 .group-icon .tg2{
+  margin-right: 6vw;
+}
+
+.fila5 .group-icon .ic2{
+  margin-right: 4vw;
+}
+
+.fila5  .ic3{
+  float: left;
+  margin-top: 10vh;
+  
+}
+
+.fila5  .ic1{
+  margin-top: 10vh;
+}
+
+.fila5 .ic4{
+  float: left;
+  margin-left: 3vw;
+}
+
+.fila6 .ic1{
+  display: inline-block;margin-left: 3vw;visibility: hidden;
+}
+
+.fila6 .ic2{
+  display: inline-block;margin-left: 4vw;
+}
+
+.fila6 .group-icon .if1{
+  margin-bottom: 10vh;
+}
+
+.fila6 .ic3{
+  display: inline-block;margin-left: 4vw;
+}
+
+.fila6 .if2{
+  display: inline-block;
+}
+
+.fila6 .ic4{
+  display: inline-block;margin-left: 4vw
+}
+
+.fila6 .if3{
+  display: inline-block;
+}
 
 .fila6 .group-icon span{
   font-size: 1.3vw;
@@ -693,6 +777,104 @@
 
 /*car components*/
 
+.group-car-comp .feature-icon {
+  padding: 0px;
+  margin-left: 0;
+  position: relative;
+  height: 120vh;
+}
+
+.group-car-comp .feature-icon img{
+  width: 48vw;
+  position:absolute;
+  left: -3vw;
+}
+
+.group-car-comp .car-alt{
+  height: 120vh;
+  position: relative;
+}
+
+.group-car-comp .feature-icon2{
+  padding: 0px;
+  margin-left: 0;
+  position: relative;
+}
+
+.group-car-comp .feature-icon2 img{
+  width: 55vw;
+  height: 120vh;
+  position:absolute;
+  left: 0vw;
+}
+
+.group-car-comp .feature-icon3 {
+  padding: 0px;
+  margin-left: 0;
+  position: relative;
+  height: 150vh;
+}
+
+.group-car-comp .feature-icon3 img{
+  width: 48vw;position:absolute;left: -3vw;
+}
+
+.group-car-comp .feature-icon4{
+  padding: 0px;margin-left: 0;position: relative;
+}
+
+.group-car-comp .feature-icon4 img{
+  width: 55vw;height: 130vh;position:absolute;left: 0vw;
+}
+
+.group-car-comp .feature-icon5 {
+  padding: 0px;margin-left: 0;position: relative;height: 135vh;margin-top: 15vh;
+}
+
+.group-car-comp .feature-icon5 img{
+  width: 48vw;position:absolute;left: -3vw;
+}
+
+.car-comp-alt2{
+  height: 120vh;position: relative;
+}
+
+.car-comp-alt{
+  height: 120vh;
+  position: relative;
+}
+
+.car-comp-alt3{
+  height: 120vh;position: relative;
+}
+
+.group-car-comp .feature-icon6 {
+  padding: 0px;margin-left: 0;position: relative;
+}
+
+.group-car-comp .feature-icon6 img{
+  width: 55vw;height: 130vh;position:absolute;left: 0vw;" src="imagenes/ELEMENTOS-17.png
+}
+
+.group-car-comp .feature-icon7{
+  padding: 0px;margin-left: 0;position: relative;height: 120vh;margin-top: 15vh;
+}
+
+.group-car-comp .feature-icon7 img{
+  width: 48vw;position:absolute;left: -3vw;
+}
+
+.group-car-comp .feature-icon8{
+  padding: 0px;margin-left: 0;position: relative;
+}
+
+.group-car-comp .feature-icon8 img{
+  width: 55vw;height: 130vh;position:absolute;left: 0vw;
+}
+
+.group-car-comp .feature-icon9 img{
+  width: 77vw;height: 110vh;
+}
 
 .car-component-desc{
   margin: 0;
@@ -720,7 +902,8 @@
 
 
 .sw-faktory-desc2{
-  margin: 0;
+  margin-left: 7vw;
+ 
   position: absolute;
   top: 50%;
   left: 70%;
@@ -747,6 +930,9 @@
 
 }
 
+.sw-faktory-desc {
+  height: 110vh;position: relative;
+}
 
   /* End of Section 2 */
   
