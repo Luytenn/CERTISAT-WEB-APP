@@ -443,11 +443,7 @@
   
   /*Steps icons*/
 
-  .fila1{
-    margin-top: 15vh;
-  
-  }
-
+ 
   .fila1 .group-icon{
     float: left;
     margin-top: 6vh;
@@ -853,7 +849,7 @@
 }
 
 .group-car-comp .feature-icon6 img{
-  width: 55vw;height: 130vh;position:absolute;left: 0vw;" src="imagenes/ELEMENTOS-17.png
+  width: 55vw;height: 130vh;position:absolute;left: 0vw;
 }
 
 .group-car-comp .feature-icon7{
@@ -903,7 +899,6 @@
 
 .sw-faktory-desc2{
   margin-left: 7vw;
- 
   position: absolute;
   top: 50%;
   left: 70%;
@@ -951,7 +946,7 @@
 
     margin-top: 20vh;
     background: url('../imagenes/ELEMENTOS-20.png');
-  
+    
 
   }
   
@@ -1659,6 +1654,466 @@
      
    }
    
+   /*--------------------------Section 2---------------------*/
+
+
+   /*Feature 1*/
+
+   .group-car-comp .feature-icon {
+    padding: 0px;
+    position: relative;
+    height: 70vh;
+    margin-top:20vh
+  }
+  
+  .group-car-comp .feature-icon img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+  }
+
+  .reverse{
+    display:flex;
+    flex-direction: column-reverse;
+  }
+
+  .car-component{
+    text-align: center;
+  }
+
+  .car-component-desc{
+    left: 50%;
+    width: 100vh;
+  }
+
+  .car-component .car-component.desc div{
+    width: 90vw;
+  }
+
+  .car-component .car-component-desc span{
+    line-height: 8vw;
+    font-size: 6vw;
+    width: 50vw;
+  }
+
+  .car-component .car-component-desc span br:nth-child(2){
+    display: none;
+  }
+
+  .car-component .car-component-desc p{
+    text-align: center;
+    font-size: 3vw;
+   
+  }
+
+  /*Feature2*/
+
+ 
+
+  .car-component-desc2{
+    left: 50%;
+    width: 100vh;
+  }
+
+  .car-component .car-component.desc2 div{
+    width: 90vw;
+  }
+
+   .group-car-comp .car-alt{
+    height: 0px;
+  }
+
+
+  .car-component .car-component-desc2 span{
+    line-height: 8vw;
+    font-size: 6vw;
+    width: 50vw;
+  }
+
+  .car-component .car-component-desc2 p{
+    text-align: center;
+    font-size: 3vw;
+  } 
+
+  .group-car-comp .feature-icon2 {
+    padding: 0px;
+    position: relative;
+    height: 70vh;
+    margin-top:20vh
+  }
+  
+  .group-car-comp .feature-icon2 img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+  }
+ 
+  /*Feature 3*/
+
+  .group-car-comp .feature-icon3{
+    padding: 0px;
+    position: relative;
+    height: 70vh;
+    margin-top:20vh
+  }
+
+  .group-car-comp .feature-icon3 img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+    margin-top: 10vh;
+  }
+
+  .car-comp-alt {
+    height: 20vh;
+  }
+
+  /*Feature 4*/
+  .group-car-comp .feature-icon4{
+    padding: 0px;
+    position: relative;
+    height: 70vh;
+    margin-top:20vh
+  }
+
+  .group-car-comp .feature-icon4 img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+    margin-top: 10vh;
+  }
+
+  /*Feature 5*/
+
+  .group-car-comp .feature-icon5{
+    padding: 0px;
+    position: relative;
+    height: 0vh;
+    margin-top:10vh
+  }
+
+  .group-car-comp .feature-icon5 img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+    margin-top: 20vh;
+  }
+
+  /*Feature 6*/
+
+  .car-comp-alt2 .car-component-desc2{
+    margin-top: 20vh;
+  }
+
+  .group-car-comp .feature-icon6{
+    padding: 0px;
+    position: relative;
+    height: 0vh;
+    
+  }
+
+  .group-car-comp .feature-icon6 img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+  
+  }
+
+  /*Feature 7*/
+
+
+  .group-car-comp .feature-icon7{
+    padding: 0px;
+    position: relative;
+    height: 0vh;
+    margin-top: 60vh;
+  }
+
+  .group-car-comp .feature-icon7 img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+    margin-top: 15vh;
+  
+  }
+
+  /*Feature 8*/
+
+  .car-comp-alt3 .car-component-desc2{
+    margin-top: 20vh;
+  }
+
+  .car-comp-alt3{
+    margin-top: 20vh;
+    height: 79vh;
+  }
+
+  .group-car-comp .feature-icon8{
+    padding: 0px;
+    position: relative;
+    height: 0vh;
+    margin-top: 10vh;
+    margin-bottom: 30vh;
+
+  }
+
+  .group-car-comp .feature-icon8 img{
+    width: 70vw;
+    height: 40vh;
+    position: initial;
+    left: 0;
+  
+  
+  }
+
+  /*SW Faktory*/
+
+  .sw-faktory-desc2{
+    margin-top: 5vh;
+    left: 50%;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .sw-faktory-desc2 p{
+    font-size: 4vw;
+    text-align: center;
+  }
+
+  .sw-faktory-desc span{
+    line-height: 0;
+    font-size: 8vw;
+    line-height: 4vh;
+  }
+
+  .group-car-comp .feature-icon9 img{
+    height: 47vh;
+  }  
+
+  .sw-faktory-desc{
+    height: 38vh;
+  }
+
+  /*-----------------Circle Icons---------------------------*/
+
+  .ic{
+    margin-right: 0;
+  }
+
+  .fila1 {
+    position: absolute;
+    left: 20%;
+  }
+
+  .tag-icon{
+    display: none;
+  }
+
+  .container-fluid .icon-feature{
+    width: 16vw;
+    margin-left: 5vw;
+  }
+
+
+  /*fila2*/
+
+  .fila2{
+    margin-top: 31vh;
+    height: 30vh;
+  }
+
+  .fila2 .group-icon2{
+    margin-top: 0;
+  }
+
+  .fila2 .group-icon3{
+    margin-top: 0;
+  }
+
+  .fil2 .icon-feature-slight{
+    margin-right: 0;
+  }
+  
+  /*fila 3*/
+
+  .fila3 .group-icon6{
+    text-align: initial;
+  }
+
+  .fila3 .group-icon7{
+    float: initial;
+    margin-top: 0;
+  }
+
+  .fila3 .group-icon5{
+    float: initial;
+  }
+
+  /*fila 4 */
+
+
+
+  .fila12 .fila1 .group-icon1{
+    margin-top: 0;
+  }
+
+  .fila12 .fila1 .group-icon{
+    margin-top: 0;
+  }
+
+  .fila12 .fila1 .group-icon3{
+    margin-top: 0;
+  }
+
+  /*fila 5 */
+
+  .fila1 
+  {
+
+    position: absolute;
+    left: 17%;
+  }
+
+  .fila4 .ic3{
+    margin-top: 0;
+  }
+
+  .fila1 .group-icon{
+    margin-top: 0;
+  }
+
+  .icon1{
+    position: absolute;
+    top: 60vh;
+  }
+
+  .icon2{
+    position: absolute;
+    left: 59%;
+    bottom: 91vw;
+  }
+
+  .icon3{
+    position: absolute;
+    left: 35vw;
+    bottom: 42vh;
+  }
+
+  .icon4{
+    position: absolute;
+    bottom: 42vh;
+    left: 11vw;
+  }
+
+  .icon5{
+    position: absolute;
+
+  }
+
+  .icon6{
+    position: absolute;
+    bottom: 31vh;
+    left: 10vw;
+  }
+
+  .icon12{
+    position: absolute;
+    bottom: 30vh;
+    left: 15vw;
+  }
+
+  .icon7{
+    position: absolute;
+    top: 32vh;
+  }
+
+  .icon8{
+    position: absolute;
+    top: 23vh;
+  }
+
+  .icon9{
+    position: absolute;
+    top: 16vh;
+   left: 24vw;
+  }
+
+  .icon10{
+   position: absolute;
+   top: 16vh;
+   right: 16vw;
+  }
+
+  .container-fluid .icon-feature{
+    margin-left: 0;
+  }
+
+  .icon11{
+    position: absolute;
+    top: 16.5vh;
+    right: -2vw;
+  }
+
+  .icon13{
+    position: absolute;
+    top: 30vh;
+    left: 30vw;
+  }
+
+  .icon14{
+    position: absolute;
+    top: 40vh;
+    left: 20vw;
+  }
+
+  .icon15{
+    position: absolute;
+    top: 15vh;
+    left: 10vw;
+  }
+
+  .certi-gold{
+    position: absolute;
+    top: 150vh;
+  }
+
+
+  .certi-security{
+    margin-top: 5vh;
+  }
+
+  .certi-gold div{
+    left: 50%;
+    text-align: center;
+    width: 100vw;
+    margin-left: 0;
+  }
+
+  .certi-gold h3{
+    font-size: 8.5vw;
+    line-height: normal;
+  }
+
+  .certi-gold p{
+    font-size: 3.5vw;
+    text-align: center;
+  }
+
+  /*Certisat Gold*/
+
+  .col-6{
+    width: 100vw;
+  }
+
+
+
   }
   /* End of Responsive */
   
