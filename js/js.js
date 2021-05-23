@@ -191,3 +191,112 @@ document.addEventListener('mouseup', function(e) {
      }
     });
   
+
+    /*-------------Section 5--------------------*/
+    
+  
+    function displayDescription() {
+      console.log("Funciona");
+      var x = document.getElementById("question1");
+  
+      x.style.display  = "block";
+     }
+     
+    
+     
+   document.addEventListener('mouseup', function(e) {
+      var container = document.getElementById('question1');
+      if (!container.contains(e.target)) {
+          container.style.display = 'none';
+       
+      }
+   });
+   
+   /*-------------------*/ 
+   
+   function displayDescription2() {
+      console.log("Funciona");
+      var x = document.getElementById("question2");
+  
+    
+      x.style.display  = "block";
+     }
+     
+    
+     
+   document.addEventListener('mouseup', function(e) {
+      var container = document.getElementById('question2');
+      if (!container.contains(e.target)) {
+          container.style.display = 'none';
+       
+      }
+   });
+  
+   /*-------------------*/ 
+   
+   function displayDescription3() {
+      console.log("Funciona");
+      var x = document.getElementById("question3");
+  
+    
+      x.style.display  = "block";
+     }
+     
+    
+     
+   document.addEventListener('mouseup', function(e) {
+      var container = document.getElementById('question3');
+      if (!container.contains(e.target)) {
+          container.style.display = 'none';
+       
+      }
+   });
+  
+  
+   
+    /*-------------------*/ 
+   
+    function displayDescription4() {
+      console.log("Funciona");
+      var x = document.getElementById("question4");
+  
+    
+      x.style.display  = "block";
+     }
+     
+    
+     
+   document.addEventListener('mouseup', function(e) {
+      var container = document.getElementById('question4');
+      if (!container.contains(e.target)) {
+          container.style.display = 'none';
+       
+      }
+   });
+  
+  
+    /*-------------------*/ 
+   
+    function displayDescription5() {
+      console.log("Funciona");
+      var x = document.getElementById("question5");
+  
+    
+      x.style.display  = "block";
+     }
+     
+    
+     
+   document.addEventListener('mouseup', function(e) {
+      var container = document.getElementById('question5');
+      if (!container.contains(e.target)) {
+          container.style.display = 'none';
+       
+      }
+   });
+  
+    
+
+  
+    /*-------------End of Section 5--------------------*/
+  

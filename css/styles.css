@@ -468,7 +468,7 @@ height: 70%;
 .background-image{
 
 background:url('../imagenes/ELEMENTOS-01.png') no-repeat center center / cover ;
-position: relative;
+
 
 /*background-size: 100% 90vw;*/
 height: 100vh;
