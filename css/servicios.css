@@ -35,6 +35,11 @@
   
   }
   
+
+  header{
+    background: url('../imagenes/puntero-tecnologia.png') no-repeat center center / cover;
+  }
+
   
   /*Background transparent
   
@@ -423,7 +428,13 @@
     width: 1vw;
   }
   
-  
+  .icon6{
+    margin-left: 4vw;
+  }
+
+ 
+
+
   /*---------------- Section 2 --------------------*/
   
 
@@ -446,8 +457,10 @@
  
   .fila1 .group-icon{
     float: left;
-    margin-top: 6vh;
+    margin-top: 18vh;
     text-align: right;
+    position: relative;
+     z-index: 999;
   }
 
   
@@ -474,6 +487,9 @@
     box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
 }
 
+.fila1  .ic0{
+  margin-top : 9vh;
+}
 
 
 .fila1 .group-icon span{
@@ -482,6 +498,12 @@
     color: #013C6C;
    
 }
+
+.fila1 .group-icon .tag-custom{
+  margin-top: 4vh;
+}
+
+
 
 .fila2 .group-icon div{
         
@@ -507,18 +529,19 @@
 
 .fila2 .group-icon2{
   float: left;
-  margin-top: 16vh;
+  margin-top: 19vh;
   text-align: right; 
 }
 
 .fila2 .group-icon3{
   float: left;
-  margin-top: 10vh;
+  margin-top: 17vh;
 }
 
 .fila2 .group-icon4{
   float: left;
   margin-left: 3vw;
+  margin-top: 14vh;
 }
 
 .fila2 .icon-feature-slight{
@@ -533,8 +556,8 @@
   padding-right: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
-
- width: auto;
+  margin-right: 2vw;
+  width: auto;
   box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
 }
 
@@ -559,7 +582,7 @@
 
 .fila3 .group-icon7{
   float: left;
-  margin-top: 7vh;
+  margin-top: 5vh;
 }
 
 .iconf{
@@ -580,7 +603,7 @@
 
 .col-12 .fila1 .group-icon1{
   float: left; 
-  margin-top: 19vh;
+  margin-top: 26vh;
 }
 
 .col-12 .fila1 .ic1{
@@ -590,16 +613,18 @@
 .col-12 .fila1 .group-icon2{
   float: left;
   margin-left: 2vw;
+  margin-top: 5vw;
 }
 
 .col-12 .fila1 .group-icon3{
   float: left; 
-  margin-top: 10vh;
+  margin-top: 13vh;
 }
 
 .col-12 .fila1 .group-icon4{
   float: left; 
   margin-left: 5vw;
+  margin-top: 9vh;
 }
 
 .fila6 .group-icon div{
@@ -616,7 +641,7 @@
 
 .fila4{
   margin-top: 0;
-  margin-left: 4vw;
+  margin-left: -1vw;
 }
 
 .fila4 .group-icon{
@@ -626,7 +651,7 @@
 }
 
 .fila4 .group-icon .ic2{
-  margin-right: 6vw;
+  margin-right: 2vw;
 }
 
 .fila4 .group-icon .tag2{
@@ -659,17 +684,19 @@
 
 .fila5  .ic3{
   float: left;
-  margin-top: 10vh;
-  
+  margin-top: 15vh;
+ 
 }
 
 .fila5  .ic1{
-  margin-top: 10vh;
+  margin-top: 19vh;
+  margin-left: 2vw;
 }
 
 .fila5 .ic4{
   float: left;
   margin-left: 3vw;
+  margin-top: 10vh;
 }
 
 .fila6 .ic1{
@@ -677,7 +704,9 @@
 }
 
 .fila6 .ic2{
-  display: inline-block;margin-left: 4vw;
+  display: inline-block;
+  margin-left: 7vw;
+  margin-top: 5vh;
 }
 
 .fila6 .group-icon .if1{
@@ -723,6 +752,20 @@
   font-size: 1.3vw;
   color: #013C6C;
   font-family: biennale_light;
+}
+
+
+/*Icon Feature position*/
+
+
+.icon6{
+  margin-right: 6vw;
+  z-index: 999;
+}
+
+.container-fluid .tag-icon span{
+  font-family: biennale_light;
+  font-weight: 300;
 }
 
 /*Certisat description*/
@@ -1138,7 +1181,7 @@
   
   
   .group-device-img img{
-    width: 8vh;
+    width: 9.5vh;
   }
   
     .device-img{

@@ -330,7 +330,8 @@
   
   .icon-menu{
   
-  background-color: #013C6C;
+  background-color: #FFFFFF;
+  box-shadow: -4px -4px 0px -7px #696868, 2px 1px 10px -4px #696868;
   border-radius: 55%;
   padding-right: 3.5vw;
   padding-bottom: 3.5vw;
