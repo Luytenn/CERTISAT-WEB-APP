@@ -642,6 +642,19 @@
   }
   
   /*footer*/
+  .bi-geo-alt-fill{
+    font-size: 1.7vw;
+      margin-left: 6px;
+      color: black;
+      stroke-width: 1px;
+  }
+  
+  .contact-location{
+    vertical-align: bottom; 
+    width: 4vw; 
+    margin-left: 2vw;
+  }
+  
   
   .col-logo{
     margin-top: auto;
@@ -650,27 +663,37 @@
   
   .col-contact h1{
     font-size: 1vw;
-    
+    font-family: biennale_medium;
+    margin-bottom: 3vh;
   }
   
+  .footer-text h1{
+    margin-bottom: 1.6vh;
+  }
+  
+  
   .col-contact p{
+   
     font-size: 1vw;
     color: #464646;
+    line-height: 15px;
+    font-family: biennale_light;
   }
   
   .col-social-media img{
-    width: 7vh;
+    width: 10vh;
   }
   
   .col-social-media h1{
     font-size: 1vw;
+    font-family: biennale_medium;
   }
   
   .copyright p{
     font-size: 1vw;
     color: #464646;
+    font-family: biennale_light;
   }
-  
   
   @media(max-width:2100px){
     .img-app{
@@ -1071,70 +1094,75 @@
       
         
        /*footer*/
-      
-      .col-logo img{
-        width: 20vw;
-      }
-      
-       .footer-text{
-          margin-left: 8vw;
-       }
-      
-       .footer-2{
-         margin-right: 8vw;
-       }
-        
-        .icon-bar{
-          position: initial;
-          text-align: center;
-          
-        }
-        
-        .icon-bar img{
-      
-          margin-right: 5vw;
-          text-align: center;
-          width: 2vw;
-          margin-bottom: 4vw;
-        }
+     
+ .bi-geo-alt-fill{
+  font-size: 4vw;
+    
+    stroke-width: 1px;
+}
 
-        .icon-bar{
-          position: absolute;
-          left: 88%;
-          bottom: 55%;
-        }
-      
-      
-        .group-title{
-          margin-right: 0;
-        }
-      
-        .group-device-img img{
-          text-align: center;
-        }
-      
-        .col-social-media img{
-          width: 10vw;
-        }
-      
-       
-      
-        .img-app{
-         
-          margin-left: 23%;
-         
-        }
-      
-        .img-app img{
-          width: 60vw;
-         
-        }
-      
-        .copyright p{
-          font-size: 2vw;
-        
-        }
-      
+.footer-text h1{
+  margin-bottom:  2.2vh;
+}
+
+.col-logo img{
+  width: 20vw;
+}
+
+
+
+ .footer-text{
+    margin-left: 8vw;
+ }
+
+ .footer-2{
+   margin-right: 8vw;
+ }
+  
+  .icon-bar{
+    position: initial;
+    text-align: center;
+    
+  }
+  
+  .icon-bar img{
+    margin-bottom: 15vw;
+    display: inline;
+    margin-right: 5vw;
+    text-align: center;
+    width: 2vw;
+  }
+
+
+  .group-title{
+    margin-right: 0;
+  }
+
+  .group-device-img img{
+    text-align: center;
+  }
+
+  .col-social-media img{
+    width: 10vw;
+  }
+
+ 
+
+  .img-app{
+   
+    margin-left: 23%;
+   
+  }
+
+  .img-app img{
+    width: 60vw;
+   
+  }
+
+  .copyright p{
+    font-size: 2vw;
+  
+  }
         /*SideBar*/
       
       

@@ -622,7 +622,44 @@ height: 100vh;
   margin-right: 0rem;
 }
 
+/* Company logo */
+
+.clientes{
+  height: 100vh;
+  position: relative; 
+  background: url("../imagenes/ELEMENTOS-23.png")
+   no-repeat center center / cover ;
+}
+
+.center-logo-company{
+  position: absolute;
+  padding: 80px 150px 80px 150px;
+}
+
+.center-logo-company img{
+  width: 20vw;height: 25vh;
+}
+
+.center-logo-company img:nth-child(1){
+  width: 25vw;height: 30vh;
+}
+
+
 /*footer*/
+
+.bi-geo-alt-fill{
+  font-size: 1.7vw;
+    margin-left: 6px;
+    color: black;
+    stroke-width: 1px;
+}
+
+.contact-location{
+  vertical-align: bottom; 
+  width: 4vw; 
+  margin-left: 2vw;
+}
+
 
 .col-logo{
   margin-top: auto;
@@ -632,12 +669,19 @@ height: 100vh;
 .col-contact h1{
   font-size: 1vw;
   font-family: biennale_medium;
+  margin-bottom: 3vh;
 }
 
+.footer-text h1{
+  margin-bottom: 1.2vh;
+}
+
+
 .col-contact p{
+ 
   font-size: 1vw;
   color: #464646;
-  line-height: 10px;
+  line-height: 5px;
   font-family: biennale_light;
 }
 
@@ -684,6 +728,8 @@ height: 100vh;
   
   
   /*footer*/
+
+
   .group-img img{
     width: 4vw;
   }
@@ -1018,9 +1064,21 @@ html {
   
  /*footer*/
 
+ .bi-geo-alt-fill{
+  font-size: 4vw;
+    
+    stroke-width: 1px;
+}
+
+.footer-text h1{
+  margin-bottom:  2.2vh;
+}
+
 .col-logo img{
   width: 20vw;
 }
+
+
 
  .footer-text{
     margin-left: 8vw;

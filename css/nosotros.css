@@ -949,6 +949,19 @@ height: 100vh;
 }
 
 /*footer*/
+.bi-geo-alt-fill{
+  font-size: 1.7vw;
+    margin-left: 6px;
+    color: black;
+    stroke-width: 1px;
+}
+
+.contact-location{
+  vertical-align: bottom; 
+  width: 4vw; 
+  margin-left: 2vw;
+}
+
 
 .col-logo{
   margin-top: auto;
@@ -957,25 +970,36 @@ height: 100vh;
 
 .col-contact h1{
   font-size: 1vw;
-  
+  font-family: biennale_medium;
+  margin-bottom: 3vh;
 }
 
+.footer-text h1{
+  margin-bottom: 1.2vh;
+}
+
+
 .col-contact p{
+ 
   font-size: 1vw;
   color: #464646;
+  line-height: 5px;
+  font-family: biennale_light;
 }
 
 .col-social-media img{
-  width: 7vh;
+  width: 10vh;
 }
 
 .col-social-media h1{
   font-size: 1vw;
+  font-family: biennale_medium;
 }
 
 .copyright p{
   font-size: 1vw;
   color: #464646;
+  font-family: biennale_light;
 }
 
 /*Element list custom*/
@@ -1536,6 +1560,16 @@ margin-top: 0.5vh;
 
   
  /*footer*/
+
+ .bi-geo-alt-fill{
+  font-size: 4vw;
+    
+    stroke-width: 1px;
+}
+
+.footer-text h1{
+  margin-bottom:  2.2vh;
+}
 
 .col-logo img{
   width: 20vw;

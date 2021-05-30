@@ -417,16 +417,27 @@ height: 70%;
 
 .container-experiencia{
   background:url('../imagenes/ELEMENTOS-24.png') no-repeat center center / cover ;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   position: relative;
+  
 }
 
 
+.red-social-content{
+  position: absolute;
+  right: 0;
+  margin-bottom: 10px;
+}
+
+.red-social-content img{
+  width: 24vw;
+}
+
   .red-social{
-      background:url('../imagenes/ELEMENTOS-09.png') no-repeat center center / cover ;
-  height: 70vh;
+  height: 75vh;
   width: 100%;
+  position: relative;
   }
 
 
@@ -655,6 +666,23 @@ height: 100vh;
 
 /*footer*/
 
+.bi-geo-alt-fill{
+  font-size: 1.7vw;
+    margin-left: 6px;
+    color: black;
+    stroke-width: 1px;
+}
+
+.col-contact h1{
+  font-size: 1vw;
+  font-family: biennale_medium;
+  margin-bottom: 3vh;
+}
+
+.footer-text h1{
+  margin-bottom: 1.6vh;
+}
+
 .col-logo{
   margin-top: auto;
  margin-bottom: auto;
@@ -662,25 +690,29 @@ height: 100vh;
 
 .col-contact h1{
   font-size: 1vw;
-
+  font-family: biennale_medium;
 }
 
 .col-contact p{
   font-size: 1vw;
   color: #464646;
+  line-height: 10px;
+  font-family: biennale_light;
 }
 
 .col-social-media img{
-  width: 7vh;
+  width: 10vh;
 }
 
 .col-social-media h1{
   font-size: 1vw;
+  font-family: biennale_medium;
 }
 
 .copyright p{
   font-size: 1vw;
   color: #464646;
+  font-family: biennale_light;
 }
 
 .container-experiencia .capa{
@@ -707,7 +739,7 @@ height: 100vh;
   .contact-form .ubicacion-text{
 
     position: absolute;
-    top: 35vh;
+    top: 48vh;
   }
  
 
@@ -1112,9 +1144,29 @@ html {
     left: 35%;
   }
 
-
+  .red-social{
+    height: 22vh;
+  }
   
+
+.red-social-content img{
+  width: 24vw;
+  height: 22vh;
+}
+
  /*footer*/
+
+
+ .bi-geo-alt-fill{
+  font-size: 4vw;
+    
+    stroke-width: 1px;
+}
+
+.footer-text h1{
+  margin-bottom:  2.2vh;
+}
+
 
 .col-logo img{
   width: 20vw;

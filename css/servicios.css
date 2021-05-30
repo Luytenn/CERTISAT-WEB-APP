@@ -391,9 +391,7 @@ button{
   font-size: 2rem;
 }
 
-.col-contact p{
-  font-size: 1.5rem;
-}
+
 
 
 
@@ -843,6 +841,7 @@ height: 120vh;
 width: 48vw;
 position:absolute;
 left: -3vw;
+z-index: 999;
 }
 
 .group-car-comp .car-alt{
@@ -862,6 +861,7 @@ width: 55vw;
 height: 120vh;
 position:absolute;
 left: 0vw;
+z-index: 999;
 }
 
 .group-car-comp .feature-icon3 {
@@ -869,6 +869,7 @@ padding: 0px;
 margin-left: 0;
 position: relative;
 height: 150vh;
+z-index: 999;
 }
 
 .group-car-comp .feature-icon3 img{
@@ -880,6 +881,7 @@ padding: 0px;
 margin-left: 0;
 position: relative;
 margin-top: 20vh;
+z-index: 999;
 }
 
 .group-car-comp .feature-icon4 img{
@@ -892,6 +894,7 @@ margin-left: 0;
 position: relative;
 height: 135vh;
 margin-top: 52vh;
+z-index: 999;
 }
 
 .group-car-comp .feature-icon5 img{
@@ -917,6 +920,7 @@ height: 120vh;position: relative;
 
 .group-car-comp .feature-icon6 {
 padding: 0px;margin-left: 0;position: relative;
+z-index: 999;
 }
 
 .group-car-comp .feature-icon6 img{
@@ -925,6 +929,7 @@ width: 55vw;height: 130vh;position:absolute;left: 0vw;
 
 .group-car-comp .feature-icon7{
 padding: 0px;margin-left: 0;position: relative;height: 120vh;margin-top: 15vh;
+z-index: 999;
 }
 
 .group-car-comp .feature-icon7 img{
@@ -933,6 +938,7 @@ width: 48vw;position:absolute;left: -3vw;
 
 .group-car-comp .feature-icon8{
 padding: 0px;margin-left: 0;position: relative;
+z-index: 999;
 }
 
 .group-car-comp .feature-icon8 img{
@@ -1092,6 +1098,19 @@ height: 100vh;
 
 
 /*footer*/
+.bi-geo-alt-fill{
+  font-size: 1.7vw;
+    margin-left: 6px;
+    color: black;
+    stroke-width: 1px;
+}
+
+.contact-location{
+  vertical-align: bottom; 
+  width: 4vw; 
+  margin-left: 2vw;
+}
+
 
 .col-logo{
   margin-top: auto;
@@ -1101,12 +1120,19 @@ height: 100vh;
 .col-contact h1{
   font-size: 1vw;
   font-family: biennale_medium;
+  margin-bottom: 3vh;
 }
 
+.footer-text h1{
+  margin-bottom: 1.6vh;
+}
+
+
 .col-contact p{
+ 
   font-size: 1vw;
-  color: #464646;
-  line-height: 10px;
+  color: #7c6868;
+  line-height: 15px;
   font-family: biennale_light;
 }
 
@@ -1124,6 +1150,7 @@ height: 100vh;
   color: #464646;
   font-family: biennale_light;
 }
+
 
 
 
@@ -1480,10 +1507,21 @@ html {
 
   
  /*footer*/
+ .bi-geo-alt-fill{
+  font-size: 4vw;
+    
+    stroke-width: 1px;
+}
+
+.footer-text h1{
+  margin-bottom:  2.2vh;
+}
 
 .col-logo img{
   width: 20vw;
 }
+
+
 
  .footer-text{
     margin-left: 8vw;
