@@ -271,6 +271,25 @@ SIDEBAR-LEFT
   order:2;
 }
 
+.custom-button{
+  width: 18%;
+  background: #003260;
+  text-align: left;
+  border-radius: 41px;
+  
+  margin-left: 7vw;
+}
+
+.custom-button .btn{
+  position: left;
+  width: 183px;
+  height: 50px;
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: rgba(244, 244, 244, 0.8) ;
+  font-family: biennale_light;
+}
+
 
 
 span{
@@ -1211,6 +1230,25 @@ html {
   
   }
 
+  .custom-button{
+    width: 19%;
+    background: #003260;
+    text-align: left;
+    border-radius: 41px;
+    margin-left: 19vw;
+  }
+  
+  .custom-button .btn{
+    position: left;
+    width: 102px;
+    height: 43px;
+    font-size: 2.6vw;
+    font-weight: 100;
+    color: rgba(244, 244, 244, 0.8) ;
+    font-family: biennale_light;
+  }
+  
+
   /*SideBar*/
 
 
@@ -1451,6 +1489,8 @@ html {
 .contact-form2 .box-container{
   order:1;
 }
+
+
 
 
 .background-image .background-title {

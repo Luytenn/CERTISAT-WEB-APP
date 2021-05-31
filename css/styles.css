@@ -133,7 +133,30 @@ overflow-x: hidden;
 
 
 
+.custom-button{
+  width: 22%;
+  background: rgba(0, 50, 96, 0.5);
+  text-align: left;
+  border-radius: 100px;
+  margin-left: 0vw;
+  margin-top: 3vh;
+}
 
+.custom-button .btn{
+  position: left;
+  width: 160px;
+  height: 50px;
+  font-size: 1.6vw;
+  font-weight: 100;
+  color: rgba(244, 244, 244, 0.8) ;
+  font-family: biennale_light;
+}
+
+.btn{
+  margin-top: 0px;
+  visibility: visible;
+  width: 3vw;
+}
 
 .mcd-menu li ul{
   position: absolute;
@@ -252,7 +275,7 @@ overflow-x: hidden;
 
 .group-title{
   margin-right: 8vw;
-  margin-top: 10vh;
+  margin-top: 7vh;
   
 }
 
@@ -292,7 +315,7 @@ img {
 
 
 .device-img{
-  width: 10vw;
+  width: 9vw;
   margin-top: 4vh;
  
 }
@@ -729,6 +752,26 @@ height: 100vh;
   
   /*footer*/
 
+  .custom-button{
+    width: 9%;
+    background: rgba(0, 50, 96, 0.5);
+    border-radius: 100px;
+    margin-left: 0vw;
+    margin-top: 3vh;
+    margin-left: 23vh;
+  }
+  
+  .custom-button .btn{
+    width: 65px;
+    height: 24px;
+    font-size: 2vw;
+    font-weight: 100;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: biennale_light;
+    margin-right: auto;
+}
+ 
+
 
   .group-img img{
     width: 4vw;
@@ -1008,6 +1051,7 @@ html {
     font-size: 2.5vw;
     margin-top: 2vh;
     color: black;
+    text-shadow: none;
   }
 
   .main-title .group-device-img{
