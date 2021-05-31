@@ -1555,11 +1555,21 @@ margin-top: 0.5vh;
   
 }
 
+.section4 div span{
+
+  font-size: 8vw;
+
+}
+
 /* End of Section 3*/
 
 
   
  /*footer*/
+
+ .container-footer{
+  margin-top: 5vh;
+}
 
  .bi-geo-alt-fill{
   font-size: 4vw;

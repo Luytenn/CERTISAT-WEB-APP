@@ -29,13 +29,19 @@ function myFunction() {
 
  document.addEventListener('mouseup', function(e) {
    var container = document.getElementById('miServicio');
-   if (!container.contains(e.target)) {
-       container.style.display = 'none';
-       document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
-       document.getElementById("cambiarImagen0").src="imagenes/ELEMENTOS-49.png";
-       y = document.getElementById("layer");
-       y.style.backgroundImage = "none";
-   }
+
+   if(container){
+     console.log("Existe")
+    if (!container.contains(e.target)) {
+      container.style.display = 'none';
+      document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
+      document.getElementById("cambiarImagen0").src="imagenes/ELEMENTOS-49.png";
+      y = document.getElementById("layer");
+      y.style.backgroundImage = "none";
+  }
+   } 
+
+  
 });
 
 
@@ -47,9 +53,6 @@ function myFunction3() {
  var y = document.getElementById("layer");
   document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-48.png";
   document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-42.png";
-
-  
-  
 
   y.style.backgroundImage = "url('imagenes/ELEMENTOS-02.png') ";
   y.style.position = "absolute"
@@ -70,13 +73,21 @@ function myFunction3() {
  
 document.addEventListener('mouseup', function(e) {
   var container = document.getElementById('miServicio2');
-  if (!container.contains(e.target)) {
+  var elementExists = document.getElementById("miServicio2");
+
+  if(elementExists){
+    if (!container.contains(e.target)) {
       container.style.display = 'none';
+
+    
       document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-47.png";
       document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
       y = document.getElementById("layer");
        y.style.backgroundImage = "none";
   }
+  }
+  
+ 
  });
 
 
@@ -108,13 +119,21 @@ function myFunction2() {
 
 document.addEventListener('mouseup', function(e) {
   var container = document.getElementById("miServicio3");
-  if (!container.contains(e.target)) {
-      container.style.display = 'none';
-      document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
-      document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-46.png";
-      y = document.getElementById("layer");
-      y.style.backgroundImage = "none";
-  }
+
+
+    if(container){
+      if (!container.contains(e.target)) {
+      
+        container.style.display = 'none';
+        document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
+        document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-46.png";
+        y = document.getElementById("layer");
+        y.style.backgroundImage = "none";
+  
+    }
+    }
+
+  
  });
  
 
@@ -148,6 +167,11 @@ document.addEventListener('mouseup', function(e) {
  
  document.addEventListener('mouseup', function(e) {
    var container = document.getElementById("miServicio4");
+
+  if(container){
+
+  
+
    if (!container.contains(e.target)) {
       console.log("ingreso outclick ")
        container.style.display = 'none';
@@ -160,6 +184,8 @@ document.addEventListener('mouseup', function(e) {
        var z = document.getElementById("background-image");
        z.style.zIndex = "2";
    }
+
+  }
   });
 
 
@@ -193,8 +219,15 @@ document.addEventListener('mouseup', function(e) {
    
    }
    
+  
+
    document.addEventListener('mouseup', function(e) {
      var container = document.getElementById("miServicio5");
+
+    if(container){
+
+  
+
      if (!container.contains(e.target)) {
          container.style.display = 'none';
          document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
@@ -202,6 +235,7 @@ document.addEventListener('mouseup', function(e) {
          y = document.getElementById("layer");
          y.style.backgroundImage = "none";
      }
+    }
     });
   
 
@@ -219,10 +253,16 @@ document.addEventListener('mouseup', function(e) {
      
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question1');
+
+      if(container){
+
+      
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
       }
+
+    }
    });
    
    /*-------------------*/ 
@@ -239,10 +279,15 @@ document.addEventListener('mouseup', function(e) {
      
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question2');
+      
+      if(container){
+
+     
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
-      }
+      } 
+    }
    });
   
    /*-------------------*/ 
@@ -259,10 +304,14 @@ document.addEventListener('mouseup', function(e) {
      
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question3');
+
+      if(container){
+
+      
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
-      }
+      }}
    });
   
   
@@ -281,10 +330,14 @@ document.addEventListener('mouseup', function(e) {
      
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question4');
+
+      if(container ==true){
+
+      
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
-      }
+      }}
    });
   
   
@@ -302,10 +355,14 @@ document.addEventListener('mouseup', function(e) {
      
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question5');
+
+      if(container==true){
+
+    
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
-      }
+      }  }
    });
   
     

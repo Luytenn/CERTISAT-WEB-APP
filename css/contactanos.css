@@ -1175,6 +1175,11 @@ html {
 
  /*footer*/
 
+ .container-footer{
+  margin-top: 5vh;
+}
+
+
 
  .bi-geo-alt-fill{
   font-size: 4vw;
@@ -1202,15 +1207,15 @@ html {
   .icon-bar{
     position: initial;
     text-align: center;
-    
+    margin-top: 9vh;
   }
   
   .icon-bar img{
     margin-bottom: 15vw;
     display: inline;
-    margin-right: 5vw;
+    margin-right: 7vw;
     text-align: center;
-    width: 2vw;
+    width: 6vw;
   }
 
 
@@ -1494,11 +1499,11 @@ html {
 
 
 .background-image .background-title {
-  top: 30%;
+  top: 27%;
 }
 
 .main-title .title{
-  margin-top: 14vh;
+  margin-top: 11vh;
   font-size: 12vw;
 }
 

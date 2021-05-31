@@ -758,7 +758,7 @@ height: 100vh;
     border-radius: 100px;
     margin-left: 0vw;
     margin-top: 3vh;
-    margin-left: 23vh;
+    margin-left: 41%;
   }
   
   .custom-button .btn{
@@ -768,7 +768,7 @@ height: 100vh;
     font-weight: 100;
     color: rgba(0, 0, 0, 0.8);
     font-family: biennale_light;
-    margin-right: auto;
+    margin-right: 4vw;
 }
  
 
@@ -1107,6 +1107,11 @@ html {
 
   
  /*footer*/
+
+.container-footer{
+  margin-top: 5vh;
+}
+
 
  .bi-geo-alt-fill{
   font-size: 4vw;
