@@ -134,17 +134,17 @@ overflow-x: hidden;
 
 
 .custom-button{
-  width: 22%;
+  width: 19%;
   background: rgba(0, 50, 96, 0.5);
   text-align: left;
   border-radius: 100px;
-  margin-left: 0vw;
+  margin-left:0vw;
   margin-top: 3vh;
 }
 
 .custom-button .btn{
   position: left;
-  width: 160px;
+  width: 150px;
   height: 50px;
   font-size: 1.6vw;
   font-weight: 100;

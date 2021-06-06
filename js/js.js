@@ -245,24 +245,35 @@ document.addEventListener('mouseup', function(e) {
     function displayDescription() {
       console.log("Funciona");
       var x = document.getElementById("question1");
-  
+      var y = document.getElementById('question2');
+      var z= document.getElementById('question3');
+      var k= document.getElementById('question4');
+      var j= document.getElementById('question5');
+
+      
       x.style.display  = "block";
+      y.style.display = 'none';
+      z.style.display = 'none';
+      k.style.display = 'none';
+      j.style.display = 'none';
      }
      
     
      
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question1');
-
-      if(container){
+      
+      
+  
 
       
       if (!container.contains(e.target)) {
           container.style.display = 'none';
+          console.log("out")
        
       }
 
-    }
+    
    });
    
    /*-------------------*/ 
@@ -270,9 +281,19 @@ document.addEventListener('mouseup', function(e) {
    function displayDescription2() {
       console.log("Funciona");
       var x = document.getElementById("question2");
-  
-    
+      var y = document.getElementById('question1');
+      var z= document.getElementById('question3');
+      var k= document.getElementById('question4');
+      var j= document.getElementById('question5');
+
+      
       x.style.display  = "block";
+      y.style.display = 'none';
+      z.style.display = 'none';
+      k.style.display = 'none';
+      j.style.display = 'none';
+    
+  
      }
      
     
@@ -294,10 +315,21 @@ document.addEventListener('mouseup', function(e) {
    
    function displayDescription3() {
       console.log("Funciona");
-      var x = document.getElementById("question3");
-  
+
+      var x = document.getElementById("question2");
+      var y = document.getElementById('question1');
+      var z= document.getElementById('question3');
+      var k= document.getElementById('question4');
+      var j= document.getElementById('question5');
+
+      
+      z.style.display  = "block";
+      y.style.display = 'none';
+      x.style.display = 'none';
+      k.style.display = 'none';
+      j.style.display = 'none';
     
-      x.style.display  = "block";
+
      }
      
     
@@ -321,9 +353,17 @@ document.addEventListener('mouseup', function(e) {
     function displayDescription4() {
       console.log("Funciona");
       var x = document.getElementById("question4");
-  
+      var y = document.getElementById('question1');
+      var z= document.getElementById('question3');
+      var k= document.getElementById('question2');
+      var j= document.getElementById('question5');
+
+      x.style.display = 'block';
+      z.style.display  = "none";
+      y.style.display = 'none';
+      k.style.display = 'none';
+      j.style.display = 'none';
     
-      x.style.display  = "block";
      }
      
     
@@ -331,13 +371,11 @@ document.addEventListener('mouseup', function(e) {
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question4');
 
-      if(container ==true){
-
-      
+   
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
-      }}
+      }
    });
   
   
@@ -346,8 +384,16 @@ document.addEventListener('mouseup', function(e) {
     function displayDescription5() {
       console.log("Funciona");
       var x = document.getElementById("question5");
-  
+      var j = document.getElementById("question4");
+      var y = document.getElementById('question1');
+      var z= document.getElementById('question3');
+      var k= document.getElementById('question2');
     
+
+      z.style.display  = "none";
+      y.style.display = 'none';
+      k.style.display = 'none';
+      j.style.display = 'none';
       x.style.display  = "block";
      }
      
@@ -356,13 +402,12 @@ document.addEventListener('mouseup', function(e) {
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question5');
 
-      if(container==true){
-
+   
     
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
-      }  }
+      }  
    });
   
     
