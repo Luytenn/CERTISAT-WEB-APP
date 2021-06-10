@@ -496,12 +496,18 @@
     visibility: hidden;
   }
   
-  .clientes img{
+  .clientes{
     margin-top: 25vh;
     width: 100%;
     height: 60vw;
+    margin-bottom: 35vh;
   }
   
+  .clientes .funcion-img{
+    background: url("../imagenes/ELEMENTOS-09.png") no-repeat center center / cover;
+    width: 100%;
+    height: 60vh;
+  }
   
  
   
@@ -889,6 +895,10 @@
 
     .container img{
       width: 100%;
+      height: 109vh;
+     
+      content: url("../imagenes/linea-punteada-funcion.png")  ;
+      
   
     }
 
@@ -898,7 +908,7 @@
 
     .title {
       position: absolute;
-      top: 35%;
+      top: 18%;
       left: 52%;
       font-size: 10vw;
       transform: translate(-50%, -50%);
@@ -908,7 +918,7 @@
   
     .descripcion{
       position: absolute;
-      top: 86%;
+      top: 38%;
       left: 50%;
       transform: translate(-50%, -50%);
       font-family: biennale_light;
@@ -921,7 +931,7 @@
     .subtitle{
       color: #013C6C;
       position: absolute;
-      top: 113%;
+      top: 31%;
       left: 50%;
       font-size: 4.5vw;
       transform: translate(-50%, -50%);
@@ -940,11 +950,14 @@
 
 
     .funcion-app{
-      position: initial;
+      position: absolute;
+      right: -6px;
+      left: 0;
+      top: 36%;
     }
 
     .funcion-app .group-funcion{
-      margin-top: 40vh;
+      margin-top: 0vh;
       width: 100vw;
       text-align: center;
       display: initial;
@@ -978,14 +991,16 @@
       text-align: center;
       display: inline-block;  
       width: auto; 
-      margin-top: 2vh;
+      margin-top: 1vh;
+      background: #f5f5f5;
         }
 
 
 
         .funcion-app .group-funcion .img-funcion div span{
      
-          font-size: 2.2vw;
+          font-size: 2vw;
+          
         }
     
     
@@ -1004,7 +1019,10 @@
           height: 113vw;
           margin-bottom: 4vh;
           margin-top: 20vh;
+          background-size: none;
         }
+
+        
 
         .navbar-left{
           display: none;
@@ -1124,12 +1142,12 @@
   .icon-bar{
     position: absolute;
     text-align: center;
-    bottom: 54%;
+    bottom: 21%;
     right: 6px;
   }
   
   .icon-bar img{
-    margin-bottom: 6vw;
+    margin-bottom: 4vw;
     display: inline;
     margin-right: 5vw;
     text-align: center;
