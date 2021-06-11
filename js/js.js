@@ -73,18 +73,16 @@ function myFunction3() {
  
 document.addEventListener('mouseup', function(e) {
   var container = document.getElementById('miServicio2');
-  var elementExists = document.getElementById("miServicio2");
+  console.log("Mi Servicio 2 ")
 
-  if(elementExists){
+  if(container){
     if (!container.contains(e.target)) {
       container.style.display = 'none';
-
-    
       document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-47.png";
       document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
       y = document.getElementById("layer");
        y.style.backgroundImage = "none";
-  }
+    }
   }
   
  
@@ -266,13 +264,14 @@ document.addEventListener('mouseup', function(e) {
       
   
 
-      
-      if (!container.contains(e.target)) {
-          container.style.display = 'none';
-          console.log("out")
-       
-      }
+      if(container){
+        if (!container.contains(e.target)) {
+            container.style.display = 'none';
+            console.log("out")
+        
+        }
 
+    }
     
    });
    
@@ -371,11 +370,14 @@ document.addEventListener('mouseup', function(e) {
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question4');
 
-   
+      if(container){
+
+      
       if (!container.contains(e.target)) {
           container.style.display = 'none';
        
       }
+    }
    });
   
   
@@ -402,12 +404,14 @@ document.addEventListener('mouseup', function(e) {
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question5');
 
-   
-    
-      if (!container.contains(e.target)) {
+      if(container){
+        if (!container.contains(e.target)) {
           container.style.display = 'none';
        
-      }  
+      } 
+      }
+    
+       
    });
   
     

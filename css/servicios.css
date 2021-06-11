@@ -40,6 +40,13 @@ header{
   background: url('../imagenes/puntero-tecnologia.png') no-repeat center center / cover;
 }
 
+.puntero-page{
+  height: 1620vh;
+  width: 100vw;
+  position: absolute;
+  z-index: 999;
+}
+
 
 /*Background transparent
 
@@ -804,12 +811,18 @@ transform: translateY(-50%);
 transform: translate(-50%, -50%);
 }
 
-.certi-security h3,.certi-gold h3,.car-component span{
-font-size: 4.5vw;
-font-weight: bold;
-font-family: biennale_light;
-line-height: 11vh;
 
+
+.certi-security span, .certi-gold span,.car-component span{
+  font-size: 4.5vw;
+  font-weight: bold;
+  font-family: biennale_light;
+  line-height: 11vh;
+}
+
+.certi-gold #line-space1::before{
+  content: "\a";
+    white-space: pre;
 }
 
 .certi-security p,.certi-gold p, .car-component p{
@@ -1342,6 +1355,22 @@ html {
 
 @media (max-width: 576px) {
 
+  .puntero-page{
+    content: url("../imagenes/linea-punteada-servicios.png");
+    width: 100%;
+    height: 850vh;
+    margin-top: 56vh;
+    padding: 0 30px 0 30px;
+  }
+
+  .certi-security #line-space1{
+    margin-left: 5px;
+  }
+
+  .certi-gold #line-space1::before{
+    content: none;
+      white-space: none;
+  }
   
 
   .line-header{
@@ -1350,6 +1379,8 @@ html {
     background-color: #1B1E29;
     box-shadow: -5px -78px 200px 100px rgb(26 35 61);
   }
+
+  
   
   .wrapper .center{
     position: absolute;
@@ -1395,6 +1426,14 @@ html {
     
   }
 
+  /*--Icon Features--*/
+
+
+
+
+  
+
+  
   
 
   .app:hover .sidebar{
@@ -1498,7 +1537,7 @@ html {
   }
 
   .certi-security p{
-    font-size: 3.5vw;
+    font-size: 3vw;
     text-align: center;
   }
 
@@ -1751,7 +1790,7 @@ html {
   }
 
   .social-media-main{
-    margin-top: 50vh;
+    margin-top: 53vh;
  }
 
  .social-media-main .icon-bar img{
@@ -2101,6 +2140,7 @@ html {
 
   position: absolute;
   left: 17%;
+  bottom: -23%
 }
 
 .fila4 .ic3{
@@ -2109,29 +2149,32 @@ html {
 
 .fila1 .group-icon{
   margin-top: 0;
+  margin-left: 2vw;
 }
 
 .icon1{
   position: absolute;
-  top: 60vh;
+  top: 52vh;
+  left: 47vw;
 }
 
 .icon2{
   position: absolute;
   left: 59%;
-  bottom: 91vw;
+  top: -71%;
+
 }
 
 .icon3{
   position: absolute;
-  left: 35vw;
-  bottom: 42vh;
+  left: 38vw;
+    bottom: 43vh;
 }
 
 .icon4{
   position: absolute;
-  bottom: 42vh;
-  left: 11vw;
+  bottom: 36vh;
+    left: 19vw;
 }
 
 .icon5{
@@ -2141,36 +2184,38 @@ html {
 
 .icon6{
   position: absolute;
-  bottom: 31vh;
-  left: 10vw;
+  bottom: 21vh;
+  left: 19vw;
 }
 
 .icon12{
   position: absolute;
-  bottom: 30vh;
-  left: 15vw;
+  bottom: -29vh;
+  left: 22vw;
 }
 
 .icon7{
   position: absolute;
-  top: 32vh;
+  top: 78.3vh;
+  left: 10vw;
 }
 
 .icon8{
   position: absolute;
-  top: 23vh;
+  top: 78vh;
+  left: -4vh;
 }
 
 .icon9{
   position: absolute;
-  top: 16vh;
- left: 24vw;
+  top: 65vh;
+    left: -7vw;
 }
 
 .icon10{
  position: absolute;
- top: 16vh;
- right: 4vw;
+ top: 65vh;
+    right: -28vw;
 }
 
 .container-fluid .icon-feature{
@@ -2179,14 +2224,14 @@ html {
 
 .icon11{
   position: absolute;
-  top: 16.5vh;
-  right: -15vw;
+  top: 66vh;
+  right: -42vw;
 }
 
 .icon13{
   position: absolute;
-  top: 30vh;
-  left: 30vw;
+  top: 79vh;
+  left: 43vw;
 }
 
 .icon14{
@@ -2203,7 +2248,7 @@ html {
 
 .certi-gold{
   position: absolute;
-  top: 150vh;
+  top: 144vh;
 }
 
 
@@ -2224,7 +2269,7 @@ html {
 }
 
 .certi-gold p{
-  font-size: 3.5vw;
+  font-size: 3vw;
   text-align: center;
 }
 
