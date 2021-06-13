@@ -1308,8 +1308,9 @@ height: 100vh;
 
   
   .background-image{
-    position: initial;
-    
+   
+    position: relative;
+    background-size: 160% 156vw;
   }
   
   .app{
@@ -1399,9 +1400,9 @@ html {
 
   .line-header{
     height: 1.5vh;
-    margin-top: 2vh; 
-    background-color: #1B1E29;
-    box-shadow: -5px -78px 200px 100px rgb(26 35 61);
+    margin-top: 2vh;
+    background-color: rgb(58 69 97 / 20%);
+    box-shadow: 0px 0px 0px 0px #ffffff, inset 2px 3px 6px -2px #5f5f5f;
   }
 
   
@@ -1489,7 +1490,7 @@ html {
   
 
   .background-image {
-    height: 70vh;
+    height: 72vh;
   }
 
   .header{
@@ -1822,13 +1823,13 @@ html {
  }
 
  .descripcion{
-   bottom: 33%;
+   bottom: 9%;
    font-size: 4vw;
    width: 66vw;
  }
  
  .title{
-   top: 27%;
+   top: 37%;
    width: 50vw;
  
  }
