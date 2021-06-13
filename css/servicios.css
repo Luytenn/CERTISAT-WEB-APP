@@ -2159,7 +2159,7 @@ html {
 
 .fila5 .group-icon .ic2{
   position: absolute;
-  bottom: 39%;
+  bottom: 50%;
   left: 18%;
 }
 
@@ -2167,7 +2167,7 @@ html {
   float: none;
   margin-top: 0;
   position: absolute;
-  top: 32%;
+  top: 22%;
   left: 32%;
 }
 
@@ -2197,7 +2197,8 @@ html {
 /*fila2*/
 
 .fila2{
-  margin-top: 39vh;
+  top: 6%;
+  margin-top: 35vh;
   height: 30vh;
 }
 
@@ -2256,6 +2257,7 @@ html {
 
 .fila4 .ic3{
   margin-top: 0;
+
 }
 
 .fila1 .group-icon{
@@ -2265,7 +2267,7 @@ html {
 
 .icon1{
   position: absolute;
-  top: 51vh;
+  top: 52vh;
   left: 47vw;
 }
 
@@ -2284,7 +2286,7 @@ html {
 
 .icon4{
   position: absolute;
-  bottom: 33.5vh;
+  bottom: 29.5vh;
   left: 19vw;
 }
 
@@ -2295,7 +2297,7 @@ html {
 
 .icon6{
   position: absolute;
-  bottom: 20vh;
+  bottom: 16vh;
   left: 19vw;
 }
 
@@ -2353,7 +2355,7 @@ html {
 
 .icon15{
   position: absolute;
-  top: 9vh;
+  top: 6vh;
   left: 46vw;
 }
 
