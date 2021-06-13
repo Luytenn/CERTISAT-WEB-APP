@@ -888,6 +888,8 @@ z-index: 999;
 
 }
 
+
+
 .group-car-comp .feature-icon3 img{
 width: 48vw;position:absolute;left: -3vw;
 }
@@ -1883,6 +1885,67 @@ html {
 }
 
 
+
+.group-car-comp .feature-icon4{
+  content: url("../imagenes/panelEco.png");
+  width: 60vw;
+  padding: 0px;
+  position: relative;
+  height: 33vh;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 3vh;
+}
+
+
+.group-car-comp .feature-icon5{
+  content: url("../imagenes/sensorTemperatura.png");
+    padding: 0px;
+    position: relative;
+    height: 33vh;
+    bottom: 6vh;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.group-car-comp .feature-icon6{
+  content: url("../imagenes/sensorPuerta.png");
+    padding: 0px;
+    position: relative;
+    height: 33vh;
+    bottom: 104vh;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.group-car-comp .feature-icon7{
+  content: url("../imagenes/intercomunicador.png");
+    padding: 0px;
+    position: relative;
+    height: 33vh;
+    bottom: 70vh;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+}
+
+
+.group-car-comp .feature-icon8{
+  content: url("../imagenes/sensorFatiga.png");
+    padding: 0px;
+    position: relative;
+    height: 33vh;
+    bottom: 20vh;
+    width: 60vw;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 0;
+}
+
+
 .reverse{
   display:flex;
   flex-direction: column-reverse;
@@ -1896,8 +1959,18 @@ html {
 .car-component-desc{
   left: 50%;
   width: 81%;
-
+  top: 0;
 }
+
+.car-comp-alt1{
+  bottom: 59vh;
+}
+
+.componentTT{
+  bottom: 117vh;
+}
+
+
 
 .car-component .car-component.desc div{
   width: 90vw;
@@ -1925,12 +1998,16 @@ html {
 
 .car-component-desc2{
   left: 50%;
-  width: 47vh;
+  width: 36vh;
 }
 
 
 .car-component-desc2 br{
   display: none;
+}
+
+.car-component-desc2 span br:nth-child(1){
+  display: block;
 }
 
 .car-component-desc2 .panel-break-line{
@@ -1971,88 +2048,38 @@ html {
 }
 
 /*Feature 4*/
-.group-car-comp .feature-icon4{
-  padding: 0px;
-  position: relative;
-  height: 70vh;
-  margin-top:20vh
-}
 
-.group-car-comp .feature-icon4 img{
-  width: 70vw;
-  height: 40vh;
-  position: initial;
-  left: 0;
-  margin-top: -20vh;
-}
 
 /*Feature 5*/
 
-.group-car-comp .feature-icon5{
-  padding: 0px;
-  position: relative;
-  height: 0vh;
-  margin-top:10vh
-}
 
-.group-car-comp .feature-icon5 img{
-  width: 70vw;
-  height: 40vh;
-  position: initial;
-  left: 0;
-  margin-top: 20vh;
-}
 
 /*Feature 6*/
 
 .car-comp-alt2 .car-component-desc2{
-  margin-top: 20vh;
+  margin-top: -83vh;
 }
 
-.group-car-comp .feature-icon6{
-  padding: 0px;
-  position: relative;
-  height: 0vh;
-  
-}
 
-.group-car-comp .feature-icon6 img{
-  width: 70vw;
-  height: 40vh;
-  position: initial;
-  left: 0;
-
-}
 
 /*Feature 7*/
 
 
-.group-car-comp .feature-icon7{
-  padding: 0px;
-  position: relative;
-  height: 0vh;
-  margin-top: 60vh;
-}
-
-.group-car-comp .feature-icon7 img{
-  width: 70vw;
-  height: 40vh;
-  position: initial;
-  left: 0;
-  margin-top: 15vh;
-
-}
 
 /*Feature 8*/
 
 .car-comp-alt3 .car-component-desc2{
-  margin-top: 20vh;
-
+  margin-top: 24vh;
+  
 }
 
+
+
+
 .car-comp-alt3{
-  margin-top: 20vh;
-  height: 79vh;
+  margin-top: -67vh;
+  height: 0vh;
+  
 }
 
 .fila6 .group-icon .if1{
@@ -2073,23 +2100,7 @@ html {
     bottom: 70%;
   }
 
-.group-car-comp .feature-icon8{
-  padding: 0px;
-  position: relative;
-  height: 0vh;
-  margin-top: 10vh;
-  margin-bottom: 30vh;
 
-}
-
-.group-car-comp .feature-icon8 img{
-  width: 70vw;
-  height: 40vh;
-  position: initial;
-  left: 0;
-
-
-}
 
 /*SW Faktory*/
 
@@ -2116,7 +2127,11 @@ html {
 }  
 
 .sw-faktory-desc{
-  height: 38vh;
+  height: 28vh;
+}
+
+.sw-faktory{
+  margin-top: 31vh;
 }
 
 /*-----------------Circle Icons---------------------------*/
