@@ -1150,7 +1150,7 @@ height: 100vh;
  
   font-size: 1vw;
   color: #7c6868;
-  line-height: 15px;
+  line-height: 25px;
   font-family: biennale_light;
 }
 
@@ -1339,6 +1339,9 @@ html {
 .col-contact p{
   font-size: 2vw;
   text-align: center;
+  color: #464646;
+  line-height: 5px;
+  font-family: biennale_light;
 } 
 
 .col-contact h1{
@@ -1857,6 +1860,7 @@ html {
     width: 60vw;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
 }
 
 
@@ -1869,6 +1873,7 @@ html {
     width: 60vw;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
 }
 
 
@@ -1881,7 +1886,7 @@ html {
     width: 60vw;
     left: 50%;
     transform: translateX(-50%);
-    
+    z-index: 999;
 }
 
 
@@ -1895,6 +1900,7 @@ html {
   left: 50%;
   transform: translateX(-50%);
   margin-top: 3vh;
+  z-index: 999;
 }
 
 
@@ -1907,6 +1913,7 @@ html {
     width: 60vw;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
 }
 
 .group-car-comp .feature-icon6{
@@ -1918,6 +1925,7 @@ html {
     width: 60vw;
     left: 50%;
     transform: translateX(-50%);
+    z-index: 999;
 }
 
 .group-car-comp .feature-icon7{
@@ -1930,6 +1938,7 @@ html {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 0;
+    z-index: 999;
 }
 
 
@@ -1943,6 +1952,7 @@ html {
     left: 50%;
     transform: translateX(-50%);
     margin-top: 0;
+    z-index: 999;
 }
 
 
@@ -1998,7 +2008,7 @@ html {
 
 .car-component-desc2{
   left: 50%;
-  width: 36vh;
+  width: 75%;
 }
 
 
@@ -2056,8 +2066,13 @@ html {
 
 /*Feature 6*/
 
-.car-comp-alt2 .car-component-desc2{
+.car-comp-alt .car-component-desc2{
   margin-top: -83vh;
+  top: 213%;  
+}
+
+.car-comp-alt2 .car-component-desc2{
+  top: -4%;
 }
 
 
@@ -2107,13 +2122,14 @@ html {
 .sw-faktory-desc2{
   margin-top: 5vh;
   left: 50%;
-  width: 100vw;
+  width: 83vw;
   margin-left: 0;
 }
 
 .sw-faktory-desc2 p{
-  font-size: 4vw;
+  font-size: 3vw;
   text-align: center;
+  font-family: biennale_light;
 }
 
 .sw-faktory-desc span{
@@ -2127,11 +2143,11 @@ html {
 }  
 
 .sw-faktory-desc{
-  height: 28vh;
+  height: 42vh;
 }
 
 .sw-faktory{
-  margin-top: 31vh;
+  margin-top: -8vh;
 }
 
 /*-----------------Circle Icons---------------------------*/
