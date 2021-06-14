@@ -37,14 +37,14 @@ overflow-x: hidden;
 
 
 header{
-  background: url('../imagenes/puntero-tecnologia.png') no-repeat center center / cover;
+  background: url('../imagenes/puntero-tecgunologia.png') no-repeat center center / cover;
 }
 
 .puntero-page{
   height: 1620vh;
   width: 100vw;
   position: absolute;
-  z-index: 999;
+  z-index: 1;
 }
 
 
@@ -348,7 +348,7 @@ margin: 0;
 
 .icon-menu{
 
-background-color: #013C6C;
+background-color: #FFFFFF;
 border-radius: 55%;
 padding-right: 3.5vw;
 padding-bottom: 3.5vw;
