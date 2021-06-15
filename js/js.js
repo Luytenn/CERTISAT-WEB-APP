@@ -1,3 +1,7 @@
+//Social media switch image
+
+
+
 //Animated Counter
 
 const counters = document.querySelectorAll(".autoCount");

@@ -468,6 +468,23 @@ height: 70%;
   }
 
 
+  .red-social-content img:hover:nth-child(1){
+    content: url("../imagenes/ELEMENTOS-199.png");
+  }
+
+  .red-social-content img:hover:nth-child(2){
+    content: url("../imagenes/ELEMENTOS-198.png");
+  }
+
+  .red-social-content img:hover:nth-child(3){
+    content: url("../imagenes/ELEMENTOS-197.png");
+  }
+
+  .red-social-content img:hover:nth-child(4){
+    content: url("../imagenes/ELEMENTOS-196.png");
+  }
+
+
 
 /* End of Section 2 */
 
@@ -921,6 +938,32 @@ html {
 
 @media (max-width: 576px) {
 
+/*Custom Button Animation*/
+
+.custom-button{
+  margin-right: 34vw;
+}
+
+.custom-button .read-more a{
+  padding: 6px 16px;
+  font-size: 3vw;
+  border-radius: 108px;
+  z-index: 0;
+  
+}
+
+.custom-button .read-more a::before{
+  width: 38px;
+  height: 29px;
+  border-radius: 100px;
+  background: #033a64;
+}
+
+.custom-button .read-more a:hover::before{
+	width: 100%;
+	transform: scale(3);
+  background: #033a64;
+}
 
 
   .icon-menu{
