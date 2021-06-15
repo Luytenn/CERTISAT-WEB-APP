@@ -952,6 +952,32 @@ html {
 @media (max-width: 576px) {
 
   
+/*Custom Button Animation*/
+
+.custom-button{
+  margin-right: 21vw;
+}
+
+.custom-button .read-more a{
+  padding: 3px 10px;
+  font-size: 3vw;
+  border-radius: 43px;
+  color: black;
+  z-index: 0;
+}
+
+.custom-button .read-more a::before{
+  width: 25px;
+  height: 23px;
+  border-radius: 100px;
+}
+
+.custom-button .read-more a:hover::before{
+	width: 100%;
+	transform: scale(3);
+  background: #033a64;
+}
+
 
   .line-header{
     height: 1.5vh;

@@ -775,6 +775,15 @@ height: 100vh;
     position: absolute;
     top: 48vh;
   }
+
+   
+  .form-text{
+    margin-top: -3vh;
+  }
+  
+  .contact-form .ubicacion-text{
+    top: 42vh;
+  }
  
   
 }
@@ -782,8 +791,7 @@ height: 100vh;
 
 @media(max-width:  1200px){
 
-  
-  
+ 
   
   /*footer*/
   .group-img img{
