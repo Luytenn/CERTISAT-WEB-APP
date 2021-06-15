@@ -1,3 +1,106 @@
+//Animated Counter
+
+const counters = document.querySelectorAll(".autoCount");
+const speed = 30;
+
+counters.forEach(counter => {
+   console.log("Ingreso");
+	const updateCount = () => {
+		const target = +counter.getAttribute('data-target');
+		const count = +counter.innerText;
+
+    console.log("ingreso: " + count);
+
+		// Lower inc to slow and higher to slow
+		const inc = target / speed;
+
+
+		// console.log(inc);
+		// console.log(count);
+    const no = Math.trunc(inc);
+		// Check if target is reached
+		if (count < target) {
+			// Add inc to count and output in counter
+			counter.innerText = count + no;
+			// Call function every ms
+			setTimeout(updateCount, 50);
+		} else {
+			counter.innerText = target;
+		}
+	};
+
+	updateCount();
+});
+
+const counters2 = document.querySelectorAll(".autoCount2");
+const speed2 = 99;
+
+counters2.forEach(counter => {
+  console.log("Ingreso");
+ const updateCount = () => {
+   const target = +counter.getAttribute('data-target');
+
+   const count = +counter.innerText;
+
+   console.log("ingreso: " + count);
+
+   // Lower inc to slow and higher to slow
+   const inc = target / speed2;
+
+
+   const no = Math.trunc(inc);
+   // console.log(inc);
+   // console.log(count);
+
+   // Check if target is reached
+   if (count < target) {
+     // Add inc to count and output in counter
+     counter.innerText = count + no;
+     // Call function every ms
+     setTimeout(updateCount, 20);
+   } else {
+     counter.innerText = target;
+   }
+ };
+
+ updateCount();
+});
+
+const counters3 = document.querySelectorAll(".autoCount3");
+const speed3 = 11;
+
+counters3.forEach(counter => {
+  console.log("Ingreso");
+ const updateCount = () => {
+   const target = +counter.getAttribute('data-target');
+
+   const count = +counter.innerText;
+
+   console.log("ingreso: " + count);
+
+   // Lower inc to slow and higher to slow
+   const inc = target / speed3;
+
+
+   const no = Math.trunc(inc);
+   // console.log(inc);
+   // console.log(count);
+
+   // Check if target is reached
+   if (count < target) {
+     // Add inc to count and output in counter
+     counter.innerText = count + no;
+     // Call function every ms
+     setTimeout(updateCount, 50);
+   } else {
+     counter.innerText = target;
+   }
+ };
+
+ updateCount();
+});
+
+
 function myFunction() {
   console.log("Funciona");
   var x = document.getElementById("miServicio");

@@ -195,7 +195,7 @@ overflow-x: hidden;
 
 .navbar-left{
   text-align: center;
-  box-shadow:  13px -1px 0px 0px rgb(0 0 0 / 30%);
+  box-shadow: 2px 1px 14px 1px rgb(0 0 0 / 30%);
   height: 100vh;
   width: 7vw;
  
@@ -271,25 +271,50 @@ SIDEBAR-LEFT
   order:2;
 }
 
+
+/*Custom Button Animation*/
+
 .custom-button{
-  width: 18%;
-  background: #003260;
-  text-align: left;
-  border-radius: 41px;
-  
-  margin-left: 7vw;
+  margin-top: 20px;
+  margin-left: 9vw;
 }
 
-.custom-button .btn{
-  position: left;
-  width: 183px;
-  height: 50px;
-  font-size: 1.6vw;
+.custom-button .read-more a {
+	display: inline-block;
+	padding: 12px 22px;
+	font-size: 20px;
+	
+	color: rgba(244, 244, 244, 0.8) ;
+	border-radius: 43px;
+	position: absolute;
+  z-index: 99;
+	overflow: hidden;
   font-weight: 100;
-  color: rgba(244, 244, 244, 0.8) ;
   font-family: biennale_light;
 }
 
+.custom-button .read-more a::before{
+	content: '';
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	border-radius: 100px;
+	background: rgba(0, 50, 96, 0.5);
+	z-index: -1;
+	transition: 0.5s all;
+}
+
+.custom-button .read-more a:hover::before{
+	width: 100%;
+	transform: scale(3);
+  background: #033a64;
+}
+
+.custom-button .read-more a:hover{
+	color: rgb(255, 255, 255);
+}
 
 
 span{
@@ -342,23 +367,6 @@ margin-top: 0.5vh;
 }
 
 
-
-button{
-
-
- margin-left: 2rem;
-  margin-top: 100rem;
- background: none;
- border: none;
- visibility: hidden;
-
-}
-
-.btn{
-  margin-top: 0px;
-  visibility: visible;
-  width: 3vw;
-}
 
 
 .customers-wrapper2 {
@@ -747,6 +755,13 @@ height: 100vh;
 
 
 @media(max-width:2100px){
+  .form-text{
+    margin-top: -10vh;
+  }
+
+  .contact-form2{
+    margin-top: -5vh;
+  }
 
 }
 
@@ -761,7 +776,7 @@ height: 100vh;
     top: 48vh;
   }
  
-
+  
 }
 
 
@@ -1074,15 +1089,7 @@ html {
   }
 
 
-  button{
-    margin-top: 3vw;
-    margin-left: 2rem;
-    background: none;
-    border: none;
-    visibility: visible;
-  
-  
-  }
+
 
   .main-title{
     margin-top: 10vh;
@@ -1235,23 +1242,7 @@ html {
   
   }
 
-  .custom-button{
-    width: 19%;
-    background: #003260;
-    text-align: left;
-    border-radius: 41px;
-    margin-left: 19vw;
-  }
-  
-  .custom-button .btn{
-    position: left;
-    width: 102px;
-    height: 43px;
-    font-size: 2.6vw;
-    font-weight: 100;
-    color: rgba(244, 244, 244, 0.8) ;
-    font-family: biennale_light;
-  }
+
   
 
   /*SideBar*/

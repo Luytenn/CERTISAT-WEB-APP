@@ -133,30 +133,50 @@ overflow-x: hidden;
 
 
 
+/*Custom Button Animation*/
+
 .custom-button{
-  width: 19%;
-  background: rgba(0, 50, 96, 0.5);
-  text-align: left;
-  border-radius: 100px;
-  margin-left:0vw;
-  margin-top: 3vh;
+  margin-top: 20px;
 }
 
-.custom-button .btn{
-  position: left;
-  width: 150px;
-  height: 50px;
-  font-size: 1.6vw;
+.custom-button .read-more a {
+	display: inline-block;
+	padding: 12px 22px;
+	font-size: 20px;
+	
+	color: rgba(244, 244, 244, 0.8) ;
+	border-radius: 43px;
+	position: absolute;
+  z-index: 99;
+	overflow: hidden;
   font-weight: 100;
-  color: rgba(244, 244, 244, 0.8) ;
   font-family: biennale_light;
 }
 
-.btn{
-  margin-top: 0px;
-  visibility: visible;
-  width: 3vw;
+.custom-button .read-more a::before{
+	content: '';
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 70px;
+	height: 50px;
+	border-radius: 100px;
+	background: rgba(0, 50, 96, 0.5);
+	z-index: -1;
+	transition: 0.5s all;
 }
+
+.custom-button .read-more a:hover::before{
+	width: 100%;
+	transform: scale(3);
+  background: #033a64;
+}
+
+.custom-button .read-more a:hover{
+	color: rgb(255, 255, 255);
+}
+
+
 
 .mcd-menu li ul{
   position: absolute;
@@ -228,7 +248,7 @@ overflow-x: hidden;
 
 .navbar-left{
   text-align: center;
-  box-shadow:  13px -1px 0px 0px rgb(0 0 0 / 30%);
+  box-shadow: 2px 1px 14px 1px rgb(0 0 0 / 30%);
   height: 100vh;
   width: 7vw;
  
@@ -586,7 +606,17 @@ height: 100vh;
   .label3 {
     position: absolute;
     top: 48%;
-    left: 30%;
+    left: 27%;
+    font-family: biennale_light;
+    transform: translate(-50%, -50%);
+    color: #013C6C;
+    font-size: 4vw;
+  }
+
+  .labeltag{
+    position: absolute;
+    top: 48%;
+    left: 36%;
     font-family: biennale_light;
     transform: translate(-50%, -50%);
     color: #013C6C;
@@ -608,13 +638,22 @@ height: 100vh;
   .label5{
     position: absolute;
     top: 46%;
-    left: 30%;
+    left: 27%;
     font-family: biennale_light;
     transform: translate(-50%, -50%);
     color: #013C6C;
     font-size: 4vw;
   }
 
+  .labeltag2{
+    position: absolute;
+    top: 46%;
+    left: 38%;
+    font-family: biennale_light;
+    transform: translate(-50%, -50%);
+    color: #013C6C;
+    font-size: 4vw;
+  }
 
   .label6{
     position: absolute;
@@ -637,6 +676,8 @@ height: 100vh;
     color: #013C6C;
     font-size: 4vw;
   }
+
+  
 
 
 
@@ -752,25 +793,9 @@ height: 100vh;
   
   /*footer*/
 
-  .custom-button{
-    width: 9%;
-    background: rgba(0, 50, 96, 0.5);
-    border-radius: 100px;
-    margin-left: 0vw;
-    margin-top: 3vh;
-    margin-left: 41%;
-  }
-  
-  .custom-button .btn{
-    width: 65px;
-    height: 24px;
-    font-size: 2vw;
-    font-weight: 100;
-    color: rgba(0, 0, 0, 0.8);
-    font-family: biennale_light;
-    margin-right: 4vw;
-}
+ /*custom button animation*/
  
+
 
 
   .group-img img{
@@ -1082,7 +1107,17 @@ html {
 
   .label3 {
     font-size: 5vw;
-    margin-left: 6%;
+    margin-left: 7%;
+  }
+
+  .labeltag{
+    position: absolute;
+    top: 48%;
+    left: 40%;
+    font-family: biennale_light;
+    transform: translate(-50%, -50%);
+    color: #013C6C;
+    font-size: 4vw;
   }
 
   .label4{
@@ -1093,6 +1128,16 @@ html {
   .label5{
     font-size: 5vw;
     margin-left: 6%;
+  }
+
+  .labeltag2{
+    position: absolute;
+    top: 46%;
+    left: 41%;
+    font-family: biennale_light;
+    transform: translate(-50%, -50%);
+    color: #013C6C;
+    font-size: 4vw;
   }
 
   .label6{
