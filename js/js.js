@@ -1,4 +1,2465 @@
-//Social media switch image
+//Nosotros Slider Features
+let slider = document.querySelector(".slider");
+let innerSlider = document.querySelector(".slides");
+
+let pressed = false;
+let startx;
+let x;
+
+slider.addEventListener('mousedown', (e)=>{
+	pressed = true;
+	startx = e.offsetX - innerSlider.offsetLeft;
+	slider.style.cursor='grabbing';
+});
+
+slider.addEventListener('mouseenter', ()=>{
+	slider.style.cursor='grab';	
+  /*innerSlider.style.animation = "none";*/
+  $(innerSlider).stop(stopAll,goToEnd);
+
+});
+slider.addEventListener('mouseup', ()=>{
+	slider.style.cursor='grab';
+
+});
+window.addEventListener('mouseup', ()=>{
+	pressed = false;
+});
+
+
+window.addEventListener('mousemove', (e)=>{
+	if(!pressed) return;
+	e.preventDefault();
+
+	x = e.offsetX
+
+	innerSlider.style.left = `${x - startx}px`;
+	checkboundary()
+})
+
+
+// touch event 
+sdSliderContainer.addEventListener('touchstart', (e)=>{
+  pressed = true;
+  startx = e.touches[0].clientX - sdSlider.offsetLeft;
+});
+
+window.addEventListener('touchend', ()=>{
+  pressed = false;
+});
+sdSliderContainer.addEventListener('touchmove', (e)=>{
+  if(!pressed) return
+  e.preventDefault();
+
+  x = e.touches[0].clientX;
+
+  sdSlider.style.left = `${x - startx}px`;
+
+  checkboundary();
+});
+
+function checkboundary(){
+	let outer = slider.getBoundingClientRect();
+	let inner = innerSlider.getBoundingClientRect();
+
+	if(parseInt(innerSlider.style.left) > 0){
+		innerSlider.style.left = '0px';
+	}else if(inner.right < outer.right){	
+		innerSlider.style.left = `-${inner.width - outer.width}px`
+	}
+}	
+//Icons Features
+
+function mostrarDesIcon(){ 
+  console.log("Ingreso featureIcon1 function");
+  
+  //Ubicacion en tiempo real
+  var x = document.getElementById("showTagIcon1");
+  var y = document.getElementById("changeIcon1");
+  x.style.visibility = "visible";
+  y.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+  //Mantenimiento
+  var z = document.getElementById("showTagIcon2");
+  var i = document.getElementById("changeIcon2");
+
+  z.style.visibility = "hidden";
+  i.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+   //Blqueo desde app
+   var showTagIcon6 = document.getElementById("showTagIcon6");
+   var changeIcon6 = document.getElementById("changeIcon6");
+   showTagIcon6.style.visibility = "hidden";
+   changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+   //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+
+
+function mostrarDesIcon2(){
+ 
+  //2-Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "visible";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+  //1.Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+  //3.Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+   //Blqueo desde app
+   var showTagIcon6 = document.getElementById("showTagIcon6");
+   var changeIcon6 = document.getElementById("changeIcon6");
+   showTagIcon6.style.visibility = "hidden";
+   changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+   //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon3(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "visible";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+   //Blqueo desde app
+   var showTagIcon6 = document.getElementById("showTagIcon6");
+   var changeIcon6 = document.getElementById("changeIcon6");
+   showTagIcon6.style.visibility = "hidden";
+   changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+   //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon4(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "visible";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+   //Blqueo desde app
+   var showTagIcon6 = document.getElementById("showTagIcon6");
+   var changeIcon6 = document.getElementById("changeIcon6");
+   showTagIcon6.style.visibility = "hidden";
+   changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+   //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon5(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "visible";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+  
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon6(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "visible";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon7(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "visible";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+
+function mostrarDesIcon8(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "visible";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon9(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "visible";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon10(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "visible";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+
+function mostrarDesIcon11(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "visible";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon12(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "visible";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon13(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "visible";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon14(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "visible";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+}
+
+function mostrarDesIcon15(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "visible";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+  
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon16(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "visible";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon17(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "visible";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon18(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "visible";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+  //Geocercas
+  document.getElementById("showTagIcon19").style.visibility = "hidden";
+  document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+  //Reporte grafico de posiciones
+  document.getElementById("showTagIcon20").style.visibility = "hidden";
+  document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+  //Reporte historico recorrido
+  document.getElementById("showTagIcon21").style.visibility = "hidden";
+  document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+  //Retransmision a sutran
+  document.getElementById("showTagIcon22").style.visibility = "hidden";
+  document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+
+function mostrarDesIcon19(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+   //Geocercas
+   document.getElementById("showTagIcon19").style.visibility = "visible";
+   document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+   //Reporte grafico de posiciones
+   document.getElementById("showTagIcon20").style.visibility = "hidden";
+   document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+   //Reporte historico recorrido
+   document.getElementById("showTagIcon21").style.visibility = "hidden";
+   document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+   //Retransmision a sutran
+   document.getElementById("showTagIcon22").style.visibility = "hidden";
+   document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon20(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+   //Geocercas
+   document.getElementById("showTagIcon19").style.visibility = "hidden";
+   document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+   //Reporte grafico de posiciones
+   document.getElementById("showTagIcon20").style.visibility = "visible";
+   document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+   //Reporte historico recorrido
+   document.getElementById("showTagIcon21").style.visibility = "hidden";
+   document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+   //Retransmision a sutran
+   document.getElementById("showTagIcon22").style.visibility = "hidden";
+   document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon21(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+   //Geocercas
+   document.getElementById("showTagIcon19").style.visibility = "hidden";
+   document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+   //Reporte grafico de posiciones
+   document.getElementById("showTagIcon20").style.visibility = "hidden";
+   document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+   //Reporte historico recorrido
+   document.getElementById("showTagIcon21").style.visibility = "visible";
+   document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+   //Retransmision a sutran
+   document.getElementById("showTagIcon22").style.visibility = "hidden";
+   document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
+
+function mostrarDesIcon22(){
+ 
+  //Mantenimiento
+  var x = document.getElementById("showTagIcon2");
+  var y = document.getElementById("changeIcon2");
+  x.style.visibility = "hidden";
+  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+
+//Ubicacion en tiempo real
+  var showTagIcon1 = document.getElementById("showTagIcon1");
+  var changeIcon1 = document.getElementById("changeIcon1");
+  showTagIcon1.style.visibility = "hidden";
+  changeIcon1.style.content = "url('imagenes/ELEMENTOS-78.png')"
+
+
+  //Instalacion en casa
+  var showTagIcon3 = document.getElementById("showTagIcon3");
+  var changeIcon3 = document.getElementById("changeIcon3");
+  showTagIcon3.style.visibility = "hidden";
+  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+
+  //recupero de Vehiculo
+  var showTagIcon4 = document.getElementById("showTagIcon4");
+  var changeIcon4 = document.getElementById("changeIcon4");
+  showTagIcon4.style.visibility = "hidden";
+  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+
+  //App Movil
+  var showTagIcon5 = document.getElementById("showTagIcon5");
+  var changeIcon5 = document.getElementById("changeIcon5");
+  showTagIcon5.style.visibility = "hidden";
+  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+
+  //Blqueo desde app
+  var showTagIcon6 = document.getElementById("showTagIcon6");
+  var changeIcon6 = document.getElementById("changeIcon6");
+  showTagIcon6.style.visibility = "hidden";
+  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+
+  //Central de monitoreo
+  var showTagIcon7 = document.getElementById("showTagIcon7");
+  var changeIcon7 = document.getElementById("changeIcon7");
+  showTagIcon7.style.visibility = "hidden";
+  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+
+  //Alerta de desconexión de bateria
+  var showTagIcon8 = document.getElementById("showTagIcon8");
+  var changeIcon8 = document.getElementById("changeIcon8");
+  showTagIcon8.style.visibility = "hidden";
+  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+
+  //App Movil
+  document.getElementById("showTagIcon9").style.visibility = "hidden";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+
+  //Ubicacion en tiempo real
+  document.getElementById("showTagIcon10").style.visibility = "hidden";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+
+  //Mantenimiento
+  document.getElementById("showTagIcon11").style.visibility = "hidden";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+
+  //Recupero de vehiculo
+  document.getElementById("showtagIcon11-5").style.visibility = "hidden";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+
+  //Instalacion en casa
+  document.getElementById("showTagIcon12").style.visibility = "hidden";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+
+  //Central de monitoreo
+  document.getElementById("showTagIcon14").style.visibility = "hidden";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+
+  //Bloqueo desde app
+  document.getElementById("showTagIcon15").style.visibility = "hidden";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+
+  //Acceso a plataforma
+  document.getElementById("showTagIcon16").style.visibility = "hidden";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon17").style.visibility = "hidden";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+
+  //Boton de panico
+  document.getElementById("showTagIcon18").style.visibility = "hidden";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+
+   //Geocercas
+   document.getElementById("showTagIcon19").style.visibility = "hidden";
+   document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+
+   //Reporte grafico de posiciones
+   document.getElementById("showTagIcon20").style.visibility = "hidden";
+   document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+   //Reporte historico recorrido
+   document.getElementById("showTagIcon21").style.visibility = "hidden";
+   document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+
+   //Retransmision a sutran
+   document.getElementById("showTagIcon22").style.visibility = "visible";
+   document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+
+}
 
 
 
@@ -105,6 +2566,7 @@ counters3.forEach(counter => {
 });
 
 
+
 function myFunction() {
   console.log("Funciona");
   var x = document.getElementById("miServicio");
@@ -177,23 +2639,7 @@ function myFunction3() {
 
 
 }
- 
-document.addEventListener('mouseup', function(e) {
-  var container = document.getElementById('miServicio2');
-  console.log("Mi Servicio 2 ")
 
-  if(container){
-    if (!container.contains(e.target)) {
-      container.style.display = 'none';
-      document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-47.png";
-      document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
-      y = document.getElementById("layer");
-       y.style.backgroundImage = "none";
-    }
-  }
-  
- 
- });
 
 
 

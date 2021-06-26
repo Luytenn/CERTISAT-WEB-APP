@@ -44,7 +44,7 @@ header{
   height: 1620vh;
   width: 100vw;
   position: absolute;
-  z-index: 1;
+
 }
 
 
@@ -177,21 +177,6 @@ header{
   margin-left: 0.5vw;
  
 }
-/*
-.mcd-menu li:hover > ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
- 
-  
-
-  left: 25vh;
-  
-
-}
-
-
-*/
 
  .cambiarImagen{
   content: url('../imagenes/ELEMENTOS-48.png');
@@ -635,6 +620,14 @@ margin-left: 5vw;
 margin-top: 12vh;
 }
 
+
+
+
+.fila3,.fila4,.fila5{
+  position: relative;
+  z-index: 999;
+  }
+
 .fila6 .group-icon div{
       
 border-radius: 10px;
@@ -647,12 +640,6 @@ width: auto;
 box-shadow: -2px -4px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
 }
 
-.fila3,.fila4,.fila5,.fila6{
-position: relative;
-z-index: 999;
-
-
-}
 
 .fila4{
 margin-top: 0;
@@ -727,7 +714,7 @@ margin-top: -2vh;
 .fila6 .ic2{
 display: inline-block;
 margin-left: 7vw;
-
+position: relative;
 }
 
 .fila6 .group-icon .if1{
@@ -736,6 +723,7 @@ margin-bottom: 6vh;
 
 .fila6 .ic3{
 display: inline-block;margin-left: 4vw;
+position: relative;
 }
 
 .fila6 .if2{
@@ -743,7 +731,8 @@ display: inline-block;
 }
 
 .fila6 .ic4{
-display: inline-block;margin-left: 2vw
+display: inline-block;margin-left: 2vw;
+position: relative;
 }
 
 .fila6 .if3{
@@ -1169,7 +1158,16 @@ height: 100vh;
   font-family: biennale_light;
 }
 
+.tag-icon{
+   visibility: hidden;
+}
 
+
+
+
+.fila12 .ic0 .tag-icon:hover{
+  visibility: visible;
+}
 
 
 @media(max-width:2100px){
@@ -2153,6 +2151,12 @@ html {
 
 /*-----------------Circle Icons---------------------------*/
 
+.fila3,.fila4,.fila5,.fila6{
+  position: relative;
+  z-index: 999;
+  }
+  
+
 .ic{
   margin-right: 0;
 }
@@ -2177,6 +2181,9 @@ html {
   bottom: 119%;
 }
 
+.fila6 .ic2,.fila6 .ic3,.fila6 .ic4{
+  position: initial;
+}
 
 
 .fila1 {

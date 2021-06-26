@@ -39,9 +39,74 @@ html,body
 width: 100%;
 margin: 0px;
 padding: 0px;
+max-width: 100%;
 overflow-x: hidden;
 background: #f5f5f5;
 }
+
+/*Slider features*/
+
+.wrapper{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+
+/* SLIDER */
+.slider-container{
+  width: 100%;
+  height: 55rem;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin-top: 10%;
+  /* border: 2px solid violet; */
+}
+.slider{
+  width: 700%;
+  max-width: 220rem;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: .5rem;
+  pointer-events: none;
+  /* border: 2px solid red; */
+}
+.slider-innerbox{
+  width: 80%;
+  max-width: 22rem;
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+  border-radius: .3rem;
+  /* border: 2px solid lightgreen; */
+}
+
+.slider-img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 73% 4% 84% 5% / 2% 71% 4% 92% ;
+  box-shadow: 0 0 5px rgba(0,0,0, .3);
+}
+
+#imgone{background: blue;}
+#imgtwo{background: red;}
+#imgthree{background: green;}
+#imgfour{background: beige;}
+#imgfive{background: lightblue;}
+#imgsix{background: purple;}
+#imgseven{background: crimson;}
+
+/*End of Slider Feature*/
+
 
 .gfg {
   margin: 3%;
@@ -1111,6 +1176,317 @@ height: 100vh;
 }
 
 
+/*Curved text along circle*/
+
+
+.curved-text{
+	position: absolute;
+  left: 124%;
+}
+
+
+.contaner {
+    position: absolute;
+    width: 50px;
+   	height: 50px;
+    margin: auto;
+   
+  }
+  
+   .contaner .curved-text span {
+   
+    position: absolute;
+    font-size: 40px;
+  }
+  
+  
+  
+  .char2 {
+    transform: rotate(-72deg);
+    left: 26px;
+    top: 77px;
+  }
+  
+  .char3 {
+    transform: rotate(-56deg);
+    left: 37px;
+    top: 48px;
+  }
+  
+  .char4 {
+    transform: rotate(-56deg);
+    left: 59px;
+    top: 33px;
+  }
+  
+  .char5 {
+    transform: rotate(-49deg);
+    left: 65px;
+    top: 23px;
+  }
+  
+  .char6 {
+    transform: rotate(-37deg);
+    left: 66px;
+    top: 8px;
+  }
+  
+  .char7 {
+    transform: rotate(-32deg);
+    left: 84px;
+    top: -11px;
+  }
+  
+  .char8 {
+    transform: rotate(-17deg);
+    left: 108px;
+    top: -26px;
+  }
+
+
+  /*Curved text2 along circle*/
+
+
+.curved-text2{
+	position: absolute;
+  left: 39vw;
+}
+
+.contaner2 {
+    position: absolute;
+    width: 50px;
+   	height: 50px;
+    margin: auto;
+  }
+  
+   .contaner2 .curved-text2 span {
+    position: absolute;
+    font-size: 40px;
+  }
+  
+  .contaner2 .char2 {
+    transform: rotate(-72deg);
+    left: 43px;
+    top: 77px;
+  }
+  
+  .contaner2 .char3 {
+    transform: rotate(-56deg);
+    left: 42px;
+    top: 60px;
+  }
+  
+  .contaner2 .char4 {
+    transform: rotate(-56deg);
+    left: 53px;
+    top: 39px;
+  }
+  
+  .contaner2 .char5 {
+    transform: rotate(-49deg);
+    left: 66px;
+    top: 18px;
+  }
+  
+  .contaner2 .char6 {
+    transform: rotate(-37deg);
+    left: 83px;
+    top: 1px;
+  }
+  
+  .contaner2 .char7 {
+    transform: rotate(-32deg);
+    left: 99px;
+    top: -15px;
+  }
+  
+  .contaner2 .char8 {
+    transform: rotate(-17deg);
+    left: 121px;
+    top: -27px;
+  }
+
+  .contaner2 .char9 {
+    transform: rotate(-17deg);
+    left: 143px;
+    top: -33px;
+  }
+  
+  .contaner2 .char10 {
+    transform: rotate(-17deg);
+    left: 150px;
+    top: -39px;
+  }
+
+  .contaner2 .char11 {
+    transform: rotate(-17deg);
+    left: 173px;
+    top: -46px;
+  }
+
+   /*Curved text3 along circle*/
+
+
+   .curved-text3{
+    position: absolute;
+    left: 73vw;
+  }
+  
+  .contaner3 {
+      position: absolute;
+      width: 50px;
+       height: 50px;
+      margin: auto;
+    }
+    
+     .contaner3 .curved-text3 span {
+      position: absolute;
+      font-size: 40px;
+    }
+    
+    .contaner3 .char2 {
+      transform: rotate(-72deg);
+      left: 46px;
+      top: 79px;
+    }
+    
+    .contaner3 .char3 {
+      transform: rotate(-62deg);
+      left: 57px;
+      top: 62px;
+    }
+    
+    .contaner3 .char4 {
+      transform: rotate(-58deg);
+      left: 67px;
+      top: 49px;
+    }
+    
+    .contaner3 .char5 {
+      transform: rotate(-60deg);
+      left: 66px;
+      top: 34px;
+    }
+    
+    .contaner3 .char6 {
+      transform: rotate(-51deg);
+      left: 83px;
+      top: 20px;
+    }
+    
+    .contaner3 .char7 {
+      transform: rotate(-44deg);
+      left: 86px;
+      top: 7px;
+    }
+    
+    .contaner3 .char8 {
+      transform: rotate(-37deg);
+      left: 104px;
+      top: -11px;
+    }
+  
+    .contaner3 .char9 {
+      transform: rotate(-17deg);
+      left: 126px;
+      top: -26px;
+    }
+    
+    .contaner3 .char10 {
+      transform: rotate(-22deg);
+      left: 148px;
+      top: -33px;
+    }
+  
+    .contaner3 .char11 {
+      transform: rotate(-17deg);
+      left: 155px;
+      top: -40px;
+    }
+
+
+    /*Curved text4 along circle*/
+
+
+   .curved-text4{
+    position: absolute;
+    left: 107vw;
+  }
+  
+  .contaner4 {
+      position: absolute;
+      width: 50px;
+       height: 50px;
+      margin: auto;
+    }
+    
+     .contaner4 .curved-text4 span {
+      position: absolute;
+      font-size: 40px;
+    }
+    
+    .contaner4 .char2 {
+      transform: rotate(-78deg);
+      left: 53px;
+      top: 79px;
+    }
+    
+    .contaner4 .char3 {
+      transform: rotate(-62deg);
+      left: 61px;
+      top: 58px;
+    }
+    
+    .contaner4 .char4 {
+      transform: rotate(-58deg);
+      left: 71px;
+      top: 37px;
+    }
+    
+    .contaner4 .char5 {
+      transform: rotate(-54deg);
+      left: 85px;
+      top: 18px;
+    }
+    
+    .contaner4 .char6 {
+      transform: rotate(-51deg);
+      left: 103px;
+      top: 4px;
+    }
+    
+    .contaner4 .char7 {
+      transform: rotate(-44deg);
+      left: 113px;
+      top: -4px;
+    }
+    
+    .contaner4 .char8 {
+      transform: rotate(-37deg);
+      left: 118px;
+      top: -15px;
+    }
+  
+    .contaner4 .char9 {
+      transform: rotate(-29deg);
+      left: 138px;
+      top: -28px;
+    }
+    
+    .contaner4 .char10 {
+      transform: rotate(-22deg);
+      left: 160px;
+      top: -40px;
+    }
+  
+    .contaner4 .char11 {
+      transform: rotate(-17deg);
+      left: 155px;
+      top: -40px;
+    }
+
+
+
 
 @media (max-width: 960px) {
 
@@ -1563,6 +1939,14 @@ margin-top: 0.5vh;
 
 /* End of Section 3*/
 
+.slider .slides img{
+  margin-left: 15px;
+}
+
+.slider .slides .char2,.slider .slides .char3,.slider .slides .char4,.slider .slides .char5,.slider .slides .char6,
+.slider .slides .char7,.slider .slides .char8,.slider .slides .char9,.slider .slides .char10,.slider .slides .char11{
+  font-size: 16px;
+}
 
   
  /*footer*/
