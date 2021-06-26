@@ -1,73 +1,70 @@
-//Nosotros Slider Features
-let slider = document.querySelector(".slider");
-let innerSlider = document.querySelector(".slides");
+// slider card from Conor Bailey
+const sdSliderContainer = document.querySelector('.slider-container');
+const sdSlider = document.querySelector('.slider');
+const sdSliderInnerBox = document.querySelectorAll('.slider-innerbox');
 
 let pressed = false;
 let startx;
 let x;
 
-slider.addEventListener('mousedown', (e)=>{
-	pressed = true;
-	startx = e.offsetX - innerSlider.offsetLeft;
-	slider.style.cursor='grabbing';
+
+// mouse event 
+sdSliderContainer.addEventListener('mousedown', (e)=>{
+   pressed = true;
+   startx = e.offsetX - sdSlider.offsetLeft;
+   sdSliderContainer.style.cursor = 'grabbing';
 });
-
-slider.addEventListener('mouseenter', ()=>{
-	slider.style.cursor='grab';	
-  /*innerSlider.style.animation = "none";*/
-  $(innerSlider).stop(stopAll,goToEnd);
-
+sdSliderContainer.addEventListener('mouseenter', ()=>{
+   sdSliderContainer.style.cursor = 'grab';
 });
-slider.addEventListener('mouseup', ()=>{
-	slider.style.cursor='grab';
-
+sdSliderContainer.addEventListener('mouseup', ()=>{
+   sdSliderContainer.style.cursor = 'grab';
 });
 window.addEventListener('mouseup', ()=>{
-	pressed = false;
+   pressed = false;
 });
+sdSliderContainer.addEventListener('mousemove', (e)=>{
+   if(!pressed) return
+   e.preventDefault();
 
+   x = e.offsetX
 
-window.addEventListener('mousemove', (e)=>{
-	if(!pressed) return;
-	e.preventDefault();
+   sdSlider.style.left = `${x - startx}px`;
 
-	x = e.offsetX
-
-	innerSlider.style.left = `${x - startx}px`;
-	checkboundary()
-})
+   checkboundary();
+});
 
 
 // touch event 
 sdSliderContainer.addEventListener('touchstart', (e)=>{
-  pressed = true;
-  startx = e.touches[0].clientX - sdSlider.offsetLeft;
+   pressed = true;
+   startx = e.touches[0].clientX - sdSlider.offsetLeft;
 });
 
 window.addEventListener('touchend', ()=>{
-  pressed = false;
+   pressed = false;
 });
 sdSliderContainer.addEventListener('touchmove', (e)=>{
-  if(!pressed) return
-  e.preventDefault();
+   if(!pressed) return
+   e.preventDefault();
 
-  x = e.touches[0].clientX;
+   x = e.touches[0].clientX;
 
-  sdSlider.style.left = `${x - startx}px`;
+   sdSlider.style.left = `${x - startx}px`;
 
-  checkboundary();
+   checkboundary();
 });
 
 function checkboundary(){
-	let outer = slider.getBoundingClientRect();
-	let inner = innerSlider.getBoundingClientRect();
+   let outer = sdSliderContainer.getBoundingClientRect();
+   let inner = sdSlider.getBoundingClientRect();
 
-	if(parseInt(innerSlider.style.left) > 0){
-		innerSlider.style.left = '0px';
-	}else if(inner.right < outer.right){	
-		innerSlider.style.left = `-${inner.width - outer.width}px`
-	}
-}	
+   if(parseInt(sdSlider.style.left) > 0){
+      sdSlider.style.left = '0px';
+   }else if(inner.right < outer.right){
+      sdSlider.style.left = `-${inner.width - outer.width}px`
+   }
+};
 //Icons Features
 
 function mostrarDesIcon(){ 

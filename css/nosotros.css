@@ -44,43 +44,43 @@ overflow-x: hidden;
 background: #f5f5f5;
 }
 
+
 /*Slider features*/
 
 .wrapper{
   width: 90%;
-  height: 100%;
-  margin: auto;
+  /* height: 100%; */
+  margin: auto; 
 }
 
 /* SLIDER */
 .slider-container{
   width: 100%;
-  height: 55rem;
+  height: 28rem;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   cursor: pointer;
-  margin-top: 10%;
+  /* margin-top: 10%; */
   /* border: 2px solid violet; */
 }
 .slider{
   width: 700%;
-  max-width: 220rem;
-  height: 100%;
+  max-width: 112rem;
+  height: 86%;
   position: absolute;
   left: 0;
   top: 0;
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: .5rem;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: .5rem; */
   pointer-events: none;
   /* border: 2px solid red; */
 }
 .slider-innerbox{
   width: 80%;
   max-width: 22rem;
-  height: 50%;
-  overflow: hidden;
-  position: absolute;
+  height: 83%;
+  position: relative;
   display: flex;
   justify-content: center;
   margin: 0 2rem;
@@ -97,13 +97,8 @@ background: #f5f5f5;
   box-shadow: 0 0 5px rgba(0,0,0, .3);
 }
 
-#imgone{background: blue;}
-#imgtwo{background: red;}
-#imgthree{background: green;}
-#imgfour{background: beige;}
-#imgfive{background: lightblue;}
-#imgsix{background: purple;}
-#imgseven{background: crimson;}
+
+
 
 /*End of Slider Feature*/
 
@@ -1176,6 +1171,64 @@ height: 100vh;
 }
 
 
+/*Slider features*/
+
+.wrapper{
+  width: 100%;
+  /* height: 100%; */
+  margin: auto; 
+}
+
+/* SLIDER */
+.slider-container{
+  width: 67%;
+  height: 28rem;
+  position: relative;
+  /* overflow: hidden; */
+  cursor: pointer;
+  /* margin-top: 10%; */
+  /* border: 2px solid violet; */
+}
+.slider{
+  width: 230%;
+  max-width: 112rem;
+  height: 86%;
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: .5rem; */
+  pointer-events: none;
+  /* border: 2px solid red; */
+}
+.slider-innerbox{
+  width: 80%;
+  max-width: 100rem;
+  height: 83%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 0 2rem;
+  border-radius: .3rem;
+  /* border: 2px solid lightgreen; */
+}
+
+.slider-img{
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  border-radius: 73% 4% 84% 5% / 2% 71% 4% 92% ;
+  box-shadow: 0 0 5px rgba(0,0,0, .3);
+}
+
+
+
+
+/*End of Slider Feature*/
+
+
+
 /*Curved text along circle*/
 
 
@@ -1324,12 +1377,160 @@ height: 100vh;
     top: -46px;
   }
 
+/*Curved text along circle*/
+
+
+.curved-text{
+	position: absolute;
+	left: -14.5vw;
+}
+
+
+.contaner {
+    position: absolute;
+    width: 50px;
+   	height: 50px;
+    margin: auto;
+   
+  }
+  
+   .contaner .curved-text span {
+   
+    position: absolute;
+    font-size: 40px;
+  }
+  
+  
+  
+  .char2 {
+    transform: rotate(-72deg);
+    left: 26px;
+    top: 77px;
+  }
+  
+  .char3 {
+    transform: rotate(-56deg);
+    left: 37px;
+    top: 48px;
+  }
+  
+  .char4 {
+    transform: rotate(-56deg);
+    left: 59px;
+    top: 33px;
+  }
+  
+  .char5 {
+    transform: rotate(-49deg);
+    left: 65px;
+    top: 23px;
+  }
+  
+  .char6 {
+    transform: rotate(-37deg);
+    left: 66px;
+    top: 8px;
+  }
+  
+  .char7 {
+    transform: rotate(-32deg);
+    left: 84px;
+    top: -11px;
+  }
+  
+  .char8 {
+    transform: rotate(-17deg);
+    left: 108px;
+    top: -26px;
+  }
+
+
+  /*Curved text2 along circle*/
+
+
+.curved-text2{
+	position: absolute;
+	left: -16vw;
+}
+
+.contaner2 {
+    position: absolute;
+    width: 50px;
+   	height: 50px;
+    margin: auto;
+  }
+  
+   .contaner2 .curved-text2 span {
+    position: absolute;
+    font-size: 40px;
+  }
+  
+  .contaner2 .char2 {
+    transform: rotate(-72deg);
+    left: 43px;
+    top: 77px;
+  }
+  
+  .contaner2 .char3 {
+    transform: rotate(-56deg);
+    left: 42px;
+    top: 60px;
+  }
+  
+  .contaner2 .char4 {
+    transform: rotate(-56deg);
+    left: 53px;
+    top: 39px;
+  }
+  
+  .contaner2 .char5 {
+    transform: rotate(-49deg);
+    left: 66px;
+    top: 18px;
+  }
+  
+  .contaner2 .char6 {
+    transform: rotate(-37deg);
+    left: 83px;
+    top: 1px;
+  }
+  
+  .contaner2 .char7 {
+    transform: rotate(-32deg);
+    left: 99px;
+    top: -15px;
+  }
+  
+  .contaner2 .char8 {
+    transform: rotate(-17deg);
+    left: 121px;
+    top: -27px;
+  }
+
+  .contaner2 .char9 {
+    transform: rotate(-17deg);
+    left: 143px;
+    top: -33px;
+  }
+  
+  .contaner2 .char10 {
+    transform: rotate(-17deg);
+    left: 150px;
+    top: -39px;
+  }
+
+  .contaner2 .char11 {
+    transform: rotate(-17deg);
+    left: 173px;
+    top: -46px;
+  }
+
    /*Curved text3 along circle*/
 
 
    .curved-text3{
     position: absolute;
-    left: 73vw;
+    left: -16vw;
   }
   
   .contaner3 {
@@ -1410,7 +1611,7 @@ height: 100vh;
 
    .curved-text4{
     position: absolute;
-    left: 107vw;
+    left: -16.7vw;
   }
   
   .contaner4 {
