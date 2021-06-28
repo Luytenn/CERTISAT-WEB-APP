@@ -132,6 +132,200 @@ overflow-x: hidden;
 }
 
 
+  /*Auto Slider*/
+
+  .b15 .scroll-item2.active-top2 {
+    opacity: 1;
+    -ms-filter: none;
+    filter: none;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    background: RED;
+}
+
+.scroll-item2.active-top2{
+  margin-left: 2vw;
+}
+
+.b15__mobile__scroll {
+    
+    width: 64%;
+    position: relative;
+    border-radius: 50px;
+    -webkit-box-shadow: 10px 10px 40px 0 rgb(0 1 0 / 42%);
+    box-shadow: 10px 10px 40px 0 rgb(0 1 0 / 42%);
+}
+
+.b15__mobile__scroll .info2 {
+    position: relative;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.b15__mobile__scroll img {
+    width: 102%;    
+    height: auto;
+    display: block;
+}
+
+.b15__mouse {
+    position: absolute;
+    width: 97%;
+    height: 98%;
+    background-color: rgba(0,0,0,0.4);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    margin: auto;
+    border-radius: 50px;
+    z-index: 1;
+    cursor: pointer;
+    -webkit-transition: 500ms all;
+    -moz-transition: 500ms all;
+    -o-transition: 500ms all;
+    -ms-transition: 500ms all;
+    transition: 500ms all;
+}
+
+
+.b15__mouse.active {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    visibility: hidden;
+}
+
+div{
+    display: block;
+}
+
+
+.b15__mouse i {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    background-color: rgba(8,8,8,0.7);
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.b15__mouse i:before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 15.5%;
+    top: 10%;
+    border: 1px solid #fff;
+    border-radius: 100%;
+    -webkit-animation: scroll 1800ms infinite;
+    -moz-animation: scroll 1800ms infinite;
+    -o-animation: scroll 1800ms infinite;
+    -ms-animation: scroll 1800ms infinite;
+    animation: scroll 1800ms infinite;
+}
+
+.b15__mouse i img {
+    max-width: 100%;
+    width: auto;
+    
+}
+
+.b15__mouse span {
+    display: block;
+    color: #fff;
+    padding-top: 8px;
+    font-family: 'Roboto-Bold',sans-serif;
+    font-size: 8px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+br {
+    line-height: 1;
+}
+
+.b15__scrolling {
+    border-radius: 50px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    padding: 46px 8px 18px 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background: white;
+}
+
+.b15__box {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    border-radius: 0 0 34px 34px;
+    background-color: #fff;
+}
+
+
+
+.carousel{
+    height: 100%;
+}
+
+.carousel-inner {
+    position: relative;
+    height: 100%;
+}
+
+.carousel-item{
+    height: 100%;
+}
+
+.b15__scrolling .b15__box #carouselExampleSlidesOnly img{
+    height: 100%;
+}
+
+
 
 /*Custom Button Animation*/
 
@@ -208,21 +402,8 @@ overflow-x: hidden;
   margin-left: 0.5vw;
  
 }
-/*
-.mcd-menu li:hover > ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
- 
-  
-
-  left: 25vh;
-  
-
-}
 
 
-*/
 
  .cambiarImagen{
   content: url('../imagenes/ELEMENTOS-48.png');
@@ -325,12 +506,7 @@ img {
   
 }
 
-.img-app img{
-  width: 35vw;
-  
 
- 
-}
 
 
 
@@ -768,6 +944,7 @@ height: 100vh;
 @media(max-width:2100px){
   .img-app{
     margin-left: 5vw;
+    margin-top: 7vh;
   }
 
 
@@ -889,9 +1066,7 @@ height: 100vh;
   }
 
 
-  .img-app{
-    width: 10vw;
-  }
+ 
 
 
  
@@ -951,24 +1126,27 @@ html {
 
 @media (max-width: 576px) {
 
+.b15__mobile__scroll{
+    width: 54%;
+}
   
 /*Custom Button Animation*/
 
 .custom-button{
-  margin-right: 21vw;
+  margin-right: 24vw;
 }
 
 .custom-button .read-more a{
-  padding: 3px 10px;
-  font-size: 3vw;
+  padding: 7px 10px;
+  font-size: 3.5vw;
   border-radius: 43px;
   color: black;
   z-index: 0;
 }
 
 .custom-button .read-more a::before{
-  width: 25px;
-  height: 23px;
+  width: 34px;
+  height: 34px;
   border-radius: 100px;
 }
 
@@ -1061,7 +1239,7 @@ html {
   
 
   .background-image {
-    height: 100vh;
+    height: auto;
   }
 
   .header{
@@ -1071,6 +1249,8 @@ html {
   .navbar-left{
     display: none;
   }
+
+
 
   /*Content*/
 
@@ -1095,11 +1275,11 @@ html {
   }
 
   .main-title h1{
-    font-size: 8vw;
+    font-size: 11vw;
   }
 
   .main-title .subtitle{
-    font-size: 2.5vw;
+    font-size: 3.5vw;
     margin-top: 2vh;
     color: black;
     text-shadow: none;
@@ -1110,7 +1290,7 @@ html {
   }
 
   .main-title .device-img{
-    width: 18vw;
+    width: 20vw;
     display: block;
     margin-top: 2vh;
   }
@@ -1211,15 +1391,23 @@ html {
   .icon-bar{
     position: initial;
     text-align: center;
-    
+    margin-top: 4vh;
+    margin-left: 11vw;
+    padding: 50px 0px 3px 0px;
   }
+
+
   
   .icon-bar img{
-    margin-bottom: 15vw;
+    margin-bottom: 1vw;
     display: inline;
-    margin-right: 5vw;
+    margin-right: 8vw;
     text-align: center;
-    width: 2vw;
+    width: 5vw;
+  }
+  
+  .icon-bar img:nth-child(1){
+    width: 3.2vw;
   }
 
 
@@ -1243,10 +1431,6 @@ html {
    
   }
 
-  .img-app img{
-    width: 60vw;
-   
-  }
 
   .copyright p{
     font-size: 2vw;

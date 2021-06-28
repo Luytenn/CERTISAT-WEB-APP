@@ -1,70 +1,217 @@
-// slider card from Conor Bailey
-const sdSliderContainer = document.querySelector('.slider-container');
-const sdSlider = document.querySelector('.slider');
-const sdSliderInnerBox = document.querySelectorAll('.slider-innerbox');
 
-let pressed = false;
-let startx;
-let x;
+//Load numbers when div has reached
+$(window).scroll(function() {
+  console.log("ejecutandose")
+ var hT = $('#reached').offset().top,
+     hH = $('#reached').outerHeight(),
+     wH = $(window).height(),
+     wS = $(this).scrollTop();
+  console.log((hT-wH) , wS);
+ if (wS > (hT+hH-wH)){
+    console.log("reached");
 
-
-// mouse event 
-sdSliderContainer.addEventListener('mousedown', (e)=>{
-   pressed = true;
-   startx = e.offsetX - sdSlider.offsetLeft;
-   sdSliderContainer.style.cursor = 'grabbing';
-});
-sdSliderContainer.addEventListener('mouseenter', ()=>{
-   sdSliderContainer.style.cursor = 'grab';
-});
-sdSliderContainer.addEventListener('mouseup', ()=>{
-   sdSliderContainer.style.cursor = 'grab';
-});
-window.addEventListener('mouseup', ()=>{
-   pressed = false;
-});
-sdSliderContainer.addEventListener('mousemove', (e)=>{
-   if(!pressed) return
-   e.preventDefault();
-
-   x = e.offsetX
-
-   sdSlider.style.left = `${x - startx}px`;
-
-   checkboundary();
+    añosExperiencia();
+    vehiculosMonitoreados();
+    vehiculosRecuperados();
+ }
 });
 
 
-// touch event 
-sdSliderContainer.addEventListener('touchstart', (e)=>{
-   pressed = true;
-   startx = e.touches[0].clientX - sdSlider.offsetLeft;
-});
+//Index page Slider Touch screen
 
-window.addEventListener('touchend', ()=>{
-   pressed = false;
-});
-sdSliderContainer.addEventListener('touchmove', (e)=>{
-   if(!pressed) return
-   e.preventDefault();
+function showSliderApp(){
+  $('.b15__mouse').on('click', function(event) {
+    console.log("working")
+    event.preventDefault();
+    $(this).addClass('active')
+  });
+  
+}
 
-   x = e.touches[0].clientX;
 
-   sdSlider.style.left = `${x - startx}px`;
 
-   checkboundary();
-});
+//Animated Counter
+function vehiculosMonitoreados(){
+  const counters = document.querySelectorAll(".autoCount");
+  const speed = 30;
+  
+  counters.forEach(counter => {
+     console.log("Ingreso");
+    const updateCount = () => {
+      const target = +counter.getAttribute('data-target');
+      const count = +counter.innerText;
+  
+      console.log("ingreso: " + count);
+  
+      // Lower inc to slow and higher to slow
+      const inc = target / speed;
+  
+  
+      // console.log(inc);
+      // console.log(count);
+      const no = Math.trunc(inc);
+      // Check if target is reached
+      if (count < target) {
+        // Add inc to count and output in counter
+        counter.innerText = count + no;
+        // Call function every ms
+        setTimeout(updateCount, 70);
+      } else {
+        counter.innerText = target;
+      }
+    };
+  
+    updateCount();
+  });
+}
 
-function checkboundary(){
-   let outer = sdSliderContainer.getBoundingClientRect();
-   let inner = sdSlider.getBoundingClientRect();
+function vehiculosRecuperados(){
+  const counters2 = document.querySelectorAll(".autoCount2");
+  const speed2 = 99;
+  
+  counters2.forEach(counter => {
+    console.log("Ingreso");
+   const updateCount = () => {
+     const target = +counter.getAttribute('data-target');
+  
+     const count = +counter.innerText;
+  
+     console.log("ingreso: " + count);
+  
+     // Lower inc to slow and higher to slow
+     const inc = target / speed2;
+  
+  
+     const no = Math.trunc(inc);
+     // console.log(inc);
+     // console.log(count);
+  
+     // Check if target is reached
+     if (count < target) {
+       // Add inc to count and output in counter
+       counter.innerText = count + no;
+       // Call function every ms
+       setTimeout(updateCount, 20);
+     } else {
+       counter.innerText = target;
+     }
+   };
+  
+   updateCount();
+  });
+  
+}
 
-   if(parseInt(sdSlider.style.left) > 0){
-      sdSlider.style.left = '0px';
-   }else if(inner.right < outer.right){
-      sdSlider.style.left = `-${inner.width - outer.width}px`
-   }
-};
+
+function añosExperiencia(){
+  const counters3 = document.querySelectorAll(".autoCount3");
+  const speed3 = 11;
+  
+  counters3.forEach(counter => {
+    console.log("Ingreso");
+   const updateCount = () => {
+     const target = +counter.getAttribute('data-target');
+  
+     const count = +counter.innerText;
+  
+     console.log("ingreso: " + count);
+  
+     // Lower inc to slow and higher to slow
+     const inc = target / speed3;
+  
+  
+     const no = Math.trunc(inc);
+     // console.log(inc);
+     // console.log(count);
+  
+     // Check if target is reached
+     if (count < target) {
+       // Add inc to count and output in counter
+       counter.innerText = count + no;
+       // Call function every ms
+       setTimeout(updateCount, 100);
+     } else {
+       counter.innerText = target;
+     }
+   };
+  
+   updateCount();
+  });
+}
+
+
+// slider Nosotros
+function sliderNosotros(){
+  const sdSliderContainer = document.querySelector('.slider-container');
+  const sdSlider = document.querySelector('.slider');
+  const sdSliderInnerBox = document.querySelectorAll('.slider-innerbox');
+  
+  let pressed = false;
+  let startx;
+  let x;
+  
+  
+  // mouse event 
+  
+  sdSliderContainer.addEventListener('mousedown', (e)=>{
+     pressed = true;
+     startx = e.offsetX - sdSlider.offsetLeft;
+     sdSliderContainer.style.cursor = 'grabbing';
+  });
+  sdSliderContainer.addEventListener('mouseenter', ()=>{
+     sdSliderContainer.style.cursor = 'grab';
+  });
+  sdSliderContainer.addEventListener('mouseup', ()=>{
+     sdSliderContainer.style.cursor = 'grab';
+  });
+  window.addEventListener('mouseup', ()=>{
+     pressed = false;
+  });
+  sdSliderContainer.addEventListener('mousemove', (e)=>{
+     if(!pressed) return
+     e.preventDefault();
+  
+     x = e.offsetX
+  
+     sdSlider.style.left = `${x - startx}px`;
+  
+     checkboundary();
+  });
+  
+  
+  // touch event 
+  sdSliderContainer.addEventListener('touchstart', (e)=>{
+     pressed = true;
+     startx = e.touches[0].clientX - sdSlider.offsetLeft;
+  });
+  
+  window.addEventListener('touchend', ()=>{
+     pressed = false;
+  });
+  sdSliderContainer.addEventListener('touchmove', (e)=>{
+     if(!pressed) return
+     e.preventDefault();
+  
+     x = e.touches[0].clientX;
+  
+     sdSlider.style.left = `${x - startx}px`;
+  
+     checkboundary();
+  });
+  
+  function checkboundary(){
+     let outer = sdSliderContainer.getBoundingClientRect();
+     let inner = sdSlider.getBoundingClientRect();
+  
+     if(parseInt(sdSlider.style.left) > 0){
+        sdSlider.style.left = '0px';
+     }else if(inner.right < outer.right){
+        sdSlider.style.left = `-${inner.width - outer.width}px`
+     }
+  };
+}
+
+
 //Icons Features
 
 function mostrarDesIcon(){ 
@@ -2459,108 +2606,6 @@ function mostrarDesIcon22(){
 }
 
 
-
-//Animated Counter
-
-const counters = document.querySelectorAll(".autoCount");
-const speed = 30;
-
-counters.forEach(counter => {
-   console.log("Ingreso");
-	const updateCount = () => {
-		const target = +counter.getAttribute('data-target');
-		const count = +counter.innerText;
-
-    console.log("ingreso: " + count);
-
-		// Lower inc to slow and higher to slow
-		const inc = target / speed;
-
-
-		// console.log(inc);
-		// console.log(count);
-    const no = Math.trunc(inc);
-		// Check if target is reached
-		if (count < target) {
-			// Add inc to count and output in counter
-			counter.innerText = count + no;
-			// Call function every ms
-			setTimeout(updateCount, 50);
-		} else {
-			counter.innerText = target;
-		}
-	};
-
-	updateCount();
-});
-
-const counters2 = document.querySelectorAll(".autoCount2");
-const speed2 = 99;
-
-counters2.forEach(counter => {
-  console.log("Ingreso");
- const updateCount = () => {
-   const target = +counter.getAttribute('data-target');
-
-   const count = +counter.innerText;
-
-   console.log("ingreso: " + count);
-
-   // Lower inc to slow and higher to slow
-   const inc = target / speed2;
-
-
-   const no = Math.trunc(inc);
-   // console.log(inc);
-   // console.log(count);
-
-   // Check if target is reached
-   if (count < target) {
-     // Add inc to count and output in counter
-     counter.innerText = count + no;
-     // Call function every ms
-     setTimeout(updateCount, 20);
-   } else {
-     counter.innerText = target;
-   }
- };
-
- updateCount();
-});
-
-const counters3 = document.querySelectorAll(".autoCount3");
-const speed3 = 11;
-
-counters3.forEach(counter => {
-  console.log("Ingreso");
- const updateCount = () => {
-   const target = +counter.getAttribute('data-target');
-
-   const count = +counter.innerText;
-
-   console.log("ingreso: " + count);
-
-   // Lower inc to slow and higher to slow
-   const inc = target / speed3;
-
-
-   const no = Math.trunc(inc);
-   // console.log(inc);
-   // console.log(count);
-
-   // Check if target is reached
-   if (count < target) {
-     // Add inc to count and output in counter
-     counter.innerText = count + no;
-     // Call function every ms
-     setTimeout(updateCount, 50);
-   } else {
-     counter.innerText = target;
-   }
- };
-
- updateCount();
-});
 
 
 

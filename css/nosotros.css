@@ -45,6 +45,8 @@ background: #f5f5f5;
 }
 
 
+
+
 /*Slider features*/
 
 .wrapper{
@@ -65,7 +67,7 @@ background: #f5f5f5;
 }
 .slider{
   width: 700%;
-  max-width: 112rem;
+  max-width: 208%;
   height: 86%;
   position: absolute;
   left: 0;
@@ -77,7 +79,7 @@ background: #f5f5f5;
   /* border: 2px solid red; */
 }
 .slider-innerbox{
-  width: 80%;
+  width: 200%;
   max-width: 22rem;
   height: 83%;
   position: relative;
@@ -1202,7 +1204,7 @@ height: 100vh;
   /* border: 2px solid red; */
 }
 .slider-innerbox{
-  width: 80%;
+  width: 103%;
   max-width: 100rem;
   height: 83%;
   position: relative;
