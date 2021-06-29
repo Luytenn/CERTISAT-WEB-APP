@@ -1128,6 +1128,7 @@ html {
 
 .b15__mobile__scroll{
     width: 54%;
+    z-index: 0;
 }
   
 /*Custom Button Animation*/

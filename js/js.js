@@ -1,20 +1,23 @@
 
 //Load numbers when div has reached
-$(window).scroll(function() {
-  console.log("ejecutandose")
- var hT = $('#reached').offset().top,
-     hH = $('#reached').outerHeight(),
-     wH = $(window).height(),
-     wS = $(this).scrollTop();
-  console.log((hT-wH) , wS);
- if (wS > (hT+hH-wH)){
-    console.log("reached");
+function showNumbersIndex(){
+  $(window).scroll(function() {
+    console.log("ejecutandose")
+   var hT = $('#reached').offset().top,
+       hH = $('#reached').outerHeight(),
+       wH = $(window).height(),
+       wS = $(this).scrollTop();
+    console.log((hT-wH) , wS);
+   if (wS > (hT+hH-wH)){
+      console.log("reached");
+  
+      añosExperiencia();
+      vehiculosMonitoreados();
+      vehiculosRecuperados();
+   }
+  });
+}
 
-    añosExperiencia();
-    vehiculosMonitoreados();
-    vehiculosRecuperados();
- }
-});
 
 
 //Index page Slider Touch screen
@@ -2682,7 +2685,25 @@ function myFunction3() {
 
 }
 
+document.addEventListener('mouseup', function(e) {
+  var container = document.getElementById("miServicio2");
 
+
+    if(container){
+      if (!container.contains(e.target)) {
+      
+        container.style.display = 'none';
+        document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
+        document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-47.png";
+        y = document.getElementById("layer");
+        y.style.backgroundImage = "none";
+  
+    }
+    }
+
+  
+ });
+ 
 
 
 
@@ -2856,8 +2877,6 @@ document.addEventListener('mouseup', function(e) {
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question1');
       
-      
-  
 
       if(container){
         if (!container.contains(e.target)) {

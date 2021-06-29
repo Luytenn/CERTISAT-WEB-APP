@@ -90,6 +90,13 @@ background: #f5f5f5;
   /* border: 2px solid lightgreen; */
 }
 
+.slider-innerbox  img{
+  visibility: visible;
+  width: 25vw;
+  border-radius: 50%;
+  box-shadow: -2px -4px 5px 0px #fff, 2px 2px 3px 0px #d6d6d6;
+}
+
 .slider-img{
   width: 100%;
   height: 100%;
@@ -290,7 +297,7 @@ content: url('../imagenes/ELEMENTOS-47.png');
 }
 
 
-.wrapper img { 
+.wrapper .center { 
   width: 10vw; left: 50%; transform: translate(-50%,0); position: absolute; 
 }
 
@@ -636,6 +643,8 @@ height: 70%;
  
 }
 
+
+
 .center-item-left{
 
   margin-left: 25vh;
@@ -681,6 +690,9 @@ height: 70%;
   font-family: biennale_light;
 }
 
+.section4 .wrapper{
+  margin-top: 6vh;
+}
 
 /* ----------Section 5----------*/
 
@@ -712,17 +724,17 @@ height: 70%;
   position: relative;
   width: 100%;
   max-width: 1140px;
+  height: 150vh;
   margin: 0 auto;
   padding: 15px 0;
   right: 30%;
- 
 }
 
 .timeline::after {
   content: '';
   position: absolute;
   width: 2px;
-  height: 80%;
+  height: 88%;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -1184,7 +1196,7 @@ height: 100vh;
 /* SLIDER */
 .slider-container{
   width: 67%;
-  height: 28rem;
+  height: 74vh;
   position: relative;
   /* overflow: hidden; */
   cursor: pointer;
@@ -1193,7 +1205,7 @@ height: 100vh;
 }
 .slider{
   width: 230%;
-  max-width: 112rem;
+  max-width: 225%;
   height: 86%;
   position: absolute;
   top: 0;
@@ -1405,45 +1417,45 @@ height: 100vh;
   
   
   .char2 {
-    transform: rotate(-72deg);
-    left: 26px;
-    top: 77px;
+    transform: rotate(-60deg);
+    left: 22px;
+    top: 25px;
   }
   
   .char3 {
-    transform: rotate(-56deg);
-    left: 37px;
-    top: 48px;
+    transform: rotate(-61deg);
+    left: 25px;
+    top: 18px;
   }
   
   .char4 {
-    transform: rotate(-56deg);
-    left: 59px;
-    top: 33px;
+    transform: rotate(-62deg);
+    left: 30px;
+    top: 14px;
   }
   
   .char5 {
-    transform: rotate(-49deg);
-    left: 65px;
-    top: 23px;
+    transform: rotate(-61deg);
+    left: 31px;
+    top: 11px;
   }
   
   .char6 {
-    transform: rotate(-37deg);
-    left: 66px;
-    top: 8px;
+    transform: rotate(-53deg);
+    left: 32px;
+    top: 7px;
   }
   
   .char7 {
-    transform: rotate(-32deg);
-    left: 84px;
-    top: -11px;
+    transform: rotate(-53deg);
+    left: 37px;
+    top: 1px;
   }
   
   .char8 {
-    transform: rotate(-17deg);
-    left: 108px;
-    top: -26px;
+    transform: rotate(-37deg);
+    left: 44px;
+    top: -4px;
   }
 
 
@@ -1468,63 +1480,63 @@ height: 100vh;
   }
   
   .contaner2 .char2 {
-    transform: rotate(-72deg);
-    left: 43px;
-    top: 77px;
+    transform: rotate(-78deg);
+    left: 24px;
+    top: 26px;
   }
   
   .contaner2 .char3 {
-    transform: rotate(-56deg);
-    left: 42px;
-    top: 60px;
+    transform: rotate(-71deg);
+    left: 23px;
+    top: 21px;
   }
   
   .contaner2 .char4 {
-    transform: rotate(-56deg);
-    left: 53px;
-    top: 39px;
+    transform: rotate(-65deg);
+    left: 25px;
+    top: 15px;
   }
   
   .contaner2 .char5 {
     transform: rotate(-49deg);
-    left: 66px;
-    top: 18px;
+    left: 29px;
+    top: 10px;
   }
   
   .contaner2 .char6 {
-    transform: rotate(-37deg);
-    left: 83px;
-    top: 1px;
+    transform: rotate(-55deg);
+    left: 32px;
+    top: 5px;
   }
   
   .contaner2 .char7 {
-    transform: rotate(-32deg);
-    left: 99px;
-    top: -15px;
+    transform: rotate(-43deg);
+    left: 36px;
+    top: 0px;
   }
   
   .contaner2 .char8 {
-    transform: rotate(-17deg);
-    left: 121px;
-    top: -27px;
+    transform: rotate(-33deg);
+    left: 42px;
+    top: -4px;
   }
 
   .contaner2 .char9 {
-    transform: rotate(-17deg);
-    left: 143px;
-    top: -33px;
+    transform: rotate(-35deg);
+    left: 48px;
+    top: -6px;
   }
   
   .contaner2 .char10 {
     transform: rotate(-17deg);
-    left: 150px;
-    top: -39px;
+    left: 51px;
+    top: -8px;
   }
 
   .contaner2 .char11 {
     transform: rotate(-17deg);
-    left: 173px;
-    top: -46px;
+    left: 57px;
+    top: -10px;
   }
 
    /*Curved text3 along circle*/
@@ -1549,62 +1561,62 @@ height: 100vh;
     
     .contaner3 .char2 {
       transform: rotate(-72deg);
-      left: 46px;
-      top: 79px;
+      left: 22px;
+      top: 26px;
     }
     
     .contaner3 .char3 {
-      transform: rotate(-62deg);
-      left: 57px;
-      top: 62px;
+      transform: rotate(-76deg);
+      left: 24px;
+      top: 21px;
     }
     
     .contaner3 .char4 {
-      transform: rotate(-58deg);
-      left: 67px;
-      top: 49px;
+      transform: rotate(-66deg);
+      left: 26px;
+      top: 18px;
     }
     
     .contaner3 .char5 {
       transform: rotate(-60deg);
-      left: 66px;
-      top: 34px;
+      left: 26px;
+      top: 14px;
     }
     
     .contaner3 .char6 {
-      transform: rotate(-51deg);
-      left: 83px;
-      top: 20px;
+      transform: rotate(-59deg);
+      left: 31px;
+      top: 10px;
     }
     
     .contaner3 .char7 {
       transform: rotate(-44deg);
-      left: 86px;
-      top: 7px;
+      left: 32px;
+      top: 6px;
     }
     
     .contaner3 .char8 {
-      transform: rotate(-37deg);
-      left: 104px;
-      top: -11px;
+      transform: rotate(-47deg);
+      left: 36px;
+      top: 2px;
     }
   
     .contaner3 .char9 {
-      transform: rotate(-17deg);
-      left: 126px;
-      top: -26px;
+      transform: rotate(-42deg);
+      left: 41px;
+      top: -2px;
     }
     
     .contaner3 .char10 {
-      transform: rotate(-22deg);
-      left: 148px;
-      top: -33px;
+      transform: rotate(-30deg);
+      left: 47px;
+      top: -5px;
     }
   
     .contaner3 .char11 {
-      transform: rotate(-17deg);
-      left: 155px;
-      top: -40px;
+      transform: rotate(-28deg);
+      left: 49px;
+      top: -7px;
     }
 
 
@@ -1630,56 +1642,56 @@ height: 100vh;
     
     .contaner4 .char2 {
       transform: rotate(-78deg);
-      left: 53px;
-      top: 79px;
+      left: 25px;
+      top: 22px;
     }
     
     .contaner4 .char3 {
       transform: rotate(-62deg);
-      left: 61px;
-      top: 58px;
+      left: 27px;
+      top: 16px;
     }
     
     .contaner4 .char4 {
       transform: rotate(-58deg);
-      left: 71px;
-      top: 37px;
+      left: 29px;
+      top: 11px;
     }
     
     .contaner4 .char5 {
       transform: rotate(-54deg);
-      left: 85px;
-      top: 18px;
+      left: 33px;
+      top: 6px;
     }
     
     .contaner4 .char6 {
       transform: rotate(-51deg);
-      left: 103px;
-      top: 4px;
+      left: 38px;
+      top: 3px;
     }
     
     .contaner4 .char7 {
       transform: rotate(-44deg);
-      left: 113px;
-      top: -4px;
+      left: 41px;
+      top: 1px;
     }
     
     .contaner4 .char8 {
       transform: rotate(-37deg);
-      left: 118px;
-      top: -15px;
+      left: 42px;
+      top: -3px;
     }
   
     .contaner4 .char9 {
       transform: rotate(-29deg);
-      left: 138px;
-      top: -28px;
+      left: 48px;
+      top: -6px;
     }
     
     .contaner4 .char10 {
       transform: rotate(-22deg);
-      left: 160px;
-      top: -40px;
+      left: 54px;
+      top: -9px;
     }
   
     .contaner4 .char11 {
@@ -1915,8 +1927,8 @@ margin-top: 0.5vh;
 
   /*Section 1*/
 
+ 
 
-  
 .section{
   margin-right: 0;
   height: 140vh;
@@ -2514,7 +2526,33 @@ margin-top: 0.5vh;
     margin-left: 6vw;
   }
 
+  .contaner .curved-text span,.contaner2 .curved-text2 span,.contaner3 .curved-text3 span,.contaner4 .curved-text4 span{
+    font-size: 3vw;
+  }
 
+
+  .slider-innerbox  img{
+    visibility: visible;
+    width: 30vw;
+    height: 20vh;
+    box-shadow: -2px -4px 5px 0px #fff, 2px 2px 3px 0px #d6d6d6;
+  }
+
+  .timeline .right:nth-child(6){
+      visibility: hidden;
+  }
+
+  .timeline{
+    height: 79vh;
+  }
+
+  .timeline::after{
+    height: 100%;
+  }
+
+  .slider-container{
+    height: 31vh;
+  }
 
  
 }
