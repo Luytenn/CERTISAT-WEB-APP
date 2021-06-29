@@ -51,35 +51,43 @@
         
                 <ul id="menu">
                   <li><i class="bi bi-x" style="font-size: 10vw; margin-left: 8vw;"></i></li>
-                  <li >
-                    <a href="index.html"><img src="imagenes/ELEMENTOS-108.png" alt=""><span>Inicio</span></a>
+                  <li>
+                    <a onclick="geBoxShadowInicio()" href="index.html"><img src="imagenes/ELEMENTOS-108.png" alt=""><span id="inicio" >Inicio</span></a>
         
                   </li>
                   <li>
         
-                
-                    <a href="#"><img src="imagenes/ELEMENTOS-109.png" alt=""><span>Servicio</span></a><br>
-                    <div class="li-servicio" style="text-align: center;">
-                      <div  class="servicio">
         
-                        <a href="#"><span>Certisat Security</span></a><br>
-                        <a href="#"><span>Certisat Gold</span></a><br>
-                        <a href="servicios.html"><span>Certisat lot</span></a><br>
-                        <a href=""><span>Software Faktary</span></a><br>
-                      </div>
+                    <a onclick="subElementServicio()" href="#"><img src="imagenes/ELEMENTOS-109.png" alt=""><span  id="subElementServicio">Servicio</span></a><br>
+                    <div class="li-servicio" id="li-servicio" style="text-align: center;">
+                        <div class="servicio">
+                          <a  href="servicios.  html#security"><span>Certisat Security</span></a><br>
+                          <a  href="servicios.html#gold"><span>Certisat Gold</span></a><br>
+                          <a  href="servicios.html#Iot"><span>Certisat lot</span></a><br>
+                          <a  href="servicios.html#faktory"><span>Software Faktary</span></a><br>
+                        </div>
+                       
                     </div>
         
                   </li>
                   <li>
-                    <a href="nosotros.html"><img src="imagenes/ELEMENTOS-110.png" alt=""><span>Nosotros</span></a>
+                    <a onclick="subElementNosotros()" href="#"><img src="imagenes/ELEMENTOS-110.png" alt=""><span  id="subElementNosotros">Nosotros</span></a>
+                    <div class="li-servicio" id="li-nosotros" style="text-align: center;">
+                      <div class="servicio">
+                        <a href="#"><span>Misión - Visión</span></a><br>
+                        <a href="#"><span>Valores</span></a><br>
+                        <a href="#"><span>Preguntas<br style="display: block;content: '';margin-top: -13px;">frecuentes</span></a><br>
+                      </div>
+                    </div>
+        
         
                   </li>
                   <li>
-                    <a href=""><img src="imagenes/ELEMENTOS-111.png" alt=""><span>Contáctanos</span></a>
+                    <a onclick="boxShadowContacto()" href="contactanos.html"><img src="imagenes/ELEMENTOS-111.png" alt=""><span id="contacto">Contáctanos</span></a>
         
                   </li>
                   <li>
-                    <a href="#"><img src="imagenes/ELEMENTOS-112.png" alt=""><span>Inicio de Sesión</span></a>
+                    <a onclick="boxShadowLogIn()" href="https://sistemasplus.certisat.com/faces/principal/login.xhtml;jsessionid=ED8ACBF64B47CD64ABD139D80CFA2289"><img src="imagenes/ELEMENTOS-112.png" alt=""><span id="login">Inicio de Sesión</span></a>
         
                   </li>
         
@@ -305,6 +313,120 @@
 
         </div>
     </footer>
+
+    <script type="text/javascript">
+        function boxShadowInicio(){
+
+        var inicio = document.getElementById("inicio");
+        inicio.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+        inicio.style.padding = "1px 65px 8px 6px";
+        inicio.style.border = "3px";
+
+        }
+
+        function boxShadowContacto(){
+
+        var contacto = document.getElementById("contacto");
+        contacto.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+        contacto.style.padding = "1px 65px 8px 6px";
+        contacto.style.border = "3px";
+
+        }
+
+        function boxShadowLogIn(){
+
+        var login = document.getElementById("login");
+        login.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+        login.style.padding = "1px 65px 8px 6px";
+        login.style.border = "3px";
+
+        }
+
+
+        function subElementNosotros(){
+
+
+        var x = document.getElementById("subElementNosotros");
+        var y = document.getElementById("subElementServicio");
+        var z = document.getElementById("li-nosotros");
+        var li_nosotros = document.getElementById("li-servicio");
+        li_nosotros.style.display = "none";
+        z.style.display = "block";
+        x.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+        x.style.padding = "1px 68px 8px 6px";
+        x.style.borderRadius ="5px";
+        y.style.boxShadow = "none";
+        y.style.padding = "0";
+        y.style.border = "none";
+        console.log("ejecut subElementNosotros")
+        }
+
+        function subElementServicio(){
+
+        var y = document.getElementById("subElementServicio");
+        var x = document.getElementById("subElementNosotros");
+        var z = document.getElementById("li-servicio");
+        var li_servicio = document.getElementById("li-nosotros");
+        li_servicio.style.display = "none";
+        z.style.display = "block";
+        y.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+        y.style.padding = "1px 75px 8px 6px";
+        y.style.borderRadius = "5px";
+
+        x.style.boxShadow = "none";
+        x.style.padding = "0";
+        x.style.borderRadius = "none";
+
+        console.log("ejecuto subElementServicio")
+        }
+
+        /*
+        document.addEventListener('mouseup', function(e) {
+        var container = document.getElementById('subElementNosotros');
+        var container2 = document.getElementById('subElementServicio');
+
+        if(container){
+        console.log("Existe")
+        if (!container.contains(e.target)) {
+            container.style.boxShadow = "none";
+            container.style.padding = "0";
+            container.style.border = "none";
+            container.style.display = "none";
+        }
+        }
+        
+        if(container2){
+        console.log("Existe")
+        if (!container2.contains(e.target)) {
+            container2.style.boxShadow = "none";
+            container2.style.padding = "0";
+            container2.style.border = "none";
+            container2.style.display = "none";
+        }
+        } 
+
+
+
+        });
+
+        document.addEventListener('mouseup', function(e) {
+        var container = document.getElementById('miServicio');
+
+        if(container){
+        console.log("Existe")
+        if (!container.contains(e.target)) {
+            container.style.display = 'none';
+            document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
+            document.getElementById("cambiarImagen0").src="imagenes/ELEMENTOS-49.png";
+            y = document.getElementById("layer");
+            y.style.backgroundImage = "none";
+        }
+        } 
+        });
+        */
+
+    </script>
+
 </body>
 
 </html>

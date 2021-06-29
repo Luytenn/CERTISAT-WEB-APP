@@ -1,4 +1,5 @@
 
+ 
 //Load numbers when div has reached
 function showNumbersIndex(){
   $(window).scroll(function() {
@@ -2609,9 +2610,6 @@ function mostrarDesIcon22(){
 }
 
 
-
-
-
 function myFunction() {
   console.log("Funciona");
   var x = document.getElementById("miServicio");
@@ -2638,9 +2636,6 @@ function myFunction() {
  }
  
 
-
-
-
  document.addEventListener('mouseup', function(e) {
    var container = document.getElementById('miServicio');
 
@@ -2654,10 +2649,7 @@ function myFunction() {
       y.style.backgroundImage = "none";
   }
    } 
-
-  
 });
-
 
 
 
