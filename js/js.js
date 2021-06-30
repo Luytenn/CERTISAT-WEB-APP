@@ -2647,6 +2647,9 @@ function myFunction() {
       document.getElementById("cambiarImagen0").src="imagenes/ELEMENTOS-49.png";
       y = document.getElementById("layer");
       y.style.backgroundImage = "none";
+      y.style.width = "0%";
+      y.startx.height= "0%";
+     
   }
    } 
 });

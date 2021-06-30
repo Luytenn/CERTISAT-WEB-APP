@@ -75,18 +75,17 @@ overflow-x: hidden;
   text-decoration: none;
   font-size: 1vw;
   text-align: center;
-  color: #777;
- 
-  
+  color: #464647;
   /*text-align: center;
   border-right: 1px solid #E7E7E7;*/
   
   /* == */
   text-align: left;
- 
   position: relative;
 
   /* == */
+  font-size: biennale_light;
+  font-family: 'biennale_light';
 }
 
 .mcd-menu li .item-servicio{
@@ -119,16 +118,16 @@ overflow-x: hidden;
   padding-left: 40px;
   padding-top: 2vh;
   padding-bottom: 1.5vh;
-  color: #777;
+  color: #000;
   /*text-align: center;
   border-right: 1px solid #E7E7E7;*/
   font-size: 1.5vw;
   /* == */
   text-align: left;
- 
   position: relative;
 
   /* == */
+  font-family: 'biennale_medium';
 }
 
 
@@ -396,6 +395,7 @@ br {
   top: 40px;
  
   /* == */
+  box-shadow: 6px 10px 26px rgb(23 23 23);
 }
 
 .mcd-menu li ul li{
@@ -1298,63 +1298,66 @@ html {
   }
 
   .customers img{
-    width: 50vw;
+    width: 69vw;
   }
 
   
   .label {
  
-    font-size: 2.5vw;
-    margin-left: -4vw;
-  }
+font-size: 4vw;
+ 
+margin-left: -1vw;
+ 
+}
 
   .label2 {
-    font-size: 2.5vw;
-    margin-left: 7.5%;
+    font-size: 4.5vw;
+    margin-left: 2.5%;
   }
 
   .label3 {
-    font-size: 5vw;
-    margin-left: 7%;
+    font-size: 9vw;
+    margin-left: 1%;
   }
 
   .labeltag{
     position: absolute;
-    top: 48%;
-    left: 40%;
+    top: 47%;
+    left: 38%;
     font-family: biennale_light;
     transform: translate(-50%, -50%);
     color: #013C6C;
-    font-size: 4vw;
+    font-size: 7vw;
   }
 
   .label4{
-    font-size: 2.5vw;
-    margin-left: -4vw;
+    font-size: 4vw;
+    margin-left: -2vw;
   }
 
   .label5{
-    font-size: 5vw;
-    margin-left: 6%;
+    font-size: 8vw;
+    margin-left: -1%;
   }
 
   .labeltag2{
     position: absolute;
     top: 46%;
-    left: 41%;
+    left: 38%;
     font-family: biennale_light;
     transform: translate(-50%, -50%);
     color: #013C6C;
-    font-size: 4vw;
+    font-size: 7vw;
   }
 
   .label6{
-    font-size: 2.5vw;
+    font-size: 4vw;
+    left: 62%;
   }
 
   .label7{
-    font-size: 6vw;
-    left: 35%;
+    font-size: 9vw;
+    left: 30%;
   }
 
 

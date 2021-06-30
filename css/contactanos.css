@@ -1273,7 +1273,7 @@ button{
   .icon-bar{
     position: initial;
     text-align: center;
-    margin-top: 9vh;
+    margin-top: 17vh;
   }
   
   .icon-bar img{
@@ -1281,9 +1281,12 @@ button{
     display: inline;
     margin-right: 7vw;
     text-align: center;
-    width: 6vw;
+    width: 5vw;
   }
 
+  .row .icon-bar img:nth-child(1){
+    width: 3.4vw;
+  }
 
 
 
@@ -1463,11 +1466,7 @@ button{
     display: none;
   }
 
-  #menu li:nth-child(2) a span{
-    box-shadow: -2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6;
-    padding: 1px 80px 8px 6px;
-    border-radius: 3px;
-  }
+  
 
   .servicio{
     display: inline-block ;
@@ -1580,10 +1579,9 @@ button{
 
 .background-image{
 
-  height: 50vh;
-  
-  
-  }
+height: 55vh;
+
+}
 
   .line-header {
     background-color: rgb(0 20 84 / 22%);

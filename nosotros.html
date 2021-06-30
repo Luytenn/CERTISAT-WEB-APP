@@ -53,36 +53,49 @@
                     <ul id="menu">
                         <li><i class="bi bi-x" style="font-size: 10vw; margin-left: 8vw;"></i></li>
                         <li>
-                            <a href="index.html"><img src="imagenes/ELEMENTOS-108.png" alt=""><span>Inicio</span></a>
+                            <a onclick="geBoxShadowInicio()" href="index.html"><img src="imagenes/ELEMENTOS-108.png"
+                                    alt=""><span id="inicio">Inicio</span></a>
 
                         </li>
                         <li>
 
 
-                            <a href="#"><img src="imagenes/ELEMENTOS-109.png" alt=""><span>Servicio</span></a><br>
-                            <div class="li-servicio" style="text-align: center;">
+                            <a onclick="subElementServicio()" href="#"><img src="imagenes/ELEMENTOS-109.png"
+                                    alt=""><span id="subElementServicio">Servicio</span></a><br>
+                            <div class="li-servicio" id="li-servicio" style="text-align: center;">
                                 <div class="servicio">
-
-                                    <a  href="servicios.html#security"><span>Certisat Security</span></a><br>
-                                    <a  href="servicios.html#gold"><span>Certisat Gold</span></a><br>
-                                    <a  href="servicios.html#Iot"><span>Certisat lot</span></a><br>
-                                    <a  href="servicios.html#faktory"><span>Software Faktary</span></a><br>
+                                    <a href="servicios.html#security"><span>Certisat Security</span></a><br>
+                                    <a href="servicios.html#gold"><span>Certisat Gold</span></a><br>
+                                    <a href="servicios.html#Iot"><span>Certisat lot</span></a><br>
+                                    <a href="servicios.html#faktory"><span>Software Faktary</span></a><br>
                                 </div>
+
                             </div>
 
                         </li>
                         <li>
-                            <a href="nosotros.html"><img src="imagenes/ELEMENTOS-110.png"
-                                    alt=""><span>Nosotros</span></a>
+                            <a onclick="subElementNosotros()" href="#"><img src="imagenes/ELEMENTOS-110.png"
+                                    alt=""><span id="subElementNosotros">Nosotros</span></a>
+                            <div class="li-servicio" id="li-nosotros" style="text-align: center;">
+                                <div class="servicio">
+                                    <a href="nosotros.html#misionVision"><span>Misión - Visión</span></a><br>
+                                    <a href="nosotros.html#valores"><span>Valores</span></a><br>
+                                    <a href="nosotros.html#preguntas"><span>Preguntas<br
+                                                style="display: block;content: '';margin-top: -13px;">frecuentes</span></a><br>
+                                </div>
+                            </div>
+
 
                         </li>
                         <li>
-                            <a href="contactanos.html"><img src="imagenes/ELEMENTOS-111.png"
-                                    alt=""><span>Contáctanos</span></a>
+                            <a onclick="boxShadowContacto()" href="contactanos.html"><img
+                                    src="imagenes/ELEMENTOS-111.png" alt=""><span id="contacto">Contáctanos</span></a>
 
                         </li>
                         <li>
-                            <a href="#"><img src="imagenes/ELEMENTOS-112.png" alt=""><span>Inicio de Sesión</span></a>
+                            <a onclick="boxShadowLogIn()"
+                                href="https://sistemasplus.certisat.com/faces/principal/login.xhtml;jsessionid=ED8ACBF64B47CD64ABD139D80CFA2289"><img
+                                    src="imagenes/ELEMENTOS-112.png" alt=""><span id="login">Inicio de Sesión</span></a>
 
                         </li>
 
@@ -265,7 +278,7 @@
     <!--Section 3-->
 
 
-    <div class="container-section3">
+    <div class="container-section3" id="misionVision">
 
         <div class="mision">
             <div class="center-title-left">
@@ -314,7 +327,7 @@
 
     <!-- Section 4 -->
 
-    <div class="container-fluid section4" style="margin-top: 20vh;">
+    <div class="container-fluid section4" style="margin-top: 20vh;" id="valores">
         <div style="text-align: center;">
             <span>Valores</span>
             <br>
@@ -416,7 +429,7 @@
 
         <!--Section 5-->
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="preguntas">
             <div class="row swap">
 
                 <div class="col-sm-12 col-md-7 col-lg-7">
@@ -570,9 +583,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 frequencyQues text-center">
+                <div class="col-sm-12 col-md-4 col-lg-4 frequencyQues text-center" >
 
-                    <span>Preguntas</span>
+                    <span >Preguntas</span>
 
                     <span>frecuentes</span>
 
@@ -639,43 +652,108 @@
 
 
         <script type="text/javascript" src="js/js.js"></script>
-        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script>
 
+            function boxShadowInicio(){
+
+            var inicio = document.getElementById("inicio");
+            inicio.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+            inicio.style.padding = "1px 65px 8px 6px";
+            inicio.style.border = "3px";
+
+            }
+
+            function boxShadowContacto(){
+
+            var contacto = document.getElementById("contacto");
+            contacto.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+            contacto.style.padding = "1px 65px 8px 6px";
+            contacto.style.border = "3px";
+
+            }
+
+            function boxShadowLogIn(){
+
+            var login = document.getElementById("login");
+            login.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+            login.style.padding = "1px 65px 8px 6px";
+            login.style.border = "3px";
+
+            }
+
+
+            function subElementNosotros(){
+
+
+            var x = document.getElementById("subElementNosotros");
+            var y = document.getElementById("subElementServicio");
+            var z = document.getElementById("li-nosotros");
+            var li_nosotros = document.getElementById("li-servicio");
+            li_nosotros.style.display = "none";
+            z.style.display = "block";
+            x.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+            x.style.padding = "1px 68px 8px 6px";
+            x.style.borderRadius ="5px";
+            y.style.boxShadow = "none";
+            y.style.padding = "0";
+            y.style.border = "none";
+            console.log("ejecut subElementNosotros")
+            }
+
+            function subElementServicio(){
+
+            var y = document.getElementById("subElementServicio");
+            var x = document.getElementById("subElementNosotros");
+            var z = document.getElementById("li-servicio");
+            var li_servicio = document.getElementById("li-nosotros");
+            li_servicio.style.display = "none";
+            z.style.display = "block";
+            y.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
+            y.style.padding = "1px 75px 8px 6px";
+            y.style.borderRadius = "5px";
+
+            x.style.boxShadow = "none";
+            x.style.padding = "0";
+            x.style.borderRadius = "none";
+
+            console.log("ejecuto subElementServicio")
+            }
+
             $(document).ready(function () {
-              $("#click").click(function () {
-                $('html, body').animate({
-                  scrollTop: $("#security").offset().top
-                }, 500);
-              });
+                $("#click").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#security").offset().top
+                    }, 500);
+                });
             });
-        
+
             $(document).ready(function () {
-              $("#click2").click(function () {
-                $('html, body').animate({
-                  scrollTop: $("#gold").offset().top
-                }, 500);
-              });
+                $("#click2").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#gold").offset().top
+                    }, 500);
+                });
             });
-        
+
             $(document).ready(function () {
-              $("#click3").click(function () {
-                $('html, body').animate({
-                  scrollTop: $("#Iot").offset().top
-                }, 500);
-              });
+                $("#click3").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#Iot").offset().top
+                    }, 500);
+                });
             });
-        
+
             $(document).ready(function () {
-              $("#click4").click(function () {
-                $('html, body').animate({
-                  scrollTop: $("#faktory").offset().top
-                }, 500);
-              });
+                $("#click4").click(function () {
+                    $('html, body').animate({
+                        scrollTop: $("#faktory").offset().top
+                    }, 500);
+                });
             });
-        
-          </script>
+
+        </script>
 
 
 
