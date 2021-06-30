@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "biennale_bold";
   src: url("../fonts/Biennale\ Heavy.otf") format('truetype') ;
@@ -170,13 +168,13 @@ background: #f5f5f5;
   display: block;
   text-decoration: none;
   font-size: 1vw;
-  
   text-align: center;
   color: #777;
   text-align: left;
   position: relative;
   z-index: 99999;
   /* == */
+  font-family: 'biennale_light';
 }
 
 .item-servicio{
@@ -207,16 +205,16 @@ background: #f5f5f5;
   padding-left: 40px;
   padding-top: 2vh;
   padding-bottom: 1.5vh;
-  color: #777;
+  color: black;
   /*text-align: center;
   border-right: 1px solid #E7E7E7;*/
   font-size: 1.5vw;
   /* == */
   text-align: left;
- 
   position: relative;
 
   /* == */
+  font-family: 'biennale_medium';
 }
 
 
@@ -247,6 +245,7 @@ background: #f5f5f5;
   top: 40px;
  
   /* == */
+  box-shadow: 6px 10px 26px rgb(23 23 23);
 }
 
 .mcd-menu li ul li{
@@ -461,9 +460,13 @@ height: 70%;
   margin-bottom: 2vw;
   display: block;
   text-align: center;
-  width: 1vw;
+  width: 1.2vw;
 }
 
+.icon-bar a:nth-child(1) img{
+  width: 0.9vw;
+ 
+}
 
 /* Section 2 */
 
@@ -2587,7 +2590,7 @@ margin-top: 0.5vh;
   display: flex;
   flex-direction: row;
   border-bottom: 2px dashed #013c6c;
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
 }
 
 
@@ -2635,10 +2638,13 @@ margin-top: 0.5vh;
 
 .center-item-left{
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+display: block;
+
+margin-left: 12vw;
+
+/* margin-right: auto; */
+
+width: 64%;
 }
 
 .center-item-right{
@@ -2731,11 +2737,14 @@ margin-top: 0.5vh;
     display: inline;
     margin-right: 5vw;
     text-align: center;
-    width: 2vw;
+    width: 5vw;
   }
 
 
-
+  .icon-bar a:nth-child(1) img{
+    width: 2.8vw;
+   
+  }
 
 
   .col-social-media img{

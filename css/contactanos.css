@@ -67,20 +67,17 @@ overflow-x: hidden;
   display: block;
   text-decoration: none;
   font-size: 1vw;
-  
   text-align: center;
   color: #777;
- 
- 
   /*text-align: center;
   border-right: 1px solid #E7E7E7;*/
   
   /* == */
   text-align: left;
- 
   position: relative;
 
   /* == */
+  font-family: 'biennale_light';
 }
 
 .item-servicio{
@@ -106,13 +103,13 @@ overflow-x: hidden;
   padding-left: 40px;
   padding-top: 2vh;
   padding-bottom: 1.5vh;
-  color: #777;
+  color: black;
   /*text-align: center;
   border-right: 1px solid #E7E7E7;*/
   font-size: 1.5vw;
   /* == */
   text-align: left;
- 
+  font-family: 'biennale_medium';
   position: relative;
 
   /* == */
@@ -146,6 +143,7 @@ overflow-x: hidden;
   top: 40px;
  
   /* == */
+  box-shadow: 6px 10px 26px rgb(23 23 23);
 }
 
 .mcd-menu li .item-servicio{
@@ -436,9 +434,12 @@ height: 70%;
   margin-bottom: 2vw;
   display: block;
   text-align: center;
-  width: 1vw;
+  width: 1.2vw;
 }
 
+.icon-bar a:nth-child(1) img{
+  width: 0.9vw;
+}
 
 /* Section 2 */
 
@@ -468,19 +469,19 @@ height: 70%;
   }
 
 
-  .red-social-content img:hover:nth-child(1){
+  .red-social-content a:nth-child(1) img:hover{
     content: url("../imagenes/ELEMENTOS-199.png");
   }
 
-  .red-social-content img:hover:nth-child(2){
+  .red-social-content a:nth-child(2) img:hover{
     content: url("../imagenes/ELEMENTOS-198.png");
   }
 
-  .red-social-content img:hover:nth-child(3){
+  .red-social-content a:nth-child(3) img:hover{
     content: url("../imagenes/ELEMENTOS-197.png");
   }
 
-  .red-social-content img:hover:nth-child(4){
+  .red-social-content a:nth-child(4) img:hover{
     content: url("../imagenes/ELEMENTOS-196.png");
   }
 
@@ -648,6 +649,7 @@ height: 100vh;
   color : #fff; 
   margin-bottom: 22px;
   border-radius: 10px;
+  font-family: biennale_light;
 }
 
 
@@ -988,19 +990,23 @@ html {
   max-width: 500px;
   padding: 50px;
   text-align: center;
+  margin-top: 2vh;
 }
 
 .field{
-  width: 100%;
-  padding: 0.5rem 1rem;
-
-  outline: none;
-  border: 1px solid #fff;
+  width: 75%;
+  padding: 2rem 1rem;
+  height: 4vh;
+  border: 2px solid #fff;
   background-color: #005289;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   color : #fff; 
   margin-bottom: 22px;
   border-radius: 10px;
+}
+
+.field:nth-child(4){
+  height: 13vh;
 }
 
 .form-text{
@@ -1284,8 +1290,9 @@ button{
     width: 5vw;
   }
 
-  .row .icon-bar img:nth-child(1){
-    width: 3.4vw;
+  .icon-bar a:nth-child(1) img{
+    width: 2.8vw;
+   
   }
 
 

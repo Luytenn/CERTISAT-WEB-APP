@@ -646,9 +646,13 @@ height: 70%;
   margin-bottom: 2vw;
   display: block;
   text-align: center;
-  width: 1vw;
+  width: 1.2vw;
 }
 
+.icon-bar a:nth-child(1) img{
+  width: 0.9vw;
+ 
+}
 
 /* Section 2 */
 
@@ -1411,8 +1415,11 @@ margin-left: -1vw;
     width: 5vw;
   }
   
-  .icon-bar img:nth-child(1){
-    width: 3.2vw;
+  
+  
+  .icon-bar a:nth-child(1) img{
+    width: 2.8vw;
+   
   }
 
 

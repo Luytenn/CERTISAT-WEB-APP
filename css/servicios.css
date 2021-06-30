@@ -84,17 +84,15 @@ overflow-x: hidden;
   font-size: 1vw;
   text-align: center;
   color: #777;
- 
-  
   /*text-align: center;
   border-right: 1px solid #E7E7E7;*/
   
   /* == */
   text-align: left;
- 
   position: relative;
 
   /* == */
+  font-family: 'biennale_light';
 }
 
 .mcd-menu li .item-servicio{
@@ -127,16 +125,16 @@ overflow-x: hidden;
   padding-left: 40px;
   padding-top: 2vh;
   padding-bottom: 1.5vh;
-  color: #777;
+  color: black;
   /*text-align: center;
   border-right: 1px solid #E7E7E7;*/
   font-size: 1.5vw;
   /* == */
   text-align: left;
- 
   position: relative;
 
   /* == */
+  font-family: 'biennale_medium';
 }
 
 
@@ -147,8 +145,8 @@ overflow-x: hidden;
   position: absolute;
   height: auto;
   width: 20vw;
-  padding: 0;
-  padding-bottom: 10px;
+  padding: 14px;
+  padding-bottom: 31px;
   margin: 0;
   background: #f5f5f5;
   /*border-top: 4px solid #e67e22;*/
@@ -161,12 +159,13 @@ overflow-x: hidden;
   -webkit-transition: all 300ms linear;
   /*top: 130px;*/
   z-index: 1000;
-  border-radius: 30px;
+  border-radius: 76px;
   /* == */
   left:280px;
   top: 40px;
  
   /* == */
+  box-shadow: 6px 10px 26px rgb(23 23 23);
 }
 
 .mcd-menu li ul li{
@@ -411,7 +410,12 @@ button{
   margin-bottom: 2vw;
   display: block;
   text-align: center;
-  width: 1vw;
+  width: 1.2vw;
+}
+
+.icon-bar a:nth-child(1) img{
+  width: 0.9vw;
+ 
 }
 
 .icon6{
@@ -1603,9 +1607,13 @@ html {
     display: inline;
     margin-right: 5vw;
     text-align: center;
-    width: 2vw;
+    width: 5vw;
   }
 
+  .icon-bar a:nth-child(1) img{
+    width: 2.8vw;
+   
+  }
 
   .group-title{
     margin-right: 0;
@@ -1817,13 +1825,7 @@ html {
     z-index: 100;
  }
 
- .social-media-main .icon-bar img{
-   width: 4vw;
- }
 
- .social-media-main .icon-bar img:nth-child(1){
-   width: 3vw;
- }
 
  .descripcion{
    bottom: 9%;

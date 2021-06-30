@@ -107,20 +107,17 @@
     display: block;
     text-decoration: none;
     font-size: 1vw;
-    
     text-align: center;
     color: #777;
-   
-   
     /*text-align: center;
     border-right: 1px solid #E7E7E7;*/
     
     /* == */
     text-align: left;
-  
     position: relative;
   
     /* == */
+    font-family: 'biennale_light';
   }
   
   .item-servicio{
@@ -146,16 +143,16 @@
     padding-left: 40px;
     padding-top: 2vh;
     padding-bottom: 1.5vh;
-    color: #777;
+    color: black;
     /*text-align: center;
     border-right: 1px solid #E7E7E7;*/
     font-size: 1.5vw;
     /* == */
     text-align: left;
-   
     position: relative;
   
     /* == */
+    font-family: 'biennale_medium';
   }
   
   
@@ -186,6 +183,7 @@
     top: 40px;
    
     /* == */
+    box-shadow: 6px 10px 26px rgb(23 23 23);
   }
   
   .mcd-menu li ul li{
@@ -410,11 +408,16 @@
     
   }
   
-  .icon-bar img{
+  .icon-bar  a img{
     margin-bottom: 2vw;
     display: block;
     text-align: center;
-    width: 1vw;
+    width: 1.2vw;
+  }
+
+  .icon-bar a:nth-child(1) img{
+    width: 0.9vw;
+   
   }
   
   
@@ -1159,13 +1162,18 @@
     right: 6px;
   }
   
-  .icon-bar img{
+  .icon-bar a img {
     margin-bottom: 4vw;
     display: inline;
     margin-right: 5vw;
     text-align: center;
     display: block;
+    width: 3vw;
+  }
+
+  .icon-bar a:nth-child(1) img{
     width: 2vw;
+   
   }
 
 
