@@ -59,7 +59,7 @@ function vehiculosMonitoreados(){
         // Add inc to count and output in counter
         counter.innerText = count + no;
         // Call function every ms
-        setTimeout(updateCount, 70);
+        setTimeout(updateCount, 30);
       } else {
         counter.innerText = target;
       }
@@ -95,7 +95,7 @@ function vehiculosRecuperados(){
        // Add inc to count and output in counter
        counter.innerText = count + no;
        // Call function every ms
-       setTimeout(updateCount, 20);
+       setTimeout(updateCount, 99);
      } else {
        counter.innerText = target;
      }
@@ -133,7 +133,7 @@ function añosExperiencia(){
        // Add inc to count and output in counter
        counter.innerText = count + no;
        // Call function every ms
-       setTimeout(updateCount, 100);
+       setTimeout(updateCount, 11);
      } else {
        counter.innerText = target;
      }
@@ -2618,11 +2618,11 @@ function myFunction() {
   var y = document.getElementById("layer");
 
 
-   document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-48.png";
-   document.getElementById("cambiarImagen0").src="imagenes/ELEMENTOS-40.png";
+   document.getElementById("cambiarImagen").src="imagenes/icono-servicios-azul.png";
+   document.getElementById("cambiarImagen0").src="imagenes/icono-inicio-aplicacion-gps.png";
  
 
-  y.style.backgroundImage = "url('imagenes/ELEMENTOS-02.png') ";
+  y.style.backgroundImage = "url('imagenes/fondo-azul-marino.png') ";
   y.style.position = "absolute"
   y.style.top = "0";
   y.style.left = "0";
@@ -2643,8 +2643,8 @@ function myFunction() {
      console.log("Existe")
     if (!container.contains(e.target)) {
       container.style.display = 'none';
-      document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
-      document.getElementById("cambiarImagen0").src="imagenes/ELEMENTOS-49.png";
+      document.getElementById("cambiarImagen").src="imagenes/icono-servicios-blanco.png";
+      document.getElementById("cambiarImagen0").src="imagenes/icono-inicio-aplicacion-gps-azul.png";
       y = document.getElementById("layer");
       y.style.backgroundImage = "none";
       y.style.width = "0%";
@@ -2660,10 +2660,10 @@ function myFunction3() {
  console.log("Funciona");
  var x = document.getElementById("miServicio2");
  var y = document.getElementById("layer");
-  document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-48.png";
-  document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-42.png";
+  document.getElementById("cambiarImagen").src="imagenes/icono-servicios-azul.png";
+  document.getElementById("cambiarImagen2").src="imagenes/icono-nosotros-blanco.png";
 
-  y.style.backgroundImage = "url('imagenes/ELEMENTOS-02.png') ";
+  y.style.backgroundImage = "url('imagenes/fondo-azul-marino.png') ";
   y.style.position = "absolute"
   y.style.top = "0";
   y.style.left = "0";
@@ -2688,8 +2688,8 @@ document.addEventListener('mouseup', function(e) {
       if (!container.contains(e.target)) {
       
         container.style.display = 'none';
-        document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
-        document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-47.png";
+        document.getElementById("cambiarImagen").src="imagenes/icono-servicios-blanco.png";
+        document.getElementById("cambiarImagen2").src="imagenes/icono-nosotros-azul.png";
         y = document.getElementById("layer");
         y.style.backgroundImage = "none";
   
@@ -2706,10 +2706,10 @@ function myFunction2() {
  console.log("Funciona");
  var x = document.getElementById("miServicio3");
  var y = document.getElementById("layer");
-  document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-48.png";
-  document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-43.png";
+  document.getElementById("cambiarImagen").src="imagenes/icono-servicios-azul.png";
+  document.getElementById("cambiarImagen2").src="imagenes/icono-nosotros-blanco.png";
 
-  y.style.backgroundImage = "url('imagenes/ELEMENTOS-02.png') ";
+  y.style.backgroundImage = "url('imagenes/fondo-azul-marino.png') ";
   y.style.position = "absolute"
   y.style.top = "0";
   y.style.left = "0";
@@ -2734,8 +2734,8 @@ document.addEventListener('mouseup', function(e) {
       if (!container.contains(e.target)) {
       
         container.style.display = 'none';
-        document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
-        document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-46.png";
+        document.getElementById("cambiarImagen").src="imagenes/icono-servicios-blanco.png";
+        document.getElementById("cambiarImagen2").src="imagenes/icono-contactanos-azul.png";
         y = document.getElementById("layer");
         y.style.backgroundImage = "none";
   
@@ -2753,11 +2753,11 @@ document.addEventListener('mouseup', function(e) {
 
   var z = document.getElementById("background-image");
 
-   document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-48.png";
-   document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-40.png";
+   document.getElementById("cambiarImagen").src="imagenes/icono-servicios-azul.png";
+   document.getElementById("cambiarImagen2").src="imagenes/icono-inicio-aplicacion-gps.png";
 
    z.style.zIndex = "initial";
-   y.style.backgroundImage = "url('imagenes/ELEMENTOS-02.png') ";
+   y.style.backgroundImage = "url('imagenes/fondo-azul-marino.png') ";
   y.style.position = "absolute"
   y.style.top = "0";
   y.style.left = "0";
@@ -2784,8 +2784,8 @@ document.addEventListener('mouseup', function(e) {
    if (!container.contains(e.target)) {
       console.log("ingreso outclick ")
        container.style.display = 'none';
-       document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-40.png";
-       document.getElementById("cambiarImagen2").src="imagenes/ELEMENTOS-49.png";
+       document.getElementById("cambiarImagen").src="imagenes/icono-inicio-aplicacion-gps.png";
+       document.getElementById("cambiarImagen2").src="imagenes/icono-inicio-aplicacion-gps-azul.png";
        m = document.getElementById("layer");
        m.style.backgroundImage = "none";
        console.log(" out of range ");
@@ -2805,10 +2805,10 @@ document.addEventListener('mouseup', function(e) {
     var x = document.getElementById("miServicio5");
     var y = document.getElementById("layer");
 
-     document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-48.png";
+     document.getElementById("cambiarImagen").src="imagenes/icono-servicios-azul.png";
 
 
-    y.style.backgroundImage = "url('imagenes/ELEMENTOS-02.png') ";
+    y.style.backgroundImage = "url('imagenes/fondo-azul-marino.png') ";
     y.style.position = "absolute"
     y.style.top = "0";
     y.style.left = "0";
@@ -2839,7 +2839,7 @@ document.addEventListener('mouseup', function(e) {
 
      if (!container.contains(e.target)) {
          container.style.display = 'none';
-         document.getElementById("cambiarImagen").src="imagenes/ELEMENTOS-41.png";
+         document.getElementById("cambiarImagen").src="imagenes/icono-servicios-blanco.png";
      
          y = document.getElementById("layer");
          y.style.backgroundImage = "none";
@@ -2941,7 +2941,6 @@ document.addEventListener('mouseup', function(e) {
      }
      
     
-     
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question3');
 
@@ -2953,7 +2952,6 @@ document.addEventListener('mouseup', function(e) {
        
       }}
    });
-  
   
    
     /*-------------------*/ 
@@ -2974,7 +2972,6 @@ document.addEventListener('mouseup', function(e) {
     
      }
      
-    
      
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question4');
@@ -2988,7 +2985,6 @@ document.addEventListener('mouseup', function(e) {
       }
     }
    });
-  
   
     /*-------------------*/ 
    
@@ -3008,8 +3004,6 @@ document.addEventListener('mouseup', function(e) {
       x.style.display  = "block";
      }
      
-    
-     
    document.addEventListener('mouseup', function(e) {
       var container = document.getElementById('question5');
 
@@ -3023,8 +3017,6 @@ document.addEventListener('mouseup', function(e) {
        
    });
   
-    
-
   
     /*-------------End of Section 5--------------------*/
   
