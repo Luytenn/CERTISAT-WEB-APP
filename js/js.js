@@ -1738,7 +1738,7 @@ function mostrarDesIcon14(){
 
 function mostrarDesIcon15(){
  
-  //Mantenimiento
+  //Mant enimiento
   var x = document.getElementById("showTagIcon2");
   var y = document.getElementById("changeIcon2");
   x.style.visibility = "hidden";
@@ -2647,8 +2647,7 @@ function myFunction() {
       document.getElementById("cambiarImagen0").src="imagenes/icono-inicio-aplicacion-gps-azul.png";
       y = document.getElementById("layer");
       y.style.backgroundImage = "none";
-      y.style.width = "0%";
-      y.startx.height= "0%";
+     
      
   }
    } 
