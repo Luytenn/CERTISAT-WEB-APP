@@ -913,14 +913,12 @@ height:  100vh;
 
 @media(min-width:2100px){
  
-
   .zocalo{
-    width: 1000px;
+    width: 2000px;
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-
 
 
 }
@@ -928,26 +926,21 @@ height:  100vh;
 
 /* Responsive */
 
-@media(max-width: 1700px){
+@media(min-width: 1700px){
+  
 
- 
   
-  
+
 
 }
 
-
 @media(max-width:  1200px){
 
-  
  
   /*footer*/
 
  /*custom button animation*/
  
-
-
-
   .group-img img{
     width: 4vw;
   }
@@ -993,6 +986,9 @@ height:  100vh;
 
 
 @media (max-width: 960px) {
+
+
+  
 
   .header{
     display: none;
