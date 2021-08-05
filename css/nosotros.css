@@ -2332,9 +2332,8 @@ margin-top: 0.5vh;
   .line-header{
     height: 1.5vh;
     margin-top: 2vh; 
-    background-color: rgb(0 0 0 / 22%);
-    border: 1px solid rgb(47 47 47 / 14%);
-   
+    background-color: transparent;
+    box-shadow: inset 0px 1px 5px -1px #241416;
   }
   
   .wrapper .center{

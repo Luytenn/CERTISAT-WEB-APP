@@ -1397,8 +1397,8 @@ html {
   .line-header{
     height: 1.5vh;
     margin-top: 2vh;
-    background-color: rgb(58 69 97 / 20%);
-    box-shadow: 0px 0px 0px 0px #ffffff, inset 2px 3px 6px -2px #5f5f5f;
+    background-color: rgb(68 68 68 / 20%);
+    box-shadow: inset 0px 1px 3px -1px #0c0c0c;
   }
 
   

@@ -1097,8 +1097,8 @@ button{
   .line-header{
     height: 1.5vh;
     margin-top: 2vh; 
-    background-color: #1B1E29;
-    box-shadow: -5px -78px 200px 100px rgb(26 35 61);
+    background-color: transparent;
+    box-shadow: inset 0px 1px 6px -1px #023180;
   }
   
   .wrapper .center{
@@ -1572,9 +1572,6 @@ button{
   order:1;
 }
 
-
-
-
 .background-image .background-title {
   top: 27%;
 }
@@ -1585,17 +1582,8 @@ button{
 }
 
 .background-image{
-
-height: 55vh;
-
-}
-
-  .line-header {
-    background-color: rgb(0 20 84 / 22%);
-    box-shadow: -5px -78px 200px 100px rgb(51 47 47 / 10%);
-    border: 1px solid rgb(51 47 47 / 4%);
+  height: 55vh;
   }
-  
   
 }
 

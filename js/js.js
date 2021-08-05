@@ -19,8 +19,6 @@ function showNumbersIndex(){
   });
 }
 
-
-
 //Index page Slider Touch screen
 
 function showSliderApp(){
@@ -31,8 +29,6 @@ function showSliderApp(){
   });
   
 }
-
-
 
 //Animated Counter
 function vehiculosMonitoreados(){
@@ -110,19 +106,20 @@ function vehiculosRecuperados(){
 function añosExperiencia(){
   const counters3 = document.querySelectorAll(".autoCount3");
   const speed3 = 11;
+  console.log('--------- INICIO METODO ------ ' + counters3);
   
   counters3.forEach(counter => {
-    console.log("Ingreso");
-   const updateCount = () => {
-     const target = +counter.getAttribute('data-target');
   
-     const count = +counter.innerText;
+  console.log("Ingreso counter" + counter.innerText);
+    const updateCount = () => {  
+     const target =+ counter.getAttribute('data-target');
   
-     console.log("ingreso: " + count);
+     const count =+counter.innerText;
+  
+     console.log("ingreso añis experiencia: " + count);
   
      // Lower inc to slow and higher to slow
      const inc = target / speed3;
-  
   
      const no = Math.trunc(inc);
      // console.log(inc);
@@ -131,16 +128,25 @@ function añosExperiencia(){
      // Check if target is reached
      if (count < target) {
        // Add inc to count and output in counter
-       counter.innerText = count + no;
+        counter.innerText = count + no;
        // Call function every ms
-       setTimeout(updateCount, 11);
+       setTimeout(updateCount, 1000); 
+       
      } else {
-       counter.innerText = target;
+      counter.innerText = target;
      }
+
+    
+
    };
   
    updateCount();
+  
   });
+
+   
+  
+
 }
 
 
@@ -214,7 +220,7 @@ function sliderNosotros(){
      }
   };
 }
-
+ 
 
 //Icons Features
 
@@ -222,53 +228,38 @@ function mostrarDesIcon(){
   console.log("Ingreso featureIcon1 function");
   
   //Ubicacion en tiempo real
-  var x = document.getElementById("showTagIcon1");
-  var y = document.getElementById("changeIcon1");
-  x.style.visibility = "visible";
-  y.style.content = "url('imagenes/ELEMENTOS-78.png')"
+  document.getElementById("showTagIcon1").style.visibility = "visible";
+  document.getElementById("changeIcon1").style.content ="url('imagenes/ELEMENTOS-78.png')";
 
   //Mantenimiento
-  var z = document.getElementById("showTagIcon2");
-  var i = document.getElementById("changeIcon2");
-
-  z.style.visibility = "hidden";
-  i.style.content = "url('imagenes/ELEMENTOS-79.png')"
+  document.getElementById("showTagIcon2").style.visibility = "hidden";
+  document.getElementById("changeIcon2").style.content = "url('imagenes/ELEMENTOS-79.png')";
 
   //recupero de Vehiculo
-  var showTagIcon4 = document.getElementById("showTagIcon4");
-  var changeIcon4 = document.getElementById("changeIcon4");
-  showTagIcon4.style.visibility = "hidden";
-  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+  document.getElementById("showTagIcon4").style.visibility = "hidden";
+  document.getElementById("changeIcon4").style.content = "url('imagenes/ELEMENTOS-84.png')" ;
+ 
 
   //Instalacion en casa
-  var showTagIcon3 = document.getElementById("showTagIcon3");
-  var changeIcon3 = document.getElementById("changeIcon3");
-  showTagIcon3.style.visibility = "hidden";
-  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+  document.getElementById("showTagIcon3").style.visibility = "hidden";
+  document.getElementById("changeIcon3").style.content= "url('imagenes/ELEMENTOS-80.png')";
 
   //App Movil
-  var showTagIcon5 = document.getElementById("showTagIcon5");
-  var changeIcon5 = document.getElementById("changeIcon5");
-  showTagIcon5.style.visibility = "hidden";
-  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+  document.getElementById("showTagIcon5").style.visibility = "hidden";
+  document.getElementById("changeIcon5").style.content = "url('imagenes/ELEMENTOS-85.png')";
 
    //Blqueo desde app
-   var showTagIcon6 = document.getElementById("showTagIcon6");
-   var changeIcon6 = document.getElementById("changeIcon6");
-   showTagIcon6.style.visibility = "hidden";
-   changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+  document.getElementById("showTagIcon6").style.visibility = "hidden";
+  document.getElementById("changeIcon6").style.content = "url('imagenes/ELEMENTOS-81.png')";
+  
 
    //Central de monitoreo
-  var showTagIcon7 = document.getElementById("showTagIcon7");
-  var changeIcon7 = document.getElementById("changeIcon7");
-  showTagIcon7.style.visibility = "hidden";
-  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
-
+  document.getElementById("showTagIcon7").style.visibility = "hidden";
+  document.getElementById("changeIcon7").style.content = "url('imagenes/ELEMENTOS-83.png')";
+ 
   //Alerta de desconexión de bateria
-  var showTagIcon8 = document.getElementById("showTagIcon8");
-  var changeIcon8 = document.getElementById("changeIcon8");
-  showTagIcon8.style.visibility = "hidden";
-  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+  document.getElementById("showTagIcon8").style.visibility = "hidden";
+  document.getElementById("changeIcon8").style.content = "url('imagenes/ELEMENTOS-82.png')";
 
   //App Movil
   document.getElementById("showTagIcon9").style.visibility = "hidden";
@@ -326,8 +317,6 @@ function mostrarDesIcon(){
   document.getElementById("showTagIcon22").style.visibility = "hidden";
   document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
 }
-
-
 
 function mostrarDesIcon2(){
  
