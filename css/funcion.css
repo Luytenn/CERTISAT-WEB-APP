@@ -710,12 +710,95 @@
     font-family: biennale_light;
   }
   
-  @media(max-width:2100px){
+  @media(min-width:2000px){
     .img-app{
       margin-left: 5vw;
     }
   
+    .title{
+      font-size: 70px;
+    }
   
+    .descripcion{
+      font-size: 30px;
+    }
+  
+    .navbar-left img{
+      margin-top: 60px;
+      width: 110px;
+    }
+  
+    .navbar-left{
+      width:  140px;
+    }
+  
+    .icon-bar a:nth-child(1) img{
+      width: 15.3px;
+    }
+  
+    .icon-bar img{
+      margin-bottom: 34px;
+      width: 20.4px;
+    }
+  
+    .wrapper img { 
+      width: 170px
+    }
+
+    .add-border-left{
+      width: 150px;
+    }
+  
+  /* footer */
+
+  .bi-geo-alt-fill{
+    font-size: 28.9px;
+  }
+  
+ 
+  
+  .col-contact h1{
+    font-size: 17px;
+    font-family: biennale_medium;
+    margin-bottom: 3vh;
+  }
+  
+  .footer-text h1{
+    margin-bottom: 20.4px;
+  }
+  
+  
+  .col-contact p{
+   
+    font-size: 17px;
+    color: #464646;
+    line-height: 5px;
+    font-family: biennale_light;
+  }
+  
+  .col-social-media img{
+    width: 170x;
+  }
+  
+  .col-social-media h1{
+    font-size: 17px;
+    font-family: biennale_medium;
+  }
+  
+  .copyright p{
+    font-size: 17px;
+    color: #464646;
+    font-family: biennale_light;
+  }
+  
+  .img-app{
+    margin-left: 85px;
+    margin-top: 7vh;
+  }
+
+  .col-logo img{
+    width: 170px
+  }
   
   
   }
@@ -1054,10 +1137,10 @@
         .wrapper .center{
           position: absolute;
           top: 0.5vh;
-         
+          width: 17vw;
+          content: url("../imagenes/logo-certisat-mobile.png");
         }
-      
-      
+        
         #menu img{
           width: 18vw;
         }
@@ -1120,13 +1203,6 @@
           
         }
       
-        .wrapper .center{
-          width: 19vw;
-        }
-      
-      
-      
-        
        /*footer*/
 
       

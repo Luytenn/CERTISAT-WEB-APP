@@ -240,7 +240,7 @@ overflow-x: hidden;
 .background-image .background-title{
    color: rgba(27, 26, 26,30%);
    text-align: center;
-   font-size: 16.1vw;
+   font-size: 15.1vw;
    font-weight: 900;
    width: 100%;
    position: absolute;
@@ -262,7 +262,7 @@ SIDEBAR-LEFT
 .contact-form .ubicacion-text{
   order:1;
   position: absolute;
-  top: 30vh;
+  top: 25vw;
 }
 
 .contact-form2 .box-container{
@@ -499,7 +499,7 @@ height: 70%;
 .background-image{
 
 background:url('../imagenes/edificio-ventanas-cielo.png') no-repeat center center / cover ;
-/*background-size: 100% 90vw;*/
+position: relative;
 height: 100vh;
 
 
@@ -537,21 +537,6 @@ height: 100vh;
 #color-box-input1 {
   display: none;
   }
-
-
-
-
-/*
-.background-image::before {
-
-  content: "";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-color: rgb(14 33 56 / 80%);
-}*/
 
 
 
@@ -641,13 +626,13 @@ height: 100vh;
 
 .field{
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   outline: none;
   border: 1px solid #fff;
   background-color: #005289;
   font-size: 1.1rem;
   color : #fff; 
-  margin-bottom: 22px;
+  margin-bottom: 27px;
   border-radius: 10px;
   font-family: biennale_light;
 }
@@ -773,7 +758,7 @@ height: 100vh;
 }
 
 
-@media(max-width:2100px){
+@media(min-width:2100px){
   .form-text{
     margin-top: -10vh;
   }
@@ -787,7 +772,7 @@ height: 100vh;
 
 /* Responsive */
 
-@media(max-width: 1700px){
+@media(min-width: 1700px){
 
   .contact-form .ubicacion-text{
 
@@ -803,8 +788,141 @@ height: 100vh;
   .contact-form .ubicacion-text{
     top: 42vh;
   }
+/*  
+  .zocalo{
+    width: 1700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  .title{
+    font-size: 136px;
+  }
+
+  .navbar-left img{
+    margin-top: 51px;
+    width: 93.5px;
+  }
+
+  .device-img{
+    width: 153px;
+    margin-top: 68px;
+   
+  }
+
+  .navbar-left{
+    width:  119px;
+  }
+
+  .icon-bar a:nth-child(1) img{
+    width: 15.3px;
+  }
+
+  .icon-bar img{
+    margin-bottom: 34px;
+    width: 20.4px;
+  }
+
+  .wrapper img { 
+    width: 170px
+  }
+
+  /*section social media*/
+
+  .background-image .background-title{
+    font-size: 256px;
+ }
+
+ .red-social{
+    text-align: center;
+    height: 558px;
+ }
+  .red-social-content {
+    right: 0;
+    left: 0;
+  }
+
+  .red-social-content img{
+    width: 408px;
+   
+  }
+
+  /* section 2 formulario*/
+ 
+  .contact-form h1{
+    font-size: 76.5px;
+  }
+
+  .contact-form span{
+    font-size: 34px;
+  }
+
+  .contact-form .contact-dir{
+    font-size: 17px;
+  }
+
+  .contact-form .ubicacion-text{
+    position: absolute;
+    top: 300px;
+  }
+
+  .container-experiencia .capa {
+    left: 0;
+    right: 0;
+  }
+
+  /* footer */
+
+  .bi-geo-alt-fill{
+    font-size: 28.9px;
+  }
+  
  
   
+  .col-contact h1{
+    font-size: 17px;
+    font-family: biennale_medium;
+    margin-bottom: 3vh;
+  }
+  
+  .footer-text h1{
+    margin-bottom: 20.4px;
+  }
+  
+  
+  .col-contact p{
+   
+    font-size: 17px;
+    color: #464646;
+    line-height: 5px;
+    font-family: biennale_light;
+  }
+  
+  .col-social-media img{
+    width: 170x;
+  }
+  
+  .col-social-media h1{
+    font-size: 17px;
+    font-family: biennale_medium;
+  }
+  
+  .copyright p{
+    font-size: 17px;
+    color: #464646;
+    font-family: biennale_light;
+  }
+  
+  .img-app{
+    margin-left: 85px;
+    margin-top: 7vh;
+  }
+
+  .col-logo img{
+    width: 170px
+  }
+
 }
 
 
@@ -1104,8 +1222,9 @@ button{
   .wrapper .center{
     position: absolute;
     top: 0.5vh;
+    width: 17vw;
+    content: url("../imagenes/logo-certisat-mobile.png");
   }
-
 
   #menu img{
     width: 18vw;
@@ -1161,14 +1280,9 @@ button{
     
   }
 
-  .wrapper .center{
-    width: 19vw;
-  }
-
-  
-
   .background-image {
     height: 100vh;
+    position: initial;
   }
 
   .header{

@@ -229,7 +229,7 @@ function mostrarDesIcon(){
   
   //Ubicacion en tiempo real
   document.getElementById("showTagIcon1").style.visibility = "visible";
-  document.getElementById("changeIcon1").style.content ="url('imagenes/ELEMENTOS-78.png')";
+  document.getElementById("changeIcon1").style.content ="url('imagenes/web-32.png')";
 
   //Mantenimiento
   document.getElementById("showTagIcon2").style.visibility = "hidden";
@@ -324,7 +324,7 @@ function mostrarDesIcon2(){
   var x = document.getElementById("showTagIcon2");
   var y = document.getElementById("changeIcon2");
   x.style.visibility = "visible";
-  y.style.content = "url('imagenes/ELEMENTOS-79.png')"
+  y.style.content = "url('imagenes/web-33.png')"
 
   //1.Ubicacion en tiempo real
   var showTagIcon1 = document.getElementById("showTagIcon1");
@@ -444,7 +444,7 @@ function mostrarDesIcon3(){
   var showTagIcon3 = document.getElementById("showTagIcon3");
   var changeIcon3 = document.getElementById("changeIcon3");
   showTagIcon3.style.visibility = "visible";
-  changeIcon3.style.content = "url('imagenes/ELEMENTOS-80.png')"
+  changeIcon3.style.content = "url('imagenes/web-34.png')"
 
   //recupero de Vehiculo
   var showTagIcon4 = document.getElementById("showTagIcon4");
@@ -558,7 +558,7 @@ function mostrarDesIcon4(){
   var showTagIcon4 = document.getElementById("showTagIcon4");
   var changeIcon4 = document.getElementById("changeIcon4");
   showTagIcon4.style.visibility = "visible";
-  changeIcon4.style.content = "url('imagenes/ELEMENTOS-84.png')"
+  changeIcon4.style.content = "url('imagenes/web-37.png')"
 
   //App Movil
   var showTagIcon5 = document.getElementById("showTagIcon5");
@@ -672,7 +672,7 @@ function mostrarDesIcon5(){
   var showTagIcon5 = document.getElementById("showTagIcon5");
   var changeIcon5 = document.getElementById("changeIcon5");
   showTagIcon5.style.visibility = "visible";
-  changeIcon5.style.content = "url('imagenes/ELEMENTOS-85.png')"
+  changeIcon5.style.content = "url('imagenes/web-36.png')"
 
   //Blqueo desde app
   var showTagIcon6 = document.getElementById("showTagIcon6");
@@ -786,7 +786,7 @@ function mostrarDesIcon6(){
   var showTagIcon6 = document.getElementById("showTagIcon6");
   var changeIcon6 = document.getElementById("changeIcon6");
   showTagIcon6.style.visibility = "visible";
-  changeIcon6.style.content = "url('imagenes/ELEMENTOS-81.png')"
+  changeIcon6.style.content = "url('imagenes/web-35.png')"
 
   //Central de monitoreo
   var showTagIcon7 = document.getElementById("showTagIcon7");
@@ -900,7 +900,7 @@ function mostrarDesIcon7(){
   var showTagIcon7 = document.getElementById("showTagIcon7");
   var changeIcon7 = document.getElementById("changeIcon7");
   showTagIcon7.style.visibility = "visible";
-  changeIcon7.style.content = "url('imagenes/ELEMENTOS-83.png')"
+  changeIcon7.style.content = "url('imagenes/web-38.png')"
 
   //Alerta de desconexión de bateria
   var showTagIcon8 = document.getElementById("showTagIcon8");
@@ -1015,7 +1015,7 @@ function mostrarDesIcon8(){
   var showTagIcon8 = document.getElementById("showTagIcon8");
   var changeIcon8 = document.getElementById("changeIcon8");
   showTagIcon8.style.visibility = "visible";
-  changeIcon8.style.content = "url('imagenes/ELEMENTOS-82.png')"
+  changeIcon8.style.content = "url('imagenes/web-39.png')"
 
   //App Movil
   document.getElementById("showTagIcon9").style.visibility = "hidden";
@@ -1127,7 +1127,7 @@ function mostrarDesIcon9(){
 
   //App Movil
   document.getElementById("showTagIcon9").style.visibility = "visible";
-  document.getElementById("changeIcon9").style.content = "url('imagenes/ELEMENTOS-85.png')";
+  document.getElementById("changeIcon9").style.content = "url('imagenes/web-36.png')";
 
   //Ubicacion en tiempo real
   document.getElementById("showTagIcon10").style.visibility = "hidden";
@@ -1239,7 +1239,7 @@ function mostrarDesIcon10(){
 
   //Ubicacion en tiempo real
   document.getElementById("showTagIcon10").style.visibility = "visible";
-  document.getElementById("changeIcon10").style.content = "url('imagenes/ELEMENTOS-78.png')";
+  document.getElementById("changeIcon10").style.content = "url('imagenes/web-32.png')";
 
   //Mantenimiento
   document.getElementById("showTagIcon11").style.visibility = "hidden";
@@ -1352,7 +1352,7 @@ function mostrarDesIcon11(){
 
   //Mantenimiento
   document.getElementById("showTagIcon11").style.visibility = "visible";
-  document.getElementById("changeIcon11").style.content = "url('imagenes/ELEMENTOS-79.png')";
+  document.getElementById("changeIcon11").style.content = "url('imagenes/web-33.png')";
 
   //Recupero de vehiculo
   document.getElementById("showtagIcon11-5").style.visibility = "hidden";
@@ -1464,7 +1464,7 @@ function mostrarDesIcon12(){
 
   //Recupero de vehiculo
   document.getElementById("showtagIcon11-5").style.visibility = "visible";
-  document.getElementById("changeIcon12").style.content = "url('imagenes/ELEMENTOS-87.png')";
+  document.getElementById("changeIcon12").style.content = "url('imagenes/web-37.png')";
 
   //Instalacion en casa
   document.getElementById("showTagIcon12").style.visibility = "hidden";
@@ -1577,7 +1577,7 @@ function mostrarDesIcon13(){
 
   //Instalacion en casa
   document.getElementById("showTagIcon12").style.visibility = "visible";
-  document.getElementById("changeIcon13").style.content = "url('imagenes/ELEMENTOS-86.png')";
+  document.getElementById("changeIcon13").style.content = "url('imagenes/web-40.png')";
 
   //Central de monitoreo
   document.getElementById("showTagIcon14").style.visibility = "hidden";
@@ -1690,7 +1690,7 @@ function mostrarDesIcon14(){
 
   //Central de monitoreo
   document.getElementById("showTagIcon14").style.visibility = "visible";
-  document.getElementById("changeIcon14").style.content = "url('imagenes/ELEMENTOS-96.png')";
+  document.getElementById("changeIcon14").style.content = "url('imagenes/web-38.png')";
 
   //Bloqueo desde app
   document.getElementById("showTagIcon15").style.visibility = "hidden";
@@ -1802,7 +1802,7 @@ function mostrarDesIcon15(){
 
   //Bloqueo desde app
   document.getElementById("showTagIcon15").style.visibility = "visible";
-  document.getElementById("changeIcon15").style.content = "url('imagenes/ELEMENTOS-81.png')";
+  document.getElementById("changeIcon15").style.content = "url('imagenes/web-35.png')";
 
   //Acceso a plataforma
   document.getElementById("showTagIcon16").style.visibility = "hidden";
@@ -1915,7 +1915,7 @@ function mostrarDesIcon16(){
 
   //Acceso a plataforma
   document.getElementById("showTagIcon16").style.visibility = "visible";
-  document.getElementById("changeIcon16").style.content = "url('imagenes/ELEMENTOS-94.png')";
+  document.getElementById("changeIcon16").style.content = "url('imagenes/web-47.png')";
 
   //Boton de panico
   document.getElementById("showTagIcon17").style.visibility = "hidden";
@@ -2028,7 +2028,7 @@ function mostrarDesIcon17(){
 
   //Boton de panico
   document.getElementById("showTagIcon17").style.visibility = "visible";
-  document.getElementById("changeIcon17").style.content = "url('imagenes/ELEMENTOS-91.png')";
+  document.getElementById("changeIcon17").style.content = "url('imagenes/web-50.png')";
 
   //Boton de panico
   document.getElementById("showTagIcon18").style.visibility = "hidden";
@@ -2141,7 +2141,7 @@ function mostrarDesIcon18(){
 
   //Boton de panico
   document.getElementById("showTagIcon18").style.visibility = "visible";
-  document.getElementById("changeIcon18").style.content = "url('imagenes/ELEMENTOS-92.png')";
+  document.getElementById("changeIcon18").style.content = "url('imagenes/web-49.png')";
 
   //Geocercas
   document.getElementById("showTagIcon19").style.visibility = "hidden";
@@ -2255,7 +2255,7 @@ function mostrarDesIcon19(){
 
    //Geocercas
    document.getElementById("showTagIcon19").style.visibility = "visible";
-   document.getElementById("changeIcon19").style.content = "url('imagenes/ELEMENTOS-93.png')";
+   document.getElementById("changeIcon19").style.content = "url('imagenes/web-48.png')";
 
    //Reporte grafico de posiciones
    document.getElementById("showTagIcon20").style.visibility = "hidden";
@@ -2368,7 +2368,7 @@ function mostrarDesIcon20(){
 
    //Reporte grafico de posiciones
    document.getElementById("showTagIcon20").style.visibility = "visible";
-   document.getElementById("changeIcon20").style.content = "url('imagenes/ELEMENTOS-97.png')";
+   document.getElementById("changeIcon20").style.content = "url('imagenes/web-53.png')";
 
    //Reporte historico recorrido
    document.getElementById("showTagIcon21").style.visibility = "hidden";
@@ -2481,7 +2481,7 @@ function mostrarDesIcon21(){
 
    //Reporte historico recorrido
    document.getElementById("showTagIcon21").style.visibility = "visible";
-   document.getElementById("changeIcon21").style.content = "url('imagenes/ELEMENTOS-98.png')";
+   document.getElementById("changeIcon21").style.content = "url('imagenes/web-52.png')";
 
    //Retransmision a sutran
    document.getElementById("showTagIcon22").style.visibility = "hidden";
@@ -2594,7 +2594,7 @@ function mostrarDesIcon22(){
 
    //Retransmision a sutran
    document.getElementById("showTagIcon22").style.visibility = "visible";
-   document.getElementById("changeIcon22").style.content = "url('imagenes/ELEMENTOS-97.png')";
+   document.getElementById("changeIcon22").style.content = "url('imagenes/web-53.png')";
 
 }
 

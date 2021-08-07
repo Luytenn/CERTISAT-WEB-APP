@@ -213,7 +213,7 @@
           <div class="funcion-app">
             <div class="group-funcion">
               <div class="img-funcion">
-                <img src="imagenes/ubicacion-monitoreo-vehiculo.png"
+                <img  src="imagenes/web-06.png"
                   alt="ubicacion en tiempo real de monitoreo de vehiculos">
 
                 <div class="custom-icon">
@@ -222,20 +222,20 @@
 
               </div>
               <div class="img-funcion">
-                <img src="imagenes/reporte-monitoreo-vehiculo.png" alt="reporte de monitoreo de vehiculos">
+                <img src="imagenes/web-07.png" alt="reporte de monitoreo de vehiculos">
                 <div>
                   <span>Reportes</span>
                 </div>
               </div>
               <div class="img-funcion">
-                <img src="imagenes/recorrido-grafico-monitoreo-vehiculo.png"
+                <img src="imagenes/web-08.png"
                   alt="recorrido grafico de monitoreo de vehiculos">
                 <div class="custom-icon">
                   <span>Recorrido gráfico</span>
                 </div>
               </div>
               <div class="img-funcion">
-                <img src="imagenes/comando-monitoreo-vehiculo.png" alt="comando para el monitoreo de vehiculos">
+                <img src="imagenes/web-09.png" alt="comando para el monitoreo de vehiculos">
                 <div>
                   <span>Comandos</span>
                 </div>
@@ -330,34 +330,37 @@
 
 
      document.getElementsByClassName("group-funcion")[0].children[0].onclick = function fun() {
-      document.getElementsByClassName("group-funcion")[0].children[0].style.backgroundColor = "red";
-      document.getElementsByClassName("group-funcion")[0].children[1].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[2].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[3].style.backgroundColor = "white";
+      document.getElementsByClassName("group-funcion")[0].children[0].children[0].src = 'imagenes/web-02.png';
+      document.getElementsByClassName("group-funcion")[0].children[1].children[0].src = 'imagenes/reporte-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[2].children[0].src= 'imagenes/recorrido-grafico-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[3].children[0].src = 'imagenes/comando-monitoreo-vehiculo.png';
+
+   
       console.log("first elemenet selected");
     }
 
     document.getElementsByClassName("group-funcion")[0].children[1].onclick = function fun() {
-      document.getElementsByClassName("group-funcion")[0].children[0].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[1].style.backgroundColor = "blue";
-      document.getElementsByClassName("group-funcion")[0].children[2].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[3].style.backgroundColor = "white";
+
+      document.getElementsByClassName("group-funcion")[0].children[0].children[0] .src = 'imagenes/ubicacion-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[1].children[0].src = 'imagenes/web-03.png';
+      document.getElementsByClassName("group-funcion")[0].children[2].children[0].src = 'imagenes/recorrido-grafico-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[3].children[0].src = 'imagenes/comando-monitoreo-vehiculo.png';
       console.log("second element selected");
     }
 
     document.getElementsByClassName("group-funcion")[0].children[2].onclick = function fun() {
-      document.getElementsByClassName("group-funcion")[0].children[0].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[1].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[2].style.backgroundColor = "green";
-      document.getElementsByClassName("group-funcion")[0].children[3].style.backgroundColor = "white";
+      document.getElementsByClassName("group-funcion")[0].children[0].children[0] .src = 'imagenes/ubicacion-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[1].children[0].src = 'imagenes/reporte-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[2].children[0].src = 'imagenes/web-04.png';
+      document.getElementsByClassName("group-funcion")[0].children[3].children[0].src = 'imagenes/comando-monitoreo-vehiculo.png';
       console.log("second element selected");
     }
 
     document.getElementsByClassName("group-funcion")[0].children[3].onclick = function fun() {
-      document.getElementsByClassName("group-funcion")[0].children[0].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[1].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[2].style.backgroundColor = "white";
-      document.getElementsByClassName("group-funcion")[0].children[3].style.backgroundColor = "grey";
+      document.getElementsByClassName("group-funcion")[0].children[0].children[0] .src = 'imagenes/ubicacion-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[1].children[0].src = 'imagenes/reporte-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[2].children[0].src = 'imagenes/recorrido-grafico-monitoreo-vehiculo.png';
+      document.getElementsByClassName("group-funcion")[0].children[3].children[0].src = 'imagenes/web-05.png';
       console.log("second element selected");
     }
 

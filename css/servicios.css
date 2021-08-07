@@ -38,7 +38,7 @@ overflow-x: hidden;
 
 .puntero-page{
   height: 1620vh;
-  width: 100vw;
+  width: 100%;
   position: absolute;
 
 }
@@ -1043,9 +1043,9 @@ height: 110vh;position: relative;
 
 .background-image{
 
-background:url('../imagenes/mujer-telefono-laptop-oficina.png') no-repeat center center / cover ;
-height: 100vh;
-
+  background:url('../imagenes/mujer-telefono-laptop-oficina.png') no-repeat center center / cover ;
+  height: 100vh;
+  position: relative;
 
 }
 
@@ -1167,13 +1167,159 @@ height: 100vh;
 }
 
 
-@media(max-width:2100px){
-  .img-app{
-    margin-left: 5vw;
+@media(min-width:2000px){
+
+  /* .img-app{
+    margin-left: 100vw;
+  } */
+
+  /* .zocalo{
+    width: 2000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+
+  /*header*/
+
+  .title{
+    font-size: 160px;
   }
 
+  .descripcion{
+    font-size: 30px;
+  }
 
+  .navbar-left img{
+    margin-top: 60px;
+    width: 110px;
+  }
 
+  .navbar-left{
+    width:  140px;
+  }
+
+  .icon-bar a:nth-child(1) img{
+    width: 15.3px;
+  }
+
+  .icon-bar img{
+    margin-bottom: 34px;
+    width: 20.4px;
+  }
+
+  .wrapper img { 
+    width: 170px
+  }
+
+  /*section*/
+
+  .certi-security span, .certi-gold span, .car-component span{
+    font-size: 90px;
+    display: block;
+  }
+
+  .certi-security p, .certi-gold p, .car-component p{
+    font-size: 30px;
+  }
+
+  .certi-security span, .certi-gold span, .car-component span{
+    font-size: 90px;
+  }
+
+  .certi-security p, .certi-gold p, .car-component p{
+    font-size: 30px;
+  }
+
+  .container-fluid .icon-feature{
+    width: 170px;
+  }
+
+  .fila1 .group-icon{
+    margin-top: 200px; /*18vh*/
+  }
+
+  .fila2 .group-icon2{
+    margin-top: 100px;
+  }
+
+  .fila2 .group-icon3{
+    margin-top: 184px;
+  }
+
+  /* section3 */
+
+  .sw-faktory-desc span{
+    font-size: 140px;
+  }
+
+  .sw-faktory-desc p{
+    font-size: 30px;
+  }
+
+  .group-car-comp .feature-icon9 img{
+    width: 1540px;
+  }
+
+  /*section4 caracteristicas*/
+
+  /* footer */
+
+  .bi-geo-alt-fill{
+    font-size: 28.9px;
+  }
+  
+  .contact-location{
+    vertical-align: bottom; 
+    width: 68px; 
+    margin-left: 34px;
+  }
+  
+  
+  .col-contact h1{
+    font-size: 17px;
+    font-family: biennale_medium;
+    margin-bottom: 3vh;
+  }
+  
+  .footer-text h1{
+    margin-bottom: 20.4px;
+  }
+  
+  
+  .col-contact p{
+   
+    font-size: 17px;
+    color: #464646;
+    line-height: 5px;
+    font-family: biennale_light;
+  }
+  
+  .col-social-media img{
+    width: 170x;
+  }
+  
+  .col-social-media h1{
+    font-size: 17px;
+    font-family: biennale_medium;
+  }
+  
+  .copyright p{
+    font-size: 17px;
+    color: #464646;
+    font-family: biennale_light;
+  }
+  
+  .img-app{
+    margin-left: 85px;
+    margin-top: 7vh;
+  }
+
+  .col-logo img{
+    width: 170px
+  }
+
+}
 
 }
 
@@ -1406,8 +1552,9 @@ html {
   .wrapper .center{
     position: absolute;
     top: 0.5vh;
+    width: 17vw;
+    content: url("../imagenes/logo-certisat-mobile.png");
   }
-
 
   #menu img{
     width: 18vw;
@@ -1478,12 +1625,6 @@ html {
     margin-top: 10vh;
     
   }
-
-  .wrapper .center{
-    width: 19vw;
-  }
-
-  
 
   .background-image {
     height: 72vh;
