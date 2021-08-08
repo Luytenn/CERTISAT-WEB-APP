@@ -987,7 +987,9 @@ height:  100vh;
     margin-right: 34px;
   }
 
- 
+  .b15__mobile__scroll img{
+    width: 100%;
+  }
 
   .b15__mobile__scroll{
     width: 50%;
