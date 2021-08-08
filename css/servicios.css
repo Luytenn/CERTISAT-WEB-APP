@@ -1146,7 +1146,7 @@ height: 110vh;position: relative;
 }
 
 
-@media(max-width:2000px){
+@media only screen and(min-width:2000px){
 
  
 
