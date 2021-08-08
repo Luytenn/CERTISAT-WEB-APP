@@ -260,6 +260,9 @@ function myFunction() {
       document.getElementById("cambiarImagen0").src="imagenes/icono-inicio-aplicacion-gps-azul.png";
       y = document.getElementById("layer");
       y.style.backgroundImage = "none";
+      y.style.width = "0%";
+      y.style.height = "0%";
+    
      
      
   }
@@ -404,6 +407,7 @@ document.addEventListener('mouseup', function(e) {
 
        var z = document.getElementById("background-image");
        z.style.zIndex = "2";
+ 
    }
 
   }

@@ -1482,7 +1482,12 @@ html {
     left: 30%;
   }
 
+/*clientes*/
 
+  .clientes{
+    height: 0;
+    padding: 120px 200px 120px 150px;
+  }
   
  /*footer*/
 
