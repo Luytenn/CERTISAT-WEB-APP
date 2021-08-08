@@ -375,7 +375,7 @@ br {
   -moz-transition: all 300ms linear;
   -webkit-transition: all 300ms linear;
   z-index: 1000;
-  border-radius: 50px;
+  border-radius: 40px;
   left: 280px;
   top: 40px;
   box-shadow: 6px 10px 26px rgb(23 23 23);
