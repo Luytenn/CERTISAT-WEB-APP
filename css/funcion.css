@@ -434,7 +434,7 @@ div.img-funcion {
 	height: 135vh;
 	margin-bottom: 10vh;
 	display: flex;
-	margin-top: 18vh;
+	margin-top: 28vh;
 }
 
 .background-image {
@@ -1015,8 +1015,8 @@ div.img-funcion {
 	}
 	#menuToggle input {
 		display: block;
-		width: 50px;
-		height: 50px;
+		width: 80px;
+		height: 80px;
 		position: absolute;
 		top: -7px;
 		left: -5px;

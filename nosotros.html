@@ -286,11 +286,10 @@
             <br>
             <br>
          </div>
-         <div class="row" style="margin: 0;">
-            <div class="wrapper">
+        
                <div class="slider-container" style="cursor: grab;">
                   <div class="slider" style="left: 0px;">
-                     <div class="slider-innerbox">
+                     <div  class="slider-innerbox">
                         <div class="contaner">
                            <div class="curved-text slide">
                               <span class="char2">C</span>
@@ -302,7 +301,7 @@
                               <span class="char8">d</span>
                            </div>
                         </div>
-                        <img src="imagenes/web-54.png" alt="icono calidad de color azul marino">
+                        <img  src="imagenes/web-54.png" id="slider-innerbox-img" alt="icono calidad de color azul marino">
                      </div>
                      <div class="slider-innerbox">
                         <div class="contaner2">
@@ -319,7 +318,7 @@
                               <span class="char11">n</span>
                            </div>
                         </div>
-                        <img src="imagenes/web-55.png" alt="icono de innovacion de color blanco">
+                        <img src="imagenes/web-55.png" id="slider-innerbox-img2" alt="icono de innovacion de color blanco">
                      </div>
                      <div class="slider-innerbox">
                         <div class="contaner3">
@@ -336,7 +335,7 @@
                               <span class="char11">a</span>
                            </div>
                         </div>
-                        <img src="imagenes/web-56.png" alt="icono de eficiencia de color blanco">
+                        <img src="imagenes/web-56.png" id="slider-innerbox-img3" alt="icono de eficiencia de color blanco">
                      </div>
                      <div class="slider-innerbox">
                         <div class="contaner4">
@@ -352,11 +351,10 @@
                               <span class="char10">d</span>
                            </div>
                         </div>
-                        <img src="imagenes/web-57.png" alt="icono de seguridad de color blanco">
+                        <img src="imagenes/web-57.png" id="slider-innerbox-img4" alt="icono de seguridad de color blanco">
                      </div>
                   </div>
-               </div>
-            </div>
+               
          </div>
          <!--Section 5-->
          <div class="container-fluid" id="preguntas">
@@ -530,6 +528,64 @@
          </footer>
          <script type="text/javascript" src="js/js.js"></script>
          <script>
+
+const circles = document.querySelectorAll('.slider-innerbox')
+    let activeLight = 0;
+
+    setInterval(() => {
+        changeLight();
+    }, 1000);
+
+    function changeLight() {
+        circles[activeLight].className = 'slider-innerbox';
+        activeLight++;
+        
+        if(activeLight > 3) {
+            activeLight = 0;
+        }
+
+        if(activeLight==0){
+            console.log("primero")
+            document.getElementById("slider-innerbox-img").style.content = "url('imagenes/web-59.png')";
+            document.getElementById("slider-innerbox-img2").style.content = "url('imagenes/web-55.png')";
+            document.getElementById("slider-innerbox-img3").style.content = "url('imagenes/web-56.png')";
+            document.getElementById("slider-innerbox-img4").style.content = "url('imagenes/web-57.png')";
+        }else if(activeLight==1){
+            console.log("segundo")
+            document.getElementById("slider-innerbox-img").style.content = "url('imagenes/web-54.png')";
+            document.getElementById("slider-innerbox-img2").style.content = "url('imagenes/web-79.png')";
+            document.getElementById("slider-innerbox-img3").style.content = "url('imagenes/web-56.png')";
+            document.getElementById("slider-innerbox-img4").style.content = "url('imagenes/web-57.png')";
+        }else if(activeLight==2){
+            console.log("tercero")
+            document.getElementById("slider-innerbox-img").style.content = "url('imagenes/web-54.png')";
+            document.getElementById("slider-innerbox-img2").style.content = "url('imagenes/web-55.png')";
+            document.getElementById("slider-innerbox-img3").style.content = "url('imagenes/web-60.png')";
+            document.getElementById("slider-innerbox-img4").style.content = "url('imagenes/web-57.png')";
+        }else if(activeLight==3){
+            console.log("cuarto")
+            document.getElementById("slider-innerbox-img").style.content = "url('imagenes/web-54.png')";
+            document.getElementById("slider-innerbox-img2").style.content = "url('imagenes/web-55.png')";
+            document.getElementById("slider-innerbox-img3").style.content = "url('imagenes/web-56.png')";
+            document.getElementById("slider-innerbox-img4").style.content = "url('imagenes/web-61.png')";
+        }
+        
+        const currentLight = circles[activeLight]
+        
+        currentLight.classList.add(currentLight.getAttribute('slider-innerbox'));
+    }
+            
+        
+               
+              
+
+               
+
+            
+
+            
+          
+
             function boxShadowInicio() {
             
                 var inicio = document.getElementById("inicio");
