@@ -1,718 +1,566 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="css/nosotros.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body onload="sliderNosotros()">
-
-
-
-    <div class="background-image">
-        <div id="layer">
-        </div>
-        <header>
+   <head>
+       <!-- META CHARSET -->
+       <meta charset="UTF-8">
+       <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <!-- META VIEWPORT -->
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <!-- TITLE -->
+       <title>Nosotros - Certisat</title>
+       <!-- META DESCRIPTION -->
+       <meta name="description" content="Brindamos servicio GPS profesional de monitoreo, control y recuperación vehicular. Más de 11 años de experiencia nos respaldan">
+       <!-- META KEYWORDS -->
+       <meta name="keywords" content="control, monitoreo de vehiculo, gps, recuperacion de vehiculo, control biometrico de conductor,sensor de fatiga, sensor de puerta, sensor de temperatura, modulo de combustible">
+       <link rel="shortcut icon" type="image/ico" href="../CERTISAT-WEBSITE/imagenes/logo-certisat-mobile.png">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/nosotros.css">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
+   <body onload="sliderNosotros()">
+      <div class="background-image">
+         <div id="layer">
+         </div>
+         <header>
             <nav role="navigation" class="menu-sidebar">
-                <div id="menuToggle">
-                    <!--
-              A fake / hidden checkbox is used as click reciever,
-              so you can use the :checked selector on it.
-              -->
-                    <input type="checkbox">
-
-                    <!--
-              Some spans to act as a hamburger.
-              
-              They are acting like a real hamburger,
-              not that McDonalds stuff.
-              -->
-                    <button>
-                        <div class="icon-menu">
-
-                            <img class="menu" src="imagenes/menu-negro-hamburguesa.png"
-                                alt="menu negro de tipo hamburguesa">
+               <div id="menuToggle">
+                  <!--
+                     A fake / hidden checkbox is used as click reciever,
+                     so you can use the :checked selector on it.
+                     -->
+                  <input type="checkbox">
+                  <!--
+                     Some spans to act as a hamburger.
+                     
+                     They are acting like a real hamburger,
+                     not that McDonalds stuff.
+                     -->
+                  <button>
+                     <div class="icon-menu">
+                        <img class="menu" src="imagenes/menu-negro-hamburguesa.png"
+                           alt="menu negro de tipo hamburguesa">
+                     </div>
+                  </button>
+                  <!--
+                     Too bad the menu has to be inside of the button
+                     but hey, it's pure CSS magic.
+                     -->
+                  <ul id="menu">
+                     <li><i class="bi bi-x" style="font-size: 10vw; margin-left: 8vw;"></i></li>
+                     <li>
+                        <a onclick="geBoxShadowInicio()" href="index.html"><img
+                           src="imagenes/icono-inicio-transparente.png"
+                           alt="icono de inicio transparente"><span id="inicio">Inicio</span></a>
+                     </li>
+                     <li>
+                        <a onclick="subElementServicio()" href="#"><img
+                           src="imagenes/icono-servicios-transparente.png"
+                           alt="icono de servicios transparente"><span
+                           id="subElementServicio">Servicio</span></a><br>
+                        <div class="li-servicio" id="li-servicio" style="text-align: center;">
+                           <div class="servicio">
+                              <a href="servicios.html#security"><span>Certisat Security</span></a><br>
+                              <a href="servicios.html#gold"><span>Certisat Gold</span></a><br>
+                              <a href="servicios.html#Iot"><span>Certisat lot</span></a><br>
+                              <a href="servicios.html#faktory"><span>Software Faktary</span></a><br>
+                           </div>
                         </div>
-
-                    </button>
-
-                    <!--
-              Too bad the menu has to be inside of the button
-              but hey, it's pure CSS magic.
-              -->
-
-
-                    <ul id="menu">
-                        <li><i class="bi bi-x" style="font-size: 10vw; margin-left: 8vw;"></i></li>
-                        <li>
-                            <a onclick="geBoxShadowInicio()" href="index.html"><img
-                                    src="imagenes/icono-inicio-transparente.png"
-                                    alt="icono de inicio transparente"><span id="inicio">Inicio</span></a>
-
-                        </li>
-                        <li>
-
-
-                            <a onclick="subElementServicio()" href="#"><img
-                                    src="imagenes/icono-servicios-transparente.png"
-                                    alt="icono de servicios transparente"><span
-                                    id="subElementServicio">Servicio</span></a><br>
-                            <div class="li-servicio" id="li-servicio" style="text-align: center;">
-                                <div class="servicio">
-                                    <a href="servicios.html#security"><span>Certisat Security</span></a><br>
-                                    <a href="servicios.html#gold"><span>Certisat Gold</span></a><br>
-                                    <a href="servicios.html#Iot"><span>Certisat lot</span></a><br>
-                                    <a href="servicios.html#faktory"><span>Software Faktary</span></a><br>
-                                </div>
-
-                            </div>
-
-                        </li>
-                        <li>
-                            <a onclick="subElementNosotros()" href="#"><img
-                                    src="imagenes/icono-nosotros-transparente.png"
-                                    alt="icono nosotros transparente"><span id="subElementNosotros">Nosotros</span></a>
-                            <div class="li-servicio" id="li-nosotros" style="text-align: center;">
-                                <div class="servicio">
-                                    <a href="nosotros.html#misionVision"><span>Misión - Visión</span></a><br>
-                                    <a href="nosotros.html#valores"><span>Valores</span></a><br>
-                                    <a href="nosotros.html#preguntas"><span>Preguntas<br
-                                                style="display: block;content: '';margin-top: -13px;">frecuentes</span></a><br>
-                                </div>
-                            </div>
-
-
-                        </li>
-                        <li>
-                            <a onclick="boxShadowContacto()" href="contactanos.html"><img
-                                    src="imagenes/icono-contactanos-transparente.png"
-                                    alt="icono contactanos transparente"><span id="contacto">Contáctanos</span></a>
-
-                        </li>
-                        <li>
-                            <a onclick="boxShadowLogIn()"
-                                href="https://sistemasplus.certisat.com/faces/principal/login.xhtml;jsessionid=ED8ACBF64B47CD64ABD139D80CFA2289"><img
-                                    src="imagenes/icono-iniciar-sesion-transparente.png"
-                                    alt="icono iniciar sesion transparente"><span id="login">Inicio de Sesión</span></a>
-
-                        </li>
-                        <div class="icon-media">
-                            <img src="imagenes/icono-facebook-monitoreo-gps.png"
-                                alt="icono de la página facebook sobre monitoreos de vehiculos y el uso de gps">
-                            <img src="imagenes/icono-instagram-monitoreo-gps.png"
-                                alt="icono de la red social instagram sobre monitoreos de vehiculos y el uso de gps">
-                            <img src="imagenes/icono-linkedin-monitoreo-gps.png"
-                                alt="icono de la red social linkedin sobre monitoreos de vehiculos y el uso de gps">
-                            <img src="imagenes/icono-youtube-monitoreo-gps.png"
-                                alt="icono del canal de youtube sobre monitoreos de vehiculos y el uso de gps">
+                     </li>
+                     <li>
+                        <a onclick="subElementNosotros()" href="#"><img
+                           src="imagenes/icono-nosotros-transparente.png"
+                           alt="icono nosotros transparente"><span id="subElementNosotros">Nosotros</span></a>
+                        <div class="li-servicio" id="li-nosotros" style="text-align: center;">
+                           <div class="servicio">
+                              <a href="nosotros.html#misionVision"><span>Misión - Visión</span></a><br>
+                              <a href="nosotros.html#valores"><span>Valores</span></a><br>
+                              <a href="nosotros.html#preguntas"><span>Preguntas<br
+                                 style="display: block;content: '';margin-top: -13px;">frecuentes</span></a><br>
+                           </div>
                         </div>
-
-                        </li>
-
-
-                    </ul>
-
-                </div>
-            </nav>
-        </header>
-
-
-
-        <!--<input type="radio" name="color" id="color-box-input1">-->
-
-        <div style="height: auto; background: rgba(40, 41, 41, 0.5);">
-        </div>
-
-        <div class="line-header">
-        </div>
-
-
-        <div class="wrapper">
-            <img class="center" src="imagenes/logo-circular-certisat-monitoreo-vehiculo.png"
-                alt="logo con forma circular de certisat con direccion al monitoreo de vehiculos">
-        </div>
-
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-1 col-sm-1  col-md-1 col-lg-1 col-xl-1 navbar-left">
-                    <ul class="mcd-menu">
-                        <li>
-
-                            <a href="index.html"><img src="imagenes/icono-inicio-aplicacion-gps.png"
-                                    alt="icono inicio de aplicacion de vehiculo gps"></a>
-                        </li>
-                        <li>
-
-                            <!--<label class="color-box" id="color-box1" for="color-box-input1"></label>-->
-                            <a> <img onclick="myFunction3()" class="imagenServicios" id="cambiarImagen"
-                                    src="imagenes/icono-servicios-blanco.png"
-                                    alt="icono de servicios de color blanco"></a>
-
-                            <ul id="miServicio2">
-                                <li>
-                                    <span style="font-weight: bold;">Servicios</span>
-                                </li>
-                                <li>
-
-                                    <div class="item-servicio"><a href="funcion.html">Personas</a></div>
-
-                                </li>
-                                <li>
-                                    <div class="item-servicio"><a href="">Empresas</a></div>
-
-                                </li>
-                                <li>
-
-                                </li>
-                                
-                                <li>
-                                    <div class="item-servicio"><a href="servicios.html#Iot">Certisat IoT</a></div>
-                                  </li>
-                
-                                  </li>
-                                  <li>
-                
-                                  <li>
-                                    <div class="item-servicio"><a href="servicios.html#faktory">Software faktory</a></div>
-                                  </li>
-
-                            </ul>
-                        </li>
-                        <li>
-                            <img id="cambiarImagen2" src="imagenes/icono-nosotros-azul.png" alt="icono nosotros azul">
-
-                        </li>
-                        <li>
-                            <a href="contactanos.html"><img src="imagenes/icono-contactanos-blanco.png"
-                                    alt="icono contactanos blanco"></a>
-                        </li>
-                        <li>
-                            <a href="https://sistemasplus.certisat.com/faces/principal/login.xhtml;jsessionid=ED8ACBF64B47CD64ABD139D80CFA2289"><img src="imagenes/icono-inicio-sesion-blanco.png" alt="icono de inicio de sesion blanco"></a>
-                        </li>
-                    </ul>
-
-
-
-                </div>
-                <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8  main-title">
-                    <h1 class="title">El compromiso<br> que necesitas</h1>
-
-
-
-
-                </div>
-                <div class="col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
-
-                </div>
-
-                <div class="col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1 social-media-main" style="margin-left: 3vw;">
-                    <div class="icon-bar">
+                     </li>
+                     <li>
+                        <a onclick="boxShadowContacto()" href="contactanos.html"><img
+                           src="imagenes/icono-contactanos-transparente.png"
+                           alt="icono contactanos transparente"><span id="contacto">Contáctanos</span></a>
+                     </li>
+                     <li>
+                        <a onclick="boxShadowLogIn()"
+                           href="https://sistemasplus.certisat.com/faces/principal/login.xhtml;jsessionid=ED8ACBF64B47CD64ABD139D80CFA2289"><img
+                           src="imagenes/icono-iniciar-sesion-transparente.png"
+                           alt="icono iniciar sesion transparente"><span id="login">Inicio de Sesión</span></a>
+                     </li>
+                     <div class="icon-media">
                         <a href="https://www.facebook.com/Certisat-GPS-100887952175143/" target="_blank"><img
-                                src="imagenes/min-icono-facebook-monitoreo-vehiculos.png"
-                                alt="icono pequeño de facebook con direccion al monitoreo de vehiculos"></a>
-                        <a href="https://www.instagram.com/certisat?r=nametag" target="_blank"><img
-                                src="imagenes/min-icono-instagram-monitoreo-vehiculos.png"
-                                alt="icono pequeño de instagram con direccion al monitoreo de vehiculos"></a>
-                        <a href=""><img src="imagenes/min-icono-linkedin-monitoreo-vehiculos.png"
-                                alt="icono pequeño de linkedin con direccion al monitoreo de vehiculos"
-                                target="_blank"></a>
-                        <a href="https://www.youtube.com/channel/UC6EkihHy7pOBu5mMhdFNBig" target="_blank"><img
-                                src="imagenes/min-icono-youtube-monitoreo-vehiculos.png"
-                                alt="icono pequeño de youtube con direccion al monitoreo de vehiculos"></a>
-                    </div>
-                </div>
+                            src="imagenes/icono-facebook-monitoreo-gps.png"
+                            alt="icono de la página facebook sobre monitoreos de vehiculos y el uso de gps"></a>
+                          <a href="https://www.instagram.com/certisat?r=nametag" target="_blank"><img
+                              src="imagenes/icono-instagram-monitoreo-gps.png"
+                              alt="icono de la red social instagram sobre monitoreos de vehiculos y el uso de gps"></a>
+                          <a href="#"><img src="imagenes/icono-linkedin-monitoreo-gps.png"
+                              alt="icono de la red social linkedin sobre monitoreos de vehiculos y el uso de gps"></a>
+                          <a href="https://www.youtube.com/channel/UC6EkihHy7pOBu5mMhdFNBig" target="_blank"><img
+                              src="imagenes/icono-youtube-monitoreo-gps.png"
+                              alt="icono del canal de youtube sobre monitoreos de vehiculos y el uso de gps"></a>
+                     </div>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <!--<input type="radio" name="color" id="color-box-input1">-->
+         <div style="height: auto; background: rgba(40, 41, 41, 0.5);">
+         </div>
+         <div class="line-header">
+         </div>
+         <div class="wrapper">
+            <img class="center" src="imagenes/logo-circular-certisat-monitoreo-vehiculo.png"
+               alt="logo con forma circular de certisat con direccion al monitoreo de vehiculos">
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-1 col-sm-1  col-md-1 col-lg-1 col-xl-1 navbar-left">
+                  <ul class="mcd-menu">
+                     <li>
+                        <a href="index.html"><img src="imagenes/icono-inicio-aplicacion-gps.png"
+                           alt="icono inicio de aplicacion de vehiculo gps"></a>
+                     </li>
+                     <li>
+                        <!--<label class="color-box" id="color-box1" for="color-box-input1"></label>-->
+                        <a> <img onclick="myFunction3()" class="imagenServicios" id="cambiarImagen"
+                           src="imagenes/icono-servicios-blanco.png"
+                           alt="icono de servicios de color blanco"></a>
+                        <ul id="miServicio2">
+                           <li>
+                              <span style="font-weight: bold;">Servicios</span>
+                           </li>
+                           <li>
+                              <div class="item-servicio"><a href="funcion.html">Personas</a></div>
+                           </li>
+                           <li>
+                              <div class="item-servicio"><a href="">Empresas</a></div>
+                           </li>
+                           <li>
+                           </li>
+                           <li>
+                              <div class="item-servicio"><a href="servicios.html#Iot">Certisat IoT</a></div>
+                           </li>
+                           </li>
+                           <li>
+                           <li>
+                              <div class="item-servicio"><a href="servicios.html#faktory">Software faktory</a></div>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <img id="cambiarImagen2" src="imagenes/icono-nosotros-azul.png" alt="icono nosotros azul">
+                     </li>
+                     <li>
+                        <a href="contactanos.html"><img src="imagenes/icono-contactanos-blanco.png"
+                           alt="icono contactanos blanco"></a>
+                     </li>
+                     <li>
+                        <a href="https://sistemasplus.certisat.com/faces/principal/login.xhtml;jsessionid=ED8ACBF64B47CD64ABD139D80CFA2289"><img src="imagenes/icono-inicio-sesion-blanco.png" alt="icono de inicio de sesion blanco"></a>
+                     </li>
+                  </ul>
+               </div>
+               <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8  main-title">
+                  <h1 class="title">El compromiso<br> que necesitas</h1>
+               </div>
+               <div class="col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1">
+               </div>
+               <div class="col-12 col-sm-1 col-md-1 col-lg-1 col-xl-1 social-media-main" style="margin-left: 3vw;">
+                  <div class="icon-bar">
+                     <a href="https://www.facebook.com/Certisat-GPS-100887952175143/" target="_blank"><img
+                        src="imagenes/min-icono-facebook-monitoreo-vehiculos.png"
+                        alt="icono pequeño de facebook con direccion al monitoreo de vehiculos"></a>
+                     <a href="https://www.instagram.com/certisat?r=nametag" target="_blank"><img
+                        src="imagenes/min-icono-instagram-monitoreo-vehiculos.png"
+                        alt="icono pequeño de instagram con direccion al monitoreo de vehiculos"></a>
+                     <a href=""><img src="imagenes/min-icono-linkedin-monitoreo-vehiculos.png"
+                        alt="icono pequeño de linkedin con direccion al monitoreo de vehiculos"
+                        target="_blank"></a>
+                     <a href="https://www.youtube.com/channel/UC6EkihHy7pOBu5mMhdFNBig" target="_blank"><img
+                        src="imagenes/min-icono-youtube-monitoreo-vehiculos.png"
+                        alt="icono pequeño de youtube con direccion al monitoreo de vehiculos"></a>
+                  </div>
+               </div>
             </div>
-        </div>
-
-    </div>
-
-
-
-    <!--Section 2-->
-
-    <div class="section">
-
-
-        <div class="container">
+         </div>
+      </div>
+      <!--Section 2-->
+      <div class="section">
+         <div class="container">
             <img class="image-section " src="imagenes/linea-punteada-autos.png"
-                alt="linea punteada con iconos de autos">
+               alt="linea punteada con iconos de autos">
             <div class="row" style="margin: auto;
-            width: 80%;">
-                <div class="col-md-12 tecnologia">
-                    <h1>Somos un grupo de</h1><br>
-                    <h2>profesionales apasionados por la tecnología</h2><br>
-                    <p>que estamos enfocados en crear valor a través de los datos y la información
-                        captada por los gps y por<br> los accesorios complementarios en los vehículos.
-                    </p>
-
-                </div>
-                <div class="col-md-12 experiencia-group">
-                    <div class="experiencia">
-                        <div>Con experiencia más de</div>
-                        <h1>10 años</h1>
-                    </div>
-                    <p>Monitoreando flotas, vehículos y personas a nivel nacional.<br>
-                        Nuestro foco está en la instalación, nonitoreo, mantenimiento de<br>
-                        los equipos gps, accesorios y gestión de los datos.
-                    </p>
-                </div>
-                <div class="col-md-12 offset-md-4 group-cliente">
-                    <div class="clientes">
-                        <div style="line-height: 55px;">Nuestros</div>
-                        <h1>Clientes</h1>
-                    </div>
-                    <p>
-                        de los diferentes sectores<br>
-                        mineros, financieras(créditos<br>
-                        financieros). seguros y <br>
-                        particulares, quienes tienen<br>
-                        diferentes necesidades, para <br>
-                        cada uno de los cuales les<br>
-                        creamos una matriz de<br>
-                        reportería especializada y<br>
-                        parametrizada de forma tal que<br>
-                        la gestión de su información cree<br>
-                        el mayor valor posible.
-                    </p>
-                </div>
+               width: 80%;">
+               <div class="col-md-12 tecnologia">
+                  <h1>Somos un grupo de</h1>
+                  <br>
+                  <h2>profesionales apasionados por la tecnología</h2>
+                  <br>
+                  <p>que estamos enfocados en crear valor a través de los datos y la información
+                     captada por los gps y por<br> los accesorios complementarios en los vehículos.
+                  </p>
+               </div>
+               <div class="col-md-12 experiencia-group">
+                  <div class="experiencia">
+                     <div>Con experiencia más de</div>
+                     <h1>10 años</h1>
+                  </div>
+                  <p>Monitoreando flotas, vehículos y personas a nivel nacional.<br>
+                     Nuestro foco está en la instalación, nonitoreo, mantenimiento de<br>
+                     los equipos gps, accesorios y gestión de los datos.
+                  </p>
+               </div>
+               <div class="col-md-12 offset-md-4 group-cliente">
+                  <div class="clientes">
+                     <div style="line-height: 55px;">Nuestros</div>
+                     <h1>Clientes</h1>
+                  </div>
+                  <p>
+                     de los diferentes sectores<br>
+                     mineros, financieras(créditos<br>
+                     financieros). seguros y <br>
+                     particulares, quienes tienen<br>
+                     diferentes necesidades, para <br>
+                     cada uno de los cuales les<br>
+                     creamos una matriz de<br>
+                     reportería especializada y<br>
+                     parametrizada de forma tal que<br>
+                     la gestión de su información cree<br>
+                     el mayor valor posible.
+                  </p>
+               </div>
             </div>
-        </div>
-
-    </div>
-
-
-    <!--Section2-->
-
-
-    <!--Section 3-->
-
-
-    <div class="container-section3" id="misionVision">
-
-        <div class="mision">
+         </div>
+      </div>
+      <!--Section2-->
+      <!--Section 3-->
+      <div class="container-section3" id="misionVision">
+         <div class="mision">
             <div class="center-title-left">
-
-
-                <h1>Misión</h1>
+               <h1>Misión</h1>
             </div>
-
-        </div>
-
-        <div class="vision">
+         </div>
+         <div class="vision">
             <div class="center-title-right">
-                <h1>Visión</h1>
+               <h1>Visión</h1>
             </div>
-        </div>
-
-
-
-    </div>
-
-    <div class="container-section4">
-        <div class="flex-item-left">
+         </div>
+      </div>
+      <div class="container-section4">
+         <div class="flex-item-left">
             <div class="center-item-left">
-                <p>Brindarles un servicio de confianza y<br>
-                    seguridad de rastreo satelital,<br>
-                    satisfaciendo la necesidad de Nuestros<br>
-                    clientes brindándoles un alto nivel<br>
-                    de calidad.
-                </p>
+               <p>Brindarles un servicio de confianza y<br>
+                  seguridad de rastreo satelital,<br>
+                  satisfaciendo la necesidad de Nuestros<br>
+                  clientes brindándoles un alto nivel<br>
+                  de calidad.
+               </p>
             </div>
-        </div>
-
-        <div class="flex-item-right">
+         </div>
+         <div class="flex-item-right">
             <div class="center-item-right">
-                <p>Ser la empresa líder en desarrollo e<br>
-                    innovación innovación en nuevas tecnologías vía<br>
-                    gps/gprs, dual y satelital en el mercado<br>
-                    de seguridad a nivel nacional. Asimismo<br>
-                    consolidarnos como un empresa<br>
-                    de transformación digital a través del big<br>
-                    data.</p>
+               <p>Ser la empresa líder en desarrollo e<br>
+                  innovación innovación en nuevas tecnologías vía<br>
+                  gps/gprs, dual y satelital en el mercado<br>
+                  de seguridad a nivel nacional. Asimismo<br>
+                  consolidarnos como un empresa<br>
+                  de transformación digital a través del big<br>
+                  data.
+               </p>
             </div>
-        </div>
-    </div>
-
-
-    <!-- Section 4 -->
-
-    <div class="container-fluid section4" style="margin-top: 20vh;" id="valores">
-        <div style="text-align: center;">
+         </div>
+      </div>
+      <!-- Section 4 -->
+      <div class="container-fluid section4" style="margin-top: 20vh;" id="valores">
+         <div style="text-align: center;">
             <span>Valores</span>
             <br>
             <br>
             <br>
-        </div>
-        <div class="row" style="margin: 0;">
-
+         </div>
+         <div class="row" style="margin: 0;">
             <div class="wrapper">
-                <div class="slider-container" style="cursor: grab;">
-                    <div class="slider" style="left: 0px;">
-                        <div class="slider-innerbox">
-                            <div class="contaner">
-                                <div class="curved-text slide">
-                                    <span class="char2">C</span>
-                                    <span class="char3">a</span>
-                                    <span class="char4">l</span>
-                                    <span class="char5">i</span>
-                                    <span class="char6">d</span>
-                                    <span class="char7">a</span>
-                                    <span class="char8">d</span>
-                                </div>
-                            </div>
-                            <img src="imagenes/web-54.png" alt="icono calidad de color azul marino">
-
+               <div class="slider-container" style="cursor: grab;">
+                  <div class="slider" style="left: 0px;">
+                     <div class="slider-innerbox">
+                        <div class="contaner">
+                           <div class="curved-text slide">
+                              <span class="char2">C</span>
+                              <span class="char3">a</span>
+                              <span class="char4">l</span>
+                              <span class="char5">i</span>
+                              <span class="char6">d</span>
+                              <span class="char7">a</span>
+                              <span class="char8">d</span>
+                           </div>
                         </div>
-                        <div class="slider-innerbox">
-                            <div class="contaner2">
-                                <div class="curved-text2 slide slide">
-                                    <span class="char2">I</span>
-                                    <span class="char3">n</span>
-                                    <span class="char4">n</span>
-                                    <span class="char5">o</span>
-                                    <span class="char6">v</span>
-                                    <span class="char7">a</span>
-                                    <span class="char8">c</span>
-                                    <span class="char9">i</span>
-                                    <span class="char10">ó</span>
-                                    <span class="char11">n</span>
-                                </div>
-                            </div>
-                            <img src="imagenes/web-55.png" alt="icono de innovacion de color blanco">
+                        <img src="imagenes/web-54.png" alt="icono calidad de color azul marino">
+                     </div>
+                     <div class="slider-innerbox">
+                        <div class="contaner2">
+                           <div class="curved-text2 slide slide">
+                              <span class="char2">I</span>
+                              <span class="char3">n</span>
+                              <span class="char4">n</span>
+                              <span class="char5">o</span>
+                              <span class="char6">v</span>
+                              <span class="char7">a</span>
+                              <span class="char8">c</span>
+                              <span class="char9">i</span>
+                              <span class="char10">ó</span>
+                              <span class="char11">n</span>
+                           </div>
                         </div>
-                        <div class="slider-innerbox">
-                            <div class="contaner3">
-                                <div class="curved-text3 slide slide">
-                                    <span class="char2">E</span>
-                                    <span class="char3">f</span>
-                                    <span class="char4">i</span>
-                                    <span class="char5">c</span>
-                                    <span class="char6">i</span>
-                                    <span class="char7">e</span>
-                                    <span class="char8">n</span>
-                                    <span class="char9">c</span>
-                                    <span class="char10">i</span>
-                                    <span class="char11">a</span>
-                                </div>
-                            </div>
-
-                            <img src="imagenes/web-56.png" alt="icono de eficiencia de color blanco">
-
-
+                        <img src="imagenes/web-55.png" alt="icono de innovacion de color blanco">
+                     </div>
+                     <div class="slider-innerbox">
+                        <div class="contaner3">
+                           <div class="curved-text3 slide slide">
+                              <span class="char2">E</span>
+                              <span class="char3">f</span>
+                              <span class="char4">i</span>
+                              <span class="char5">c</span>
+                              <span class="char6">i</span>
+                              <span class="char7">e</span>
+                              <span class="char8">n</span>
+                              <span class="char9">c</span>
+                              <span class="char10">i</span>
+                              <span class="char11">a</span>
+                           </div>
                         </div>
-                        <div class="slider-innerbox">
-                            <div class="contaner4">
-                                <div class="curved-text4 slide slide">
-                                    <span class="char2">S</span>
-                                    <span class="char3">e</span>
-                                    <span class="char4">g</span>
-                                    <span class="char5">u</span>
-                                    <span class="char6">r</span>
-                                    <span class="char7">i</span>
-                                    <span class="char8">d</span>
-                                    <span class="char9">a</span>
-                                    <span class="char10">d</span>
-                                </div>
-                            </div>
-                            <img src="imagenes/web-57.png" alt="icono de seguridad de color blanco">
-
+                        <img src="imagenes/web-56.png" alt="icono de eficiencia de color blanco">
+                     </div>
+                     <div class="slider-innerbox">
+                        <div class="contaner4">
+                           <div class="curved-text4 slide slide">
+                              <span class="char2">S</span>
+                              <span class="char3">e</span>
+                              <span class="char4">g</span>
+                              <span class="char5">u</span>
+                              <span class="char6">r</span>
+                              <span class="char7">i</span>
+                              <span class="char8">d</span>
+                              <span class="char9">a</span>
+                              <span class="char10">d</span>
+                           </div>
                         </div>
-
-                    </div>
-                </div>
+                        <img src="imagenes/web-57.png" alt="icono de seguridad de color blanco">
+                     </div>
+                  </div>
+               </div>
             </div>
-
-
-
-
-
-
-
-        </div>
-
-
-
-
-
-
-
-        <!--Section 5-->
-
-        <div class="container-fluid" id="preguntas">
+         </div>
+         <!--Section 5-->
+         <div class="container-fluid" id="preguntas">
             <div class="row swap">
-
-                <div class="col-sm-12 col-md-7 col-lg-7">
-                    <div class="timeline">
-
-                        <div class="container-cover right">
-
-
-                            <div class="content">
-                                <div class="tag-icon" onclick="displayDescription()">
-                                    <span>¿Qué es un GPS?</span>
-                                </div>
-
-
-                                <div class="tag-icon2" id="question1"
-                                    style="display: none;position: absolute;z-index: 999;">
-                                    <p>
-                                        Las siglas “GPS” han pasado a formar<br>
-                                        parte de nuestro hábito lingüístico. Su<br>
-                                        significado es de sobra conocido: “Global<br>
-                                        Positioning System”, o Sistema de<br>
-                                        Posicionamiento Global.<br>
-                                        Y también es ampliamente conocido su<br>
-                                        uso: establecer la posición en<br>
-                                        coordenadas de latitud y longitud en<br>
-                                        cualquier lugar de la Tierra. Detrás de<br>
-                                        estas siglas y para que constantemente<br>
-                                        se sepa la posición, hay en marcha un<br>
-                                        complejo sistema de satélites y<br>
-                                        estaciones terrestres.
-                                    </p>
-                                </div>
-
-                            </div>
-
-
+               <div class="col-sm-12 col-md-7 col-lg-7">
+                  <div class="timeline">
+                     <div class="container-cover right">
+                        <div class="content">
+                           <div class="tag-icon" onclick="displayDescription()">
+                              <span>¿Qué es un GPS?</span>
+                           </div>
+                           <div class="tag-icon2" id="question1"
+                              style="display: none;position: absolute;z-index: 999;">
+                              <p>
+                                 Las siglas “GPS” han pasado a formar<br>
+                                 parte de nuestro hábito lingüístico. Su<br>
+                                 significado es de sobra conocido: “Global<br>
+                                 Positioning System”, o Sistema de<br>
+                                 Posicionamiento Global.<br>
+                                 Y también es ampliamente conocido su<br>
+                                 uso: establecer la posición en<br>
+                                 coordenadas de latitud y longitud en<br>
+                                 cualquier lugar de la Tierra. Detrás de<br>
+                                 estas siglas y para que constantemente<br>
+                                 se sepa la posición, hay en marcha un<br>
+                                 complejo sistema de satélites y<br>
+                                 estaciones terrestres.
+                              </p>
+                           </div>
                         </div>
-
-
-
-                        <div class="container-cover right">
-
-                            <div class="content">
-                                <div class="tag-icon" onclick="displayDescription2()">
-                                    <span>¿Para qué me sirve un GPS?</span>
-                                </div>
-
-                                <div class="tag-icon2" id="question2"
-                                    style="display: none;position: absolute;z-index: 999;">
-                                    <p style="text-align: left;">El dispositivo sirve para saber con<br>
-                                        exactitud y en tiempo real, donde se<br>
-                                        encuentra tu vehículo, mediante tu<br>
-                                        celular, Tablet o laptop podrás visualizar la<br>
-                                        ubicación.<br>
-                                        Además tendrás los siguientes beneficios:<br>
-                                        Además tendrá las siguientes ventajas:<br>
-                                        • Tu vehículo estará siempre protegido.<br>
-                                        • Podrás controlar las horas de<br>
-                                        funcionamiento de tu auto, camión, bus o<br>
-                                        maquinaria pesada.<br>
-                                        • Podrás cortar la energía a través de tu<br>
-                                        aplicación móvil cada vez que estaciones<br>
-                                        tu vehículo en un lugar no confiable.
-                                    </p>
-                                </div>
-
-                            </div>
-
-
+                     </div>
+                     <div class="container-cover right">
+                        <div class="content">
+                           <div class="tag-icon" onclick="displayDescription2()">
+                              <span>¿Para qué me sirve un GPS?</span>
+                           </div>
+                           <div class="tag-icon2" id="question2"
+                              style="display: none;position: absolute;z-index: 999;">
+                              <p style="text-align: left;">El dispositivo sirve para saber con<br>
+                                 exactitud y en tiempo real, donde se<br>
+                                 encuentra tu vehículo, mediante tu<br>
+                                 celular, Tablet o laptop podrás visualizar la<br>
+                                 ubicación.<br>
+                                 Además tendrás los siguientes beneficios:<br>
+                                 Además tendrá las siguientes ventajas:<br>
+                                 • Tu vehículo estará siempre protegido.<br>
+                                 • Podrás controlar las horas de<br>
+                                 funcionamiento de tu auto, camión, bus o<br>
+                                 maquinaria pesada.<br>
+                                 • Podrás cortar la energía a través de tu<br>
+                                 aplicación móvil cada vez que estaciones<br>
+                                 tu vehículo en un lugar no confiable.
+                              </p>
+                           </div>
                         </div>
-
-                        <div class="container-cover right ">
-                            <div class="content">
-
-                                <div class="tag-icon2" id="question3"
-                                    style="display: none;position: absolute;z-index: 999;">
-                                    <p style="text-align: left;">Algunas de sus funciones principales son<br>
-                                        las siguientes:n<br>
-                                        • Reproducción del historial de la ruta.n<br>
-                                        • Seguimiento en vivo.n<br>
-                                        • Definir zonas de alerta y recibirn<br>
-                                        notificaciones si el GPS entra o sale den<br>
-                                        dichas zonasn<br>
-                                        • Limitación de movimienton<br>
-                                        • Batería interna con larga duración
-                                    </p>
-                                </div>
-
-                                <div class="tag-icon" onclick="displayDescription3()">
-                                    <span>¿Qué funciones tiene un GPS?
-                                    </span>
-                                </div>
-                            </div>
-
-
-
-
+                     </div>
+                     <div class="container-cover right ">
+                        <div class="content">
+                           <div class="tag-icon2" id="question3"
+                              style="display: none;position: absolute;z-index: 999;">
+                              <p style="text-align: left;">Algunas de sus funciones principales son<br>
+                                 las siguientes:n<br>
+                                 • Reproducción del historial de la ruta.n<br>
+                                 • Seguimiento en vivo.n<br>
+                                 • Definir zonas de alerta y recibirn<br>
+                                 notificaciones si el GPS entra o sale den<br>
+                                 dichas zonasn<br>
+                                 • Limitación de movimienton<br>
+                                 • Batería interna con larga duración
+                              </p>
+                           </div>
+                           <div class="tag-icon" onclick="displayDescription3()">
+                              <span>¿Qué funciones tiene un GPS?
+                              </span>
+                           </div>
                         </div>
-
-                        <div class="container-cover right ">
-
-                            <div class="content">
-
-                                <div class="tag-icon2" id="question4"
-                                    style="display: none;position: absolute;z-index: 999;">
-                                    <p>El dispositivo señalará la ultima posición<br>
-                                        anterior al ingreso del estacionamiento<br>
-                                        subterráneo y volverá a emitir señal una<br>
-                                        vez que salga de ese lugar y recupere<br>
-                                        cobertura.
-                                    </p>
-                                </div>
-
-
-
-                                <div class="tag-icon" onclick="displayDescription4()">
-                                    <span>¿Qué sucede si el vehículo es estacionado
-                                        dentro de una cochera subterránea?</span>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="container-cover right ">
+                        <div class="content">
+                           <div class="tag-icon2" id="question4"
+                              style="display: none;position: absolute;z-index: 999;">
+                              <p>El dispositivo señalará la ultima posición<br>
+                                 anterior al ingreso del estacionamiento<br>
+                                 subterráneo y volverá a emitir señal una<br>
+                                 vez que salga de ese lugar y recupere<br>
+                                 cobertura.
+                              </p>
+                           </div>
+                           <div class="tag-icon" onclick="displayDescription4()">
+                              <span>¿Qué sucede si el vehículo es estacionado
+                              dentro de una cochera subterránea?</span>
+                           </div>
                         </div>
-
-                        <div class="container-cover right ">
-
-                            <div class="content">
-
-                                <div class="tag-icon2" id="question5"
-                                    style="display: none;position: absolute;z-index: 999;">
-                                    <p>No, en estos casos no funciona pero el<br>
-                                        dispositivo GPS cuenta con una memoria<br>
-                                        interna donde almacena todas las<br>
-                                        coordenadas registradas cuando no tuvo<br>
-                                        señal, una vez que recupera señal,<br>
-                                        descarga toda la información almacena<br>
-                                        y recrea el recorrido
-                                    </p>
-                                </div>
-
-                                <div class="tag-icon" onclick="displayDescription5()">
-                                    <span>¿El dispositivo GPS funciona donde no
-                                        hay señal celular?</span>
-                                </div>
-                            </div>
+                     </div>
+                     <div class="container-cover right ">
+                        <div class="content">
+                           <div class="tag-icon2" id="question5"
+                              style="display: none;position: absolute;z-index: 999;">
+                              <p>No, en estos casos no funciona pero el<br>
+                                 dispositivo GPS cuenta con una memoria<br>
+                                 interna donde almacena todas las<br>
+                                 coordenadas registradas cuando no tuvo<br>
+                                 señal, una vez que recupera señal,<br>
+                                 descarga toda la información almacena<br>
+                                 y recrea el recorrido
+                              </p>
+                           </div>
+                           <div class="tag-icon" onclick="displayDescription5()">
+                              <span>¿El dispositivo GPS funciona donde no
+                              hay señal celular?</span>
+                           </div>
                         </div>
-
-                        <div class="container-cover-custom right">
-                            <div class="tag-icon" style="visibility: hidden;">
-                                <span>¿El dispositivo GPS funciona donde no
-                                    hay señal celular?</span>
-                            </div>
+                     </div>
+                     <div class="container-cover-custom right">
+                        <div class="tag-icon" style="visibility: hidden;">
+                           <span>¿El dispositivo GPS funciona donde no
+                           hay señal celular?</span>
                         </div>
-                    </div>
-                </div>
-                <div class="col-sm-12 col-md-4 col-lg-4 frequencyQues text-center">
-
-                    <span>Preguntas</span>
-
-                    <span>frecuentes</span>
-
-
-                </div>
-
+                     </div>
+                  </div>
+               </div>
+               <div class="col-sm-12 col-md-4 col-lg-4 frequencyQues text-center">
+                  <span>Preguntas</span>
+                  <span>frecuentes</span>
+               </div>
             </div>
-        </div>
-
-
-
-
-        <!--Footer-->
-
-        <footer>
+         </div>
+         <!--Footer-->
+         <footer>
             <div class="container-footer">
-                <div class="row">
-
-
-
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 col-logo ">
-                        <img class="logo" src="imagenes/logo-circular-certisat-monitoreo-vehiculo.png"
-                            alt="logo con forma circular de certisat con direccion al monitoreo de vehiculos">
-                    </div>
-
-
-                    <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 col-contact">
-
-                        <div class="footer-text">
-                            <h1>Visitanos</h1>
-                            <p>Av. Canaval y Moreyra 452, San Isidro<i class="bi bi-geo-alt-fill"></i></p>
-                        </div>
-
-
-                    </div>
-
-                    <div class="col-sm-6 col-md-6 col-lg-6  col-xl-3  col-contact">
-                        <div class="footer-text2">
-                            <h1>Escríbenos</h1>
-                            <p>info@certisat.com.pe</p>
-                            <p>01 719-3940</p>
-                            <p>01 625-0808</p>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 col-social-media">
-                        <h1>Síguenos en:</h1>
-                        <div class="group-img">
-                            <a href="https://www.facebook.com/Certisat-GPS-100887952175143/" target="_blank"><img
-                                    src="imagenes/icono-facebook-monitoreo-gps.png"
-                                    alt="icono de la página facebook sobre monitoreos de vehiculos y el uso de gps"></a>
-                            <a href="https://www.instagram.com/certisat?r=nametag" target="_blank"><img
-                                    src="imagenes/icono-instagram-monitoreo-gps.png"
-                                    alt="icono de la red social instagram sobre monitoreos de vehiculos y el uso de gps"></a>
-                            <a href="#"><img src="imagenes/icono-linkedin-monitoreo-gps.png"
-                                    alt="icono de la red social linkedin sobre monitoreos de vehiculos y el uso de gps"></a>
-                            <a href="https://www.youtube.com/channel/UC6EkihHy7pOBu5mMhdFNBig" target="_blank"><img
-                                    src="imagenes/icono-youtube-monitoreo-gps.png"
-                                    alt="icono del canal de youtube sobre monitoreos de vehiculos y el uso de gps"></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="copyright">
-                    <p>Copyright © 2021 Certisat. Todos los derechos reservados</p>
-                </div>
-
+               <div class="row">
+                  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 col-logo ">
+                     <img class="logo" src="imagenes/logo-circular-certisat-monitoreo-vehiculo.png"
+                        alt="logo con forma circular de certisat con direccion al monitoreo de vehiculos">
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6 col-xl-3 col-contact">
+                     <div class="footer-text">
+                        <h1>Visitanos</h1>
+                        <p>Av. Canaval y Moreyra 452, San Isidro<i class="bi bi-geo-alt-fill"></i></p>
+                     </div>
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-6  col-xl-3  col-contact">
+                     <div class="footer-text2">
+                        <h1>Escríbenos</h1>
+                        <p>info@certisat.com.pe</p>
+                        <p>01 719-3940</p>
+                        <p>01 625-0808</p>
+                     </div>
+                  </div>
+                  <div class="col-sm-12 col-md-12 col-lg-12 col-xl-3 col-social-media">
+                     <h1>Síguenos en:</h1>
+                     <div class="group-img">
+                        <a href="https://www.facebook.com/Certisat-GPS-100887952175143/" target="_blank"><img
+                           src="imagenes/icono-facebook-monitoreo-gps.png"
+                           alt="icono de la página facebook sobre monitoreos de vehiculos y el uso de gps"></a>
+                        <a href="https://www.instagram.com/certisat?r=nametag" target="_blank"><img
+                           src="imagenes/icono-instagram-monitoreo-gps.png"
+                           alt="icono de la red social instagram sobre monitoreos de vehiculos y el uso de gps"></a>
+                        <a href="#"><img src="imagenes/icono-linkedin-monitoreo-gps.png"
+                           alt="icono de la red social linkedin sobre monitoreos de vehiculos y el uso de gps"></a>
+                        <a href="https://www.youtube.com/channel/UC6EkihHy7pOBu5mMhdFNBig" target="_blank"><img
+                           src="imagenes/icono-youtube-monitoreo-gps.png"
+                           alt="icono del canal de youtube sobre monitoreos de vehiculos y el uso de gps"></a>
+                     </div>
+                  </div>
+               </div>
+               <div class="copyright">
+                  <p>Copyright © 2021 Certisat. Todos los derechos reservados</p>
+               </div>
             </div>
-        </footer>
-
-
-
-        <script type="text/javascript" src="js/js.js"></script>
-
-        <script>
-
+         </footer>
+         <script type="text/javascript" src="js/js.js"></script>
+         <script>
             function boxShadowInicio() {
-
+            
                 var inicio = document.getElementById("inicio");
                 inicio.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
                 inicio.style.padding = "1px 65px 8px 6px";
                 inicio.style.border = "3px";
-
+            
             }
-
+            
             function boxShadowContacto() {
-
+            
                 var contacto = document.getElementById("contacto");
                 contacto.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
                 contacto.style.padding = "1px 65px 8px 6px";
                 contacto.style.border = "3px";
-
+            
             }
-
+            
             function boxShadowLogIn() {
-
+            
                 var login = document.getElementById("login");
                 login.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
                 login.style.padding = "1px 65px 8px 6px";
                 login.style.border = "3px";
-
+            
             }
-
-
+            
+            
             function subElementNosotros() {
-
-
+            
+            
                 var x = document.getElementById("subElementNosotros");
                 var y = document.getElementById("subElementServicio");
                 var z = document.getElementById("li-nosotros");
@@ -727,9 +575,9 @@
                 y.style.border = "none";
                 console.log("ejecut subElementNosotros")
             }
-
+            
             function subElementServicio() {
-
+            
                 var y = document.getElementById("subElementServicio");
                 var x = document.getElementById("subElementNosotros");
                 var z = document.getElementById("li-servicio");
@@ -739,23 +587,17 @@
                 y.style.boxShadow = "-2px -3px 5px 0px #fff, 3px 6px 5px 0px #d6d6d6";
                 y.style.padding = "1px 75px 8px 6px";
                 y.style.borderRadius = "5px";
-
+            
                 x.style.boxShadow = "none";
                 x.style.padding = "0";
                 x.style.borderRadius = "none";
-
+            
                 console.log("ejecuto subElementServicio")
             }
-
-
-
-        </script>
-
-
-
-
-
-    </div>
-</body>
-
+            
+            
+            
+         </script>
+      </div>
+   </body>
 </html>

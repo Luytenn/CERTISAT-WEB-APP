@@ -19,9 +19,6 @@
   padding:0;
 }
 
-
-
-
 html,body
 {
 background: #f5f5f5;
@@ -1931,7 +1928,7 @@ html {
 
   .social-media-main{
     margin-top: 53vh;
-    z-index: 100;
+    z-index: 51;
  }
 
 
@@ -2531,16 +2528,6 @@ html {
 .certi-security p,.certi-gold p, .car-component p{
   margin-top: 2vh;
   }
-
-
-
-
-
-
-
-
-
-
 
 }
 /* End of Responsive */
