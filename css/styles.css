@@ -805,14 +805,18 @@ button {
 }
 
 .col-contact h1 {
-	font-size: 1vw;
+	font-size: 14px;
 	font-family: biennale_medium;
 	margin-bottom: 3vh;
 }
 
-.footer-text h1 {
-	margin-bottom: 1.2vh;
-}
+/* .footer-text h2 {
+	
+	font-size: 15px;
+	font-family: biennale_medium;
+	margin-bottom: 3vh;
+} */
+
 
 .col-contact p {
 	font-size: 1vw;
@@ -940,6 +944,7 @@ button {
 	}
 	.footer-text h1 {
 		margin-bottom: 20.4px;
+	
 	}
 	.col-contact p {
 		font-size: 17px;

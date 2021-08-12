@@ -925,7 +925,7 @@ button {
 }
 
 .col-contact h1 {
-	font-size: 1vw;
+	font-size: 14px;
 	font-family: biennale_medium;
 	margin-bottom: 3vh;
 }
@@ -1211,7 +1211,7 @@ button {
 /* SLIDER */
 
 .slider-container {
-	width: 67%;
+	/* width: 67%; */
 	height: 28rem;
 	position: relative;
 	/* overflow: hidden; */
@@ -1754,7 +1754,7 @@ button {
 	}
 	/* SLIDER */
 	.slider-container {
-		width: 67%;
+		width: 54%;
 		height: 74vh;
 		position: relative;
 		/* overflow: hidden; */
