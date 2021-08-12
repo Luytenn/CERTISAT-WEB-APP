@@ -303,8 +303,7 @@ document.addEventListener('mouseup', function(e) {
       if (!container.contains(e.target)) {
       
         container.style.display = 'none';
-        document.getElementById("cambiarImagen").src="imagenes/icono-servicios-blanco.png";
-        document.getElementById("cambiarImagen2").src="imagenes/icono-nosotros-azul.png";
+        document.getElementById("cambiarImagen").src="imagenes/icono-servicios-azul.png";
         y = document.getElementById("layer");
         y.style.backgroundImage = "none";
   
