@@ -298,7 +298,6 @@ function myFunction3() {
 document.addEventListener('mouseup', function(e) {
   var container = document.getElementById("miServicio2");
 
-
     if(container){
       if (!container.contains(e.target)) {
       
